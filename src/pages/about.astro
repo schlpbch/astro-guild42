@@ -1,0 +1,114 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+
+import SocialLink from "@components/SocialLink.astro";
+---
+
+<Layout title={`About | ${SITE.title}`}>
+  <Header activeNav="about" />
+  <Main pageTitle="About" pageDesc="All about guild42">
+    <h2 class="text-xl font-semibold pt-6 pb-6 sm:text-2xl">Goals</h2>
+
+     The purpose of the association is to increase the attractiveness of Bern as
+    a location for software developers and software development companies.
+    <p class="py-2">The association is involved in the following areas:</p>
+
+    <ul class="list-[square] list-inside">
+      <li>
+        Exchange of knowledge, experience and information for software
+        developers, from and for practice.
+      </li>
+      <li>
+        Networking between software developers, but also between companies and
+        software developers, as well as between companies.
+      </li>
+    </ul>
+
+    <h2 class="text-xl font-semibold pt-12 pb-6 sm:text-2xl">
+      Board of directors
+    </h2>
+
+     The Board of Directors is currently composed as follows:
+
+    <ul class="list-[square] list-inside">
+      <li>
+        President, events, social media: Simon M. Butscher
+        <SocialLink
+          href="https://www.linkedin.com/in/simon-m-butscher-%E2%98%81-63b28a5/"
+          icon="LinkedIn"
+        />
+      </li>
+      <li>
+        Treasurer, events: Daniel Marthaler
+        <SocialLink
+          href="https://www.linkedin.com/in/daniel-marthaler-34b36814/"
+          icon="LinkedIn"
+        />
+      </li>
+      <li>Website, technology, events: Niklaus Röthlisberger</li>
+      <li>
+        Website, technology, events: Andreas Schlapbach
+        <SocialLink
+          href="https://www.linkedin.com/in/andreas-schlapbach/"
+          icon="LinkedIn"
+        />
+      </li>
+      <li>
+        Assessor, events: Thomas Siegrist
+        <SocialLink
+          href="https://www.linkedin.com/in/thomas-siegrist/"
+          icon="LinkedIn"
+        />
+      </li>
+      <li>
+        Assessor, events: Colin Haldemann
+        <SocialLink
+          href="https://www.linkedin.com/in/colin-haldemann-bb378917a/"
+          icon="LinkedIn"
+        />
+      </li>
+      <li>
+        Assessor, events: Florian Kammermann
+        <SocialLink
+          href="https://www.linkedin.com/in/florian-k-9196651a/"
+          icon="LinkedIn"
+        />
+      </li>
+    </ul>
+
+    <h2 class="text-xl font-semibold pt-12 pb-6 sm:text-2xl">Membership</h2>
+
+     As a member of Guild42.ch you support the goals of the association. In addition
+    to the contributions of the donors and sponsors, the association is financed
+    exclusively by the membership fees.
+
+    <h2 class="text-xl font-semibold pt-12 pb-6 sm:text-2xl">
+      Payment Details
+    </h2>
+
+     Postal Account Number: 60-255581-5 <br />
+     IBAN: CH91 0900 0000 6025 5581 5 <br />
+     BIC: POFICHBEXXX
+
+    <h2 class="text-xl font-semibold pt-12 pb-6 sm:text-2xl">Address</h2>
+
+     guild42.ch <br />
+     c/o Simon Butscher <br />
+     Thunstrasse 22 <br />
+     3110 Münsingen
+
+    <h2 class="text-xl font-semibold pt-12 pb-6 sm:text-2xl">
+      Trademark Protection
+    </h2>
+
+     The Guild42 name is a <a
+      href="https://www.swissreg.ch/srclient/de/tm/746565"
+      >registered trademark</a
+    >.
+  </Main>
+  <Footer />
+</Layout>
