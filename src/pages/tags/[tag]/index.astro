@@ -1,16 +1,16 @@
 ---
 import { getCollection } from "astro:content";
-import TagPosts from "@layouts/TagEvents.astro";
-import getEventsByTag from "@utils/getEventsByTag";
+import TopicEvents from "@layouts/TopicEvents.astro";
+import getEventsByTopic from "@utils/getEventsByTopic";
 import getPagination from "@utils/getPagination";
-import getUniqueTags from "@utils/getUniqueTags";
+import getUniqueTopics from "@utils/getUniqueTopics";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
 
-  const tags = getUniqueTags(posts);
+  const topics = getUniqueTopics(posts);
 
-  return tags.map(({ tag, tagName }) => {
+  return topics.map(({ tag, tagName }) => {
     return {
       params: { tag },
       props: { tag, tagName, posts },
@@ -20,14 +20,13 @@ export async function getStaticPaths() {
 
 const { tag, tagName, posts } = Astro.props;
 
-const eventsByTag = getEventsByTag(posts, tag);
+const eventsByTopic = getEventsByTopic(posts, tag);
 
 const pagination = getPagination({
-  posts: eventsByTag,
+  posts: eventsByTopic,
   page: 1,
   isIndex: true,
 });
 ---
 
-<TagPosts {...pagination} {tag} {tagName} />
-@utils/getEventsByTag
+<TopicEvents {...pagination} {tag} {tagName} />

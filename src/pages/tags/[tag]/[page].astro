@@ -1,8 +1,8 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import TagPosts from "@layouts/TagEvents.astro";
-import getUniqueTags from "@utils/getUniqueTags";
-import getPostsByTag from "@utils/getEventsByTag";
+import TagPosts from "@layouts/TopicEvents.astro";
+import getUniqueTopics from "@utils/getUniqueTopics";
+import getPostsByTopic from "@utils/getEventsByTopic";
 import getPageNumbers from "@utils/getPageNumbers";
 import getPagination from "@utils/getPagination";
 
@@ -13,13 +13,13 @@ export interface Props {
 }
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
+  const events = await getCollection("blog");
 
-  const tags = getUniqueTags(posts);
+  const tags = getUniqueTopics(events);
 
   return tags.flatMap(({ tag, tagName }) => {
-    const tagPosts = getPostsByTag(posts, tag);
-    const totalPages = getPageNumbers(tagPosts.length);
+    const topicPosts = getPostsByTopic(events, tag);
+    const totalPages = getPageNumbers(topicPosts.length);
 
     return totalPages.map(page => ({
       params: { tag, page },
@@ -33,13 +33,12 @@ const { tag, tagName } = Astro.props;
 
 const posts = await getCollection("blog", ({ data }) => !data.draft);
 
-const postsByTag = getPostsByTag(posts, tag);
+const eventsByTopic = getPostsByTopic(posts, tag);
 
 const pagination = getPagination({
-  posts: postsByTag,
+  posts: eventsByTopic,
   page,
 });
 ---
 
 <TagPosts {...pagination} {tag} {tagName} />
-@utils/getEventsByTag

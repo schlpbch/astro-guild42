@@ -4,20 +4,20 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
-import Tag from "@components/Tag.astro";
-import getUniqueTags from "@utils/getUniqueTags";
+import Tag from "@components/Topic.astro";
+import getUniqueTopics from "@utils/getUniqueTopics";
 import { SITE } from "@config";
 
 const events = await getCollection("blog");
 
-let tags = getUniqueTags(events);
+let topics = getUniqueTopics(events);
 ---
 
-<Layout title={`Tags | ${SITE.title}`}>
-  <Header activeNav="tags" />
-  <Main pageTitle="Tags" pageDesc="All the tags used in events.">
+<Layout title={`Topics | ${SITE.title}`}>
+  <Header activeNav="topics" />
+  <Main pageTitle="Topics" pageDesc="All the topcis in events.">
     <ul>
-      {tags.map(({ tag }) => <Tag {tag} size="lg" />)}
+      {topics.map(({ tag }) => <Tag {tag} size="lg" />)}
     </ul>
   </Main>
   <Footer />
