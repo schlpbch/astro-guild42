@@ -21,9 +21,9 @@ const getPagination = <T>({
       ? Number(page)
       : 0;
 
-  const lastPost = isIndex ? SITE.postPerPage : currentPage * SITE.postPerPage;
-  const startPost = isIndex ? 0 : lastPost - SITE.postPerPage;
-  const paginatedPosts = posts.slice(startPost, lastPost);
+  const lastEvent = isIndex ? SITE.postPerPage : currentPage * SITE.postPerPage;
+  const startEvent = isIndex ? 0 : lastEvent - SITE.postPerPage;
+  const paginatedPosts = posts.slice(startEvent, lastEvent);
 
   return {
     totalPages,

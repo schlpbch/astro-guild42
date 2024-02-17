@@ -6,14 +6,14 @@ import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import SearchBar from "@components/Search";
-import getSortedPosts from "@utils/getSortedEvents";
+import getSortedEvents from "@utils/getSortedEvents";
 
 // Retrieve all published articles
 const posts = await getCollection("blog", ({ data }) => !data.draft);
-const sortedPosts = getSortedPosts(posts);
+const sortedEvents = getSortedEvents(posts);
 
 // List of items to search in
-const searchList = sortedPosts.map(({ data, slug }) => ({
+const searchList = sortedEvents.map(({ data, slug }) => ({
   title: data.title,
   description: data.description,
   data,
@@ -23,7 +23,7 @@ const searchList = sortedPosts.map(({ data, slug }) => ({
 
 <Layout title={`Search | ${SITE.title}`}>
   <Header activeNav="search" />
-  <Main pageTitle="Search" pageDesc="Search any article ...">
+  <Main pageTitle="Search" pageDesc="Search any event ...">
     <SearchBar client:load searchList={searchList} />
   </Main>
   <Footer />
