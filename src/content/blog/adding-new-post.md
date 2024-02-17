@@ -5,7 +5,7 @@ modDatetime: 2023-12-21T09:12:47.400Z
 title: Adding new posts in AstroPaper theme
 featured: false
 draft: true
-tags:
+topics:
   - docs
 description:
   Some rules & recommendations for creating or adding new posts using AstroPaper

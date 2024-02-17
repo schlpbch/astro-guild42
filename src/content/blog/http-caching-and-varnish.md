@@ -2,8 +2,7 @@
 author: Andreas Schlapbach
 pubDatetime: 2023-06-30T18:00:00.00+02:00
 title: HTTP Caching & Varnish
-ogImage: https://user-images.githubusercontent.com/53733092/215771435-25408246-2309-4f8b-a781-1f3d93bdf0ec.png
-tags:
+topics:
   - web development
   - infrastructure
 description: Whether with CDN, a reverse proxy or to avoid problems with browser caching, the basis for correct caching are the HTTP caching specifications.

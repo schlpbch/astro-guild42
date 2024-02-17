@@ -8,32 +8,32 @@ import getPagination from "@utils/getPagination";
 
 export interface Props {
   post: CollectionEntry<"blog">;
-  tag: string;
-  tagName: string;
+  topic: string;
+  topicName: string;
 }
 
 export async function getStaticPaths() {
   const events = await getCollection("blog");
 
-  const tags = getUniqueTopics(events);
+  const topics = getUniqueTopics(events);
 
-  return tags.flatMap(({ tag, tagName }) => {
-    const topicPosts = getPostsByTopic(events, tag);
+  return topics.flatMap(({ topic, topicName }) => {
+    const topicPosts = getPostsByTopic(events, topic);
     const totalPages = getPageNumbers(topicPosts.length);
 
     return totalPages.map(page => ({
-      params: { tag, page },
-      props: { tag, tagName },
+      params: { topic, page },
+      props: { topic, topicName },
     }));
   });
 }
 
 const { page } = Astro.params;
-const { tag, tagName } = Astro.props;
+const { topic, topicName } = Astro.props;
 
 const posts = await getCollection("blog", ({ data }) => !data.draft);
 
-const eventsByTopic = getPostsByTopic(posts, tag);
+const eventsByTopic = getPostsByTopic(posts, topic);
 
 const pagination = getPagination({
   posts: eventsByTopic,
@@ -41,4 +41,4 @@ const pagination = getPagination({
 });
 ---
 
-<TopicPosts {...pagination} {tag} {tagName} />
+<TopicPosts {...pagination} {topic} {topicName} />

@@ -4,7 +4,7 @@ pubDatetime: 2023-11-23T17:00:00Z
 title: "The Race to Open-Source ChatGPT"
 featured: false
 draft: false
-tags:
+topics:
   - chatGPT
   - ai
   - machine learning

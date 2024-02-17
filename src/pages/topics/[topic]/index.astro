@@ -10,17 +10,17 @@ export async function getStaticPaths() {
 
   const topics = getUniqueTopics(events);
 
-  return topics.map(({ tag, tagName }) => {
+  return topics.map(({ topic, topicName }) => {
     return {
-      params: { tag },
-      props: { tag, tagName, posts: events },
+      params: { topic },
+      props: { topic, topicName, posts: events },
     };
   });
 }
 
-const { tag, tagName, posts } = Astro.props;
+const { topic, topicName, posts } = Astro.props;
 
-const eventsByTopic = getEventsByTopic(posts, tag);
+const eventsByTopic = getEventsByTopic(posts, topic);
 
 const pagination = getPagination({
   posts: eventsByTopic,
@@ -29,4 +29,4 @@ const pagination = getPagination({
 });
 ---
 
-<TopicEvents {...pagination} {tag} {tagName} />
+<TopicEvents {...pagination} {topic} {topicName} />

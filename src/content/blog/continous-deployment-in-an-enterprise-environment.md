@@ -2,7 +2,7 @@
 author: Simon Räss
 pubDatetime: 2023-04-24T16:00:00.007Z
 title: Continuous Deployment in an Enterprise Environment – Lessons Learned
-tags:
+topics:
   - web development
   - infrastructure
 description: In the beginning there was the idea to practice Continuous Deployment with one application. However Continuous Deployment in an enterprise environment at scale? That can’t possibly work!

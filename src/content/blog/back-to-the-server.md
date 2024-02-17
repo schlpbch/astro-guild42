@@ -4,7 +4,7 @@ pubDatetime: 2024-04-16T17:00:00Z
 title: "Modern Web Development: Back to the Server!"
 featured: true
 draft: false
-tags:
+topics:
   - react
   - web development
 description: This talk shows how React Server Components work, what problems they address and what new challenges they create when developing web applications. We also take a closer look at the full-stack ambitions of other modern frontend frameworks.

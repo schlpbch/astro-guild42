@@ -12,21 +12,22 @@ export interface Props {
   currentPage: number;
   totalPages: number;
   paginatedPosts: CollectionEntry<"blog">[];
-  tag: string;
-  tagName: string;
+  topic: string;
+  topicName: string;
 }
 
-const { currentPage, totalPages, paginatedPosts, tag, tagName } = Astro.props;
+const { currentPage, totalPages, paginatedPosts, topic, topicName } =
+  Astro.props;
 ---
 
-<Layout title={`Topic: ${tagName} | ${SITE.title}`}>
+<Layout title={`Topic: ${topicName} | ${SITE.title}`}>
   <Header activeNav="topics" />
   <Main
-    pageTitle={[`Topic:`, `${tagName}`]}
-    titleTransition={tag}
-    pageDesc={`All the events with the topic "${tagName}".`}
+    pageTitle={[`Topic:`, `${topicName}`]}
+    titleTransition={topic}
+    pageDesc={`All the events with the topic "${topicName}".`}
   >
-    <h1 slot="title" transition:name={tag}>{`Tag:${tag}`}</h1>
+    <h1 slot="title" transition:name={topic}>{`Topic:${topic}`}</h1>
     <ul>
       {
         paginatedPosts.map(({ data, slug }) => (
@@ -39,10 +40,10 @@ const { currentPage, totalPages, paginatedPosts, tag, tagName } = Astro.props;
   <Pagination
     {currentPage}
     {totalPages}
-    prevUrl={`/tags/${tag}${
+    prevUrl={`/topics/${topic}${
       currentPage - 1 !== 1 ? "/" + (currentPage - 1) : ""
     }/`}
-    nextUrl={`/tags/${tag}/${currentPage + 1}/`}
+    nextUrl={`/topics/${topic}/${currentPage + 1}/`}
   />
 
   <Footer noMarginTop={totalPages > 1} />
