@@ -9,8 +9,8 @@ import SearchBar from "@components/Search";
 import getSortedEvents from "@utils/getSortedEvents";
 
 // Retrieve all published articles
-const posts = await getCollection("blog", ({ data }) => !data.draft);
-const sortedEvents = getSortedEvents(posts);
+const events = await getCollection("blog", ({ data }) => !data.draft);
+const sortedEvents = getSortedEvents(events);
 
 // List of items to search in
 const searchList = sortedEvents.map(({ data, slug }) => ({
@@ -23,7 +23,7 @@ const searchList = sortedEvents.map(({ data, slug }) => ({
 
 <Layout title={`Search | ${SITE.title}`}>
   <Header activeNav="search" />
-  <Main pageTitle="Search" pageDesc="Search any event ...">
+  <Main pageTitle="Search" pageDesc="Search an event ...">
     <SearchBar client:load searchList={searchList} />
   </Main>
   <Footer />
