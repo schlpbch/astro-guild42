@@ -1,6 +1,6 @@
 ---
 author: Andreas Schlapbach
-pubDatetime: 2024-01-23T15:22:00Z
+pubDatetime: 2024-04-16T17:00:00Z
 title: "Modern Web Development: Back to the Server!"
 slug: back-to-the-server
 featured: true
