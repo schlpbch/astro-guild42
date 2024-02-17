@@ -11,14 +11,14 @@ export interface Props {
 }
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  const events = await getCollection("blog", ({ data }) => !data.draft);
 
-  const postResult = posts.map(post => ({
+  const postResult = events.map(post => ({
     params: { slug: post.slug },
     props: { post },
   }));
 
-  const pagePaths = getPageNumbers(posts.length).map(pageNum => ({
+  const pagePaths = getPageNumbers(events.length).map(pageNum => ({
     params: { slug: String(pageNum) },
   }));
 
@@ -28,9 +28,9 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const { post } = Astro.props;
 
-const posts = await getCollection("blog");
+const events = await getCollection("blog");
 
-const sortedEvents = getSortedEvents(posts);
+const sortedEvents = getSortedEvents(events);
 
 const pagination = getPagination({
   posts: sortedEvents,

@@ -7,15 +7,15 @@ import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
-import getSortedPosts from "@utils/getSortedEvents";
+import getSortedEvents from "@utils/getSortedEvents";
 import { SOCIALS } from "@config";
 import Hero from "@components/Hero.astro";
 
-const posts = await getCollection("blog");
+const events = await getCollection("blog");
 
-const sortedPosts = getSortedPosts(posts);
-const featuredEvents = sortedPosts.filter(({ data }) => data.featured);
-const recentEvents = sortedPosts.filter(({ data }) => !data.featured);
+const sortedEvents = getSortedEvents(events);
+const featuredEvents = sortedEvents.filter(({ data }) => data.featured);
+const recentEvents = sortedEvents.filter(({ data }) => !data.featured);
 
 const socialCount = SOCIALS.filter(social => social.active).length;
 ---
