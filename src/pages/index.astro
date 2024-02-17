@@ -25,32 +25,27 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <main id="main-content">
     <Hero />
 
-    <Hr />
-
     {
       featuredEvents.length > 0 && (
-        <>
-          <section id="featured">
-            <h2>Featured</h2>
-            <ul>
-              {featuredEvents.map(({ data, slug }) => (
-                <Card
-                  href={`/events/${slug}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
-          </section>
-          {recentEvents.length > 0 && <Hr />}
-        </>
+        <section id="featured">
+          <h2>Upcoming Event</h2>
+          <ul>
+            {featuredEvents.map(({ data, slug }) => (
+              <Card
+                href={`/events/${slug}/`}
+                frontmatter={data}
+                secHeading={false}
+              />
+            ))}
+          </ul>
+        </section>
       )
     }
 
     {
       recentEvents.length > 0 && (
         <section id="recent-events">
-          <h2>Recent Posts</h2>
+          <h2>Recent Events</h2>
           <ul>
             {recentEvents.map(
               ({ data, slug }, index) =>
@@ -115,8 +110,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   #recent-events h2 {
     @apply text-2xl font-semibold tracking-wide;
   }
+  #main-content h1 {
+    @apply inline-block bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-lg font-semibold tracking-tighter text-transparent sm:my-8 sm:text-4xl;
+  }
+
   .all-events-btn-wrapper {
     @apply my-8 text-center;
   }
 </style>
-@utils/getSortedEvents
