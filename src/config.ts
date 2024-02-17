@@ -1,4 +1,5 @@
-import type { Site, SocialObjects } from "./types";
+import type { Site, SocialObjects, Patreon } from "./types";
+import { Category } from "./types";
 
 export const SITE: Site = {
   website: "https://guild42.ch/", // replace this with your deployed domain
@@ -22,6 +23,113 @@ export const LOGO_IMAGE = {
   width: 216,
   height: 46,
 };
+
+export const PATREONS: Array<Patreon> = [
+  {
+    name: "adesso Schweiz AG, Bern",
+    href: "https://www.adeesso.ch/",
+    category: Category.Everything,
+  },
+  {
+    name: "ti&m AG, Bern & Zürich",
+    href: "https://www.ti8m.ch/",
+    category: Category.Everything,
+  },
+  {
+    name: "mtrail, Bern",
+    href: "https://www.mtrail.ch/",
+    category: Category.Everything,
+  },
+  {
+    name: "avega IT AG, Bern",
+    href: "https://www.avega.ch/",
+    category: Category.Universe,
+  },
+  {
+    name: "72 Services AG, Bern",
+    href: "https://www.72services.com/",
+    owner: "Simon Martinelli",
+    category: Category.Life,
+  },
+  {
+    name: "Lightware Solutions GmbH, Bern",
+    href: "https://www.lightware-solutions.ch/",
+    owner: "Andreas Pfeuti",
+    category: Category.Life,
+  },
+  {
+    name: "Noser Engineering AG, Bern",
+    href: "https://www.noser.com/",
+    owner: "Stephan Marti",
+    category: Category.Life,
+  },
+  {
+    name: "Plaintext GmbH",
+    href: "https://plaintext.ch/",
+    owner: "Daniel Marthaler",
+    category: Category.Life,
+  },
+  {
+    name: "sourcefactory.ch",
+    href: "https://sourcefactory.ch/",
+    owner: "Marce Bouquet, Markus Wild",
+    category: Category.Life,
+  },
+  {
+    name: "Codeblock GmbH",
+    href: "https://www.codeblock.ch/",
+    owner: "Claude Gex",
+    category: Category.Life,
+  },
+  {
+    name: "Glue Software Engineering",
+    href: "https://glue.ch/",
+    owner: "Igor Metz",
+    category: Category.Life,
+  },
+  {
+    name: "ROKT GmbH",
+    href: "https://rokt.cloud/",
+    owner: "Thomas Philipona",
+    category: Category.Life,
+  },
+  {
+    name: "IMS Informatik und Management Service AG",
+    href: "https://www.imsag.ch/",
+    owner: "Alexander Meyer",
+    category: Category.Life,
+  },
+  {
+    name: "Iterate GmbH",
+    href: "https://iterate.ch/",
+    owner: "David Kocher, Yves Langisch",
+    category: Category.Life,
+  },
+  {
+    name: "Aschi Hegg",
+    category: Category.Life,
+  },
+  {
+    name: "Daniel Lorch",
+    category: Category.Life,
+  },
+  {
+    name: "Johann Fuchs",
+    category: Category.Life,
+  },
+  {
+    name: "Markus Horisberger",
+    category: Category.Life,
+  },
+  {
+    name: "Matthias Rüedlinger",
+    category: Category.Life,
+  },
+  {
+    name: "Beat Kappert",
+    category: Category.Life,
+  },
+];
 
 export const SOCIALS: SocialObjects = [
   {

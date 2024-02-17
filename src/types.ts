@@ -17,3 +17,16 @@ export type SocialObjects = {
   active: boolean;
   linkTitle: string;
 }[];
+
+export type Patreon = {
+  name: string;
+  href: string;
+  owner?: string;
+  category: Category;
+};
+
+export enum Category {
+  Life,
+  Universe,
+  Everything,
+}
