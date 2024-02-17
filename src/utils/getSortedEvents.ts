@@ -1,9 +1,9 @@
 import type { CollectionEntry } from "astro:content";
-import postFilter from "./postFilter";
+import eventFilter from "./eventFilter";
 
-const getSortedPosts = (posts: CollectionEntry<"blog">[]) => {
+const getSortedEvents = (posts: CollectionEntry<"blog">[]) => {
   return posts
-    .filter(postFilter)
+    .filter(eventFilter)
     .sort(
       (a, b) =>
         Math.floor(
@@ -15,4 +15,4 @@ const getSortedPosts = (posts: CollectionEntry<"blog">[]) => {
     );
 };
 
-export default getSortedPosts;
+export default getSortedEvents;

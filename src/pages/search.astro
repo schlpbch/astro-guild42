@@ -6,7 +6,7 @@ import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import SearchBar from "@components/Search";
-import getSortedPosts from "@utils/getSortedPosts";
+import getSortedPosts from "@utils/getSortedEvents";
 
 // Retrieve all published articles
 const posts = await getCollection("blog", ({ data }) => !data.draft);
@@ -28,3 +28,4 @@ const searchList = sortedPosts.map(({ data, slug }) => ({
   </Main>
   <Footer />
 </Layout>
+@utils/getSortedEvents
