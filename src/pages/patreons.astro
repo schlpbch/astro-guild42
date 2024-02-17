@@ -11,8 +11,11 @@ import PatreonCategory from "../components/PatreonCategory.astro";
 
 <Layout title={`Patreons | ${SITE.title}`}>
   <Header activeNav="patreons" />
-  <Main pageTitle="Patreons" pageDesc="Thank you for your support!">
-    <PatreonCategory title="Category.Everything" category={Category.Everything} />
+  <Main pageTitle="Patreons" pageDesc="Life, the Universe and Everything">
+    <PatreonCategory
+      title="Category.Everything"
+      category={Category.Everything}
+    />
     <PatreonCategory title="Category.Universe" category={Category.Universe} />
     <PatreonCategory title="Category.Life" category={Category.Life} />
   </Main>
