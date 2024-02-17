@@ -2,7 +2,6 @@
 author: Simon Räss
 pubDatetime: 2023-04-24T16:00:00.007Z
 title: Continuous Deployment in an Enterprise Environment – Lessons Learned
-slug: http-caching-and-varnsih
 tags:
   - web development
   - infrastructure

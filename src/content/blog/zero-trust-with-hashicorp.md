@@ -2,7 +2,6 @@
 author: Andreas Schlapbach
 pubDatetime: 2023-09-20T18:00:00.00+02:00
 title: Zero Trust with HashiCorp's Armon Dadgar
-slug: zero-trust-with-hashicorp
 tags:
   - zero trust
   - infrastructure
