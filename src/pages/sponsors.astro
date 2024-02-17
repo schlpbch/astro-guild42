@@ -1,0 +1,18 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Sponsors from "@components/Sponsors.astro";
+
+import SocialLink from "@components/SocialLink.astro";
+---
+
+<Layout title={`About | ${SITE.title}`}>
+  <Header activeNav="about" />
+  <Main pageTitle="About" pageDesc="All about guild42">
+    <Sponsors></Sponsors>
+  </Main>
+  <Footer />
+</Layout>
