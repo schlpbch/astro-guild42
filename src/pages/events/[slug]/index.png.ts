@@ -8,9 +8,9 @@ export async function getStaticPaths() {
     p.filter(({ data }) => !data.draft && !data.ogImage)
   );
 
-  return events.map(post => ({
-    params: { slug: slugifyStr(post.data.title) },
-    props: post,
+  return events.map(event => ({
+    params: { slug: slugifyStr(event.data.title) },
+    props: event,
   }));
 }
 

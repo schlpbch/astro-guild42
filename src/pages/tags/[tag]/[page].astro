@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import TagPosts from "@layouts/TopicEvents.astro";
+import TopicPosts from "@layouts/TopicEvents.astro";
 import getUniqueTopics from "@utils/getUniqueTopics";
 import getPostsByTopic from "@utils/getEventsByTopic";
 import getPageNumbers from "@utils/getPageNumbers";
@@ -41,4 +41,4 @@ const pagination = getPagination({
 });
 ---
 
-<TagPosts {...pagination} {tag} {tagName} />
+<TopicPosts {...pagination} {tag} {tagName} />
