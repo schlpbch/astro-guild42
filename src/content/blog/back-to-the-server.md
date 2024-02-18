@@ -11,7 +11,7 @@ topics:
 description: This talk shows how React Server Components work, what problems they address and what new challenges they create when developing web applications. We also take a closer look at the full-stack ambitions of other modern frontend frameworks.
 ---
 
-![Back to the server!](@assets/images/back-to-the-server.webp)
+![Back to the server!](@assets/images/back-to-the-server.svg)
 
 The era of Angular, React and Vue as classic single page applications is over. The trend in modern web frameworks leads back to the server. [React Server Components](https://vercel.com/blog/understanding-react-server-components) are currently the most prominent example of how modern web development is finding its way back to the server. React Server Components could be the next revolution in front-end development, and other frameworks will have to compete with them in the future.
 
