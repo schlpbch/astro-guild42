@@ -134,7 +134,7 @@ export const PATREONS: Array<Patreon> = [
 export const SOCIALS: SocialObjects = [
   {
     name: "LinkedIn",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.linkedin.com/company/guild42-ch/",
     linkTitle: `${SITE.title} on LinkedIn`,
     active: true,
   },
@@ -146,13 +146,13 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Twitter",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://twitter.com/guild42ch",
     linkTitle: `${SITE.title} on Twitter`,
     active: true,
   },
   {
     name: "YouTube",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.youtube.com/@guild4267",
     linkTitle: `${SITE.title} on YouTube`,
     active: true,
   },
@@ -170,7 +170,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Mastodon",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://cyberplace.social/@guild42ch",
     linkTitle: `${SITE.title} on Mastodon`,
     active: true,
   },
