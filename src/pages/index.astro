@@ -17,7 +17,7 @@ const events = await getCollection("blog");
 
 const sortedEvents = getSortedEvents(events);
 const featuredEvents = sortedEvents.filter(({ data }) => data.featured);
-const recentEvents = sortedEvents.filter(({ data }) => !data.featured);
+const pastEvents = sortedEvents.filter(({ data }) => !data.featured);
 
 const socialCount = SOCIALS.filter(social => social.active).length;
 ---
@@ -50,11 +50,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     }
 
     {
-      recentEvents.length > 0 && (
+      pastEvents.length > 0 && (
         <section id="recent-events">
-          <h2>Recent Events</h2>
+          <h2>Past Events</h2>
           <ul>
-            {recentEvents.map(
+            {pastEvents.map(
               ({ data, slug }, index) =>
                 index < 2 && (
                   <Card
@@ -118,7 +118,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply text-2xl font-semibold tracking-wide;
   }
   #main-content h1 {
-    @apply inline-block bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-lg font-semibold tracking-tighter text-transparent sm:my-8 sm:text-4xl;
+    @apply inline-block bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-lg font-semibold tracking-tighter text-transparent sm:my-8 sm:text-4xl;
   }
 
   .all-events-btn-wrapper {

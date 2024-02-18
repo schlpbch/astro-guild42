@@ -12,11 +12,11 @@ const { category, title } = Astro.props;
 
 <section class="pb-3 pl-0">
   <h2 class="pb-2 pt-4 text-2xl font-semibold tracking-wide">{title}</h2>
-  <ul class="">
+  <ul class="list-outside pl-6 list-[square] marker:text-blue-400">
     {
       PATREONS.filter((donor: Patreon) => donor.category === category).map(
         (donor: Patreon) => (
-          <li class="list-inside list-[square] py-0.5">
+          <li class="py-0.5">
             <a
               href={donor.href}
               class="hover:text-skin-accent"

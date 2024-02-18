@@ -15,10 +15,10 @@
   html[data-theme="dark"] {
     --color-fill: 33, 39, 55;
     --color-text-base: 234, 237, 243;
-    --color-accent: 6, 182, 212;
+    --color-accent: 96, 165, 250;
     --color-card: 52, 63, 96;
     --color-card-muted: 138, 51, 2;
-    --color-border: 6, 182, 212;
+    --color-border: 96, 165, 250;
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
