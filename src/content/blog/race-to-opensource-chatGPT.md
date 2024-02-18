@@ -1,6 +1,6 @@
 ---
 author: Andreas Schlapbach
-pubDatetime: 2023-11-23T17:00:00Z
+pubDatetime: 2023-11-23T18:00:00+01:00
 title: "The Race to Open-Source ChatGPT"
 featured: false
 draft: false
@@ -15,6 +15,6 @@ Just one year ago, chatbots were out of fashion and most people hadn’t heard a
 
 In this talk, Lewis Tunstall will give an overview of the community’s efforts to create an open-source ChatGPT, and discuss some of the challenges involved in training and evaluating these models effectively.
 
-## Speaker bio
+## Speaker
 
 Lewis Tunstall is a Machine Learning Engineer in the research team at Hugging Face, and is the co-author of the bestseller “NLP with Transformers” book. He has previously built machine learning-powered applications for start-ups and enterprises in the domains of natural language processing, topological data analysis, and time series. He holds a PhD in Theoretical Physics, was a 2010 Fulbright Scholar and has held research positions in Australia, the USA, and Switzerland. His current work focuses on building tools and recipes to align language models with human and AI preferences through techniques like reinforcement learning.

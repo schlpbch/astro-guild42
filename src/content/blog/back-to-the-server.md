@@ -1,10 +1,11 @@
 ---
 author: Andreas Schlapbach
-pubDatetime: 2024-04-16T17:00:00Z
+pubDatetime: 2024-04-16T17:00:00+01:00
 title: "Modern Web Development: Back to the Server!"
 featured: true
 draft: false
 topics:
+  - react server components
   - react
   - web development
 description: This talk shows how React Server Components work, what problems they address and what new challenges they create when developing web applications. We also take a closer look at the full-stack ambitions of other modern frontend frameworks.
@@ -21,9 +22,3 @@ This talk shows how React Server Components work, what problems they address and
 [Jonas Bandi](https://www.linkedin.com/in/jonasbandi/) is an enthusiastic developer, architect and trainer. He is particularly interested in bringing together modern web development and traditional enterprise applications. With a background in traditional Java and .NET development, he now works primarily with JavaScript, Angular & React. In recent years, Jonas has conducted dozens of in-house workshops for numerous companies in Switzerland.
 
 Jonas is involved in a wide variety of projects: from aircraft control to industrial control platforms to business applications. He has also been teaching modern web development in CAS application development with JavaScript & HTML5 at the Bern University of Applied Sciences for several years.
-
-### Registration
-
-Please register by 3 p.m. on Tuesday, April 15, 2024 using [Meetup](https://www.meetup.com/guild42ch/events/298694012/).
-
-Thanks to our speakers, sponsors and patrons, the lecture is free!
