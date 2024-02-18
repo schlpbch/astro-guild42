@@ -77,7 +77,7 @@ export const PATRONS: Array<Patron> = [
   },
   {
     name: "Codeblock GmbH",
-    href: "https://www.codeblock.ch/",
+    href: "https://www.linkedin.com/company/codeblock-gmbh/",
     owner: "Claude Gex",
     category: Category.Life,
   },
