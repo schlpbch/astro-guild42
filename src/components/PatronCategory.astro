@@ -1,6 +1,6 @@
 ---
-import { PATREONS } from "@config";
-import type { Patreon, Category } from "types";
+import { PATRONS } from "@config";
+import type { Patron, Category } from "types";
 
 export interface Props {
   title: string;
@@ -12,20 +12,20 @@ const { category, title } = Astro.props;
 
 <section class="pb-3 pl-0">
   <h2 class="pb-2 pt-4 text-2xl font-semibold tracking-wide">{title}</h2>
-  <ul class="list-outside pl-6 list-[square] marker:text-blue-400">
+  <ul class="list-outside list-[square] pl-6 marker:text-blue-400">
     {
-      PATREONS.filter((donor: Patreon) => donor.category === category).map(
-        (donor: Patreon) => (
+      PATRONS.filter((patron: Patron) => patron.category === category).map(
+        (patron: Patron) => (
           <li class="py-0.5">
             <a
-              href={donor.href}
+              href={patron.href}
               class="hover:text-skin-accent"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {donor.name}
+              {patron.name}
             </a>
-            {donor.owner && <>({donor.owner})</>}
+            {patron.owner && <>({patron.owner})</>}
           </li>
         )
       )

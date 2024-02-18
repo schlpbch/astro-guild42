@@ -1,0 +1,23 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import { Category } from "types";
+
+import PatronCategory from "../components/PatronCategory.astro";
+---
+
+<Layout title={`Patrons | ${SITE.title}`}>
+  <Header activeNav="patrons" />
+  <Main pageTitle="Patrons" pageDesc="Life, the Universe and Everything.">
+    <PatronCategory
+      title="Category.Everything"
+      category={Category.Everything}
+    />
+    <PatronCategory title="Category.Universe" category={Category.Universe} />
+    <PatronCategory title="Category.Life" category={Category.Life} />
+  </Main>
+  <Footer />
+</Layout>

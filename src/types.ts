@@ -18,7 +18,7 @@ export type SocialObjects = {
   linkTitle: string;
 }[];
 
-export type Patreon = {
+export type Patron = {
   name: string;
   href: string;
   owner?: string;

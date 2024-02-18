@@ -1,4 +1,4 @@
-import type { Site, SocialObjects, Patreon } from "./types";
+import type { Site, SocialObjects, Patron } from "./types";
 import { Category } from "./types";
 
 export const SITE: Site = {
@@ -24,7 +24,7 @@ export const LOGO_IMAGE = {
   height: 46,
 };
 
-export const PATREONS: Array<Patreon> = [
+export const PATRONS: Array<Patron> = [
   {
     name: "adesso Schweiz AG, Bern",
     href: "https://www.adeesso.ch/",
