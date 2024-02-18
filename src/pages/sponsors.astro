@@ -4,18 +4,15 @@ import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import Sponsors from "@components/Sponsors.astro";
-
-import SocialLink from "@components/SocialLink.astro";
 ---
 
 <Layout title={`Sponsors | ${SITE.title}`}>
   <Header activeNav="sponsors" />
   <Main pageTitle="Sponsors" pageDesc="We are very grateful for your support!">
-    <section class="py-6 my-6">
+    <section class="my-6 py-6">
       <div class="py-8">
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 auto-rows-max auto-cols-max justify-around gap-8"
+          class="grid auto-cols-max auto-rows-max grid-cols-1 justify-around gap-8 sm:grid-cols-2"
         >
           <div class="">
             <a href="https://www.bedag.ch">
