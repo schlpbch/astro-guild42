@@ -1,20 +1,20 @@
 ---
-import mimacomLogo from "../assets/mimacom_2023_large.webp";
-import puzzleLogo from "../assets/puzzle_tagline_bg_rgb.svg";
+import { Image } from "astro:assets";
+import mimacomLogo from "../assets/images/mimacom_2023_large.webp";
+import puzzleLogo from "../assets/images/puzzle_tagline_bg_rgb.svg";
 ---
 
-<p class="pt-4 pb-2">
+<p class="pb-2 pt-4">
   <div class="flex justify-center py-3 font-medium tracking-wide">Sponsors</div>
   <div class="flex justify-center gap-4">
     <a href="https://www.mimacom.ch">
-
-      <!-- <img src={mimacomLogo} alt="mimacom" width="100" /> -->
+      <Image src={mimacomLogo} alt="mimacom" width="400" />
     </a>
     <a href="https://www.puzzle.ch">
-      <!-- <img src={puzzleLogo} alt="puzzle" width="100" /> -->
+      <Image src={puzzleLogo} alt="puzzle" width="400" />
     </a>
   </div>
-  <div class="flex justify-center mt-2">
+  <div class="mt-2 flex justify-center">
     <a href="donors"> & donors</a>
   </div>
 </p>
