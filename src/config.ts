@@ -95,8 +95,7 @@ export const PATRONS: Array<Patron> = [
   },
   {
     name: "IMS Informatik und Management Service AG",
-    href: "https://www.imsag.ch/",
-    owner: "Alexander Meyer",
+    href: "https://www.ims.ch/",
     category: Category.Life,
   },
   {
