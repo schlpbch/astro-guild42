@@ -23,7 +23,3 @@ As the domains of application of the HTTP protocol expand beyond basic websites,
 [David Buchmann](https://www.xing.com/profile/David_Buchmann) is a web developer at Liip AG. He is an expert in PHP and APIs.
 
 [Thijs Feryn](https://www.linkedin.com/in/thijsferyn/) is a technical evangelist at Varnish Software, the company behind the Varnish Cache open source technology.
-
-## Organizational Remarks
-
-The event will take place on Monday, June 26, 2023 in the restaurant Schmiedstube in Bern. Start is at 6 p.m., aperitif from around 7 p.m. The talk and the aperitif are free thanks to our speakers, sponsors and donors!
