@@ -10,6 +10,7 @@ import Socials from "@components/Socials.astro";
 import getSortedEvents from "@utils/getSortedEvents";
 import { SOCIALS } from "@config";
 import Hero from "@components/Hero.astro";
+import Sponsors from "@components/Sponsors.astro";
 
 const events = await getCollection("blog");
 
@@ -22,8 +23,10 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
 <Layout>
   <Header />
+
   <main id="main-content">
     <Hero />
+    <Sponsors />
     <Hr />
     {
       featuredEvents.length > 0 && (
@@ -49,7 +52,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           <ul>
             {recentEvents.map(
               ({ data, slug }, index) =>
-                index < 4 && (
+                index < 2 && (
                   <Card
                     href={`/events/${slug}/`}
                     frontmatter={data}
