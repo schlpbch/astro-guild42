@@ -10,6 +10,7 @@ import Socials from "@components/Socials.astro";
 import getSortedEvents from "@utils/getSortedEvents";
 import { SOCIALS } from "@config";
 import Hero from "@components/Hero.astro";
+import CodeSection from "@components/CodeSection.astro";
 import Sponsors from "@components/Sponsors.astro";
 
 const events = await getCollection("blog");
@@ -26,8 +27,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
   <main id="main-content">
     <Hero />
+
+    <CodeSection />
+
     <Sponsors />
-    <Hr />
+
     {
       featuredEvents.length > 0 && (
         <section id="featured">
