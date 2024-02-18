@@ -4,8 +4,8 @@ import { Category } from "./types";
 export const SITE: Site = {
   website: "https://guild42.ch/", // replace this with your deployed domain
   author: "Andreas Schlapbach",
-  desc: "Guild 42 - Event and Networking Platform for Software Engineering in Berne.",
-  title: "Guild 42",
+  desc: "Guild42 - Event and Networking Platform for Software Engineering in Berne.",
+  title: "Guild42",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 4,
