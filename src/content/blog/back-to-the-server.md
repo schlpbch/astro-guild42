@@ -22,3 +22,9 @@ This talk shows how React Server Components work, what problems they address and
 [Jonas Bandi](https://www.linkedin.com/in/jonasbandi/) is an enthusiastic developer, architect and trainer. He is particularly interested in bringing together modern web development and traditional enterprise applications. With a background in traditional Java and .NET development, he now works primarily with JavaScript, Angular & React. In recent years, Jonas has conducted dozens of in-house workshops for numerous companies in Switzerland.
 
 Jonas is involved in a wide variety of projects: from aircraft control to industrial control platforms to business applications. He has also been teaching modern web development in CAS application development with JavaScript & HTML5 at the Bern University of Applied Sciences for several years.
+
+### Registration
+
+Please register using [Meetup](https://www.meetup.com/guild42ch/events/298694012/) until April, 16th, 15:00.
+
+Thanks to our speaker, sponsors and patrons the event is free of charge.
