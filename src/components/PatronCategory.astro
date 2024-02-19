@@ -16,7 +16,7 @@ const { category, title } = Astro.props;
     {
       PATRONS.filter((patron: Patron) => patron.category === category).map(
         (patron: Patron) => (
-          <li class="py-0.5">
+          <li class="py-1">
             <a
               href={patron.href}
               class="hover:text-skin-accent"
@@ -32,3 +32,8 @@ const { category, title } = Astro.props;
     }
   </ul>
 </section>
+<style>
+  a {
+    @apply relative underline decoration-dashed underline-offset-4 hover:text-skin-accent focus-visible:p-1;
+  }
+</style>

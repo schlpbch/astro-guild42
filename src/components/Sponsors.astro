@@ -4,10 +4,14 @@
 
 <section class="py-8">
   <h2 class="text-2xl font-semibold tracking-wide">Our Sponsors</h2>
-  <p class="py-4">Thanks to our sponsors all event are free of charge.</p>
+  <p class="py-4">
+    Thanks to our <a href="./patrons">patrons</a> and <a href="/sponsors"
+      >sponsors</a
+    > all event are free of charge.
+  </p>
   <div class="py-8">
     <div
-      class="grid grid-cols-2 sm:grid-cols-4 auto-rows-max auto-cols-max justify-evenly gap-8"
+      class="grid auto-cols-max auto-rows-max grid-cols-2 justify-evenly gap-8 sm:grid-cols-4"
     >
       <div class="">
         <a href="https://www.bedag.ch">
@@ -147,6 +151,6 @@
 
 <style>
   a {
-    @apply hover:text-skin-accent;
+    @apply relative underline decoration-dashed underline-offset-4 hover:text-skin-accent focus-visible:p-1;
   }
 </style>
