@@ -27,7 +27,7 @@ export const LOGO_IMAGE = {
 export const PATRONS: Array<Patron> = [
   {
     name: "adesso Schweiz AG, Bern",
-    href: "https://www.adeesso.ch/",
+    href: "https://www.adesso.ch/",
     category: Category.Everything,
   },
   {
