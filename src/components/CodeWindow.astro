@@ -1,0 +1,11 @@
+---
+import CodeTitlebar from "./CodeTitlebar";
+import CodeBody from "./CodeBody.astro";
+---
+
+<section class="rounded-xl bg-slate-900 py-1">
+  <div class="relative m-2 flex w-full flex-col">
+    <CodeTitlebar client:load />
+    <CodeBody />
+  </div>
+</section>

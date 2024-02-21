@@ -4,14 +4,13 @@ import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
-import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
-import Socials from "@components/Socials.astro";
 import getSortedEvents from "@utils/getSortedEvents";
 import { SOCIALS } from "@config";
 import Hero from "@components/Hero.astro";
-import CodeSection from "@components/CodeSection.astro";
+import CodeWinow from "@components/CodeWindow.astro";
 import Sponsors from "@components/Sponsors.astro";
+import CodeWindow from "@components/CodeWindow.astro";
 
 const events = await getCollection("blog");
 
@@ -28,7 +27,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <main id="main-content">
     <Hero />
 
-    <CodeSection />
+    <CodeWindow />
 
     <Sponsors />
 
