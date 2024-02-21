@@ -18,6 +18,7 @@ const { noMarginTop = false } = Astro.props;
     <div class="my-2 flex flex-col items-center sm:flex-row">
       &#169; 2010&ndash;{currentYear}
     </div>
+
     <div class="my-2 flex flex-col items-center sm:flex-row">
       <a
         class="relative underline decoration-dashed underline-offset-4 hover:text-skin-accent focus-visible:p-1"
@@ -28,6 +29,9 @@ const { noMarginTop = false } = Astro.props;
   <style>
     footer {
       @apply w-full;
+    }
+    .footer-wrapper {
+      @apply flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4;
     }
   </style>
 </footer>
