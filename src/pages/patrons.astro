@@ -18,6 +18,32 @@ import PatronCategory from "../components/PatronCategory.astro";
     />
     <PatronCategory title="Category.Universe" category={Category.Universe} />
     <PatronCategory title="Category.Life" category={Category.Life} />
+    <section class="pb-3 pl-0">
+      <h2 class="pb-2 pt-4 text-2xl font-semibold tracking-wide">
+        Become a Patron
+      </h2>
+      <p class="py-3">
+        Our patrons are the reason we can keep doing what we do. If you like to
+        support us, please consider becoming a patron.
+      </p>
+      <ul class="list-outside list-[square] pl-6 marker:text-blue-400">
+        <li class="py-0.5">
+          starting from 100 CHF: <span class="font-semibold tracking-wide"
+            >Category.Life</span
+          >
+        </li>
+        <li class="py-0.5">
+          starting from 500 CHF: <span class="font-semibold tracking-wide"
+            >Category.Universe</span
+          >
+        </li>
+        <li class="py-0.5">
+          starting from 1000 CHF: <span class="font-semibold tracking-wide"
+            >Category.Everything</span
+          >
+        </li>
+      </ul>
+    </section>
   </Main>
   <Footer />
 </Layout>
