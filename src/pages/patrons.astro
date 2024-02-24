@@ -12,6 +12,9 @@ import PatronCategory from "../components/PatronCategory.astro";
 <Layout title={`Patrons | ${SITE.title}`}>
   <Header activeNav="patrons" />
   <Main pageTitle="Patrons" pageDesc="Life, the Universe and Everything.">
+    <p class="py-3">
+      If you like to support us, please consider becoming a patron.
+    </p>
     <PatronCategory
       title="Category.Everything"
       category={Category.Everything}
@@ -23,8 +26,8 @@ import PatronCategory from "../components/PatronCategory.astro";
         Become a Patron
       </h2>
       <p class="py-3">
-        Our patrons are the reason we can keep doing what we do. If you like to
-        support us, please consider becoming a patron.
+        Our patrons help us to organize our events free of charge. Please choose
+        a category suited for you and become a patron.
       </p>
       <ul class="list-outside list-[square] pl-6 marker:text-blue-400">
         <li class="py-0.5">
