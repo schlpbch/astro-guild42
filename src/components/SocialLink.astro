@@ -5,10 +5,10 @@ import type { SocialMedia } from "types";
 
 export interface Props {
   href: string;
-  icon: SocialMedia
+  icon: SocialMedia;
 }
 
-const { href, icon } = Astro.props
+const { href, icon } = Astro.props;
 ---
 
 <LinkButton href={href} title={href} className="hover:rotate-6">

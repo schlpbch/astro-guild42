@@ -30,3 +30,16 @@ export enum Category {
   Universe,
   Everything,
 }
+
+export type SocialMedia =
+  | "Github"
+  | "Instagram"
+  | "LinkedIn"
+  | "Mail"
+  | "Twitter"
+  | "YouTube"
+  | "WhatsApp"
+  | "Snapchat"
+  | "Pinterest"
+  | "Telegram"
+  | "Mastodon";
