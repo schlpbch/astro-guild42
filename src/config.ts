@@ -106,26 +106,32 @@ export const PATRONS: Array<Patron> = [
   },
   {
     name: "Aschi Hegg",
+    href: "https://www.linkedin.com/in/aschihegg/",
     category: Category.Life,
   },
   {
     name: "Daniel Lorch",
+    href: "https://www.linkedin.com/in/dlorch/",
     category: Category.Life,
   },
   {
     name: "Johann Fuchs",
+    href: "https://www.linkedin.com/in/johann-fuchs-b48a522/",
     category: Category.Life,
   },
   {
     name: "Markus Horisberger",
+    href: "https://www.linkedin.com/in/markushorisberger/",
     category: Category.Life,
   },
   {
     name: "Matthias Rüedlinger",
+    href: "https://www.linkedin.com/in/matthias-rueedlinger/",
     category: Category.Life,
   },
   {
     name: "Beat Kappert",
+    href: "https://www.linkedin.com/in/beat-kappert-02bb2173/",
     category: Category.Life,
   },
 ];
