@@ -7,6 +7,7 @@ draft: false
 topics:
   - react server components
   - react
+  - javascript
   - web development
 description: This talk shows how React Server Components work, what problems they address and what new challenges they create when developing web applications. We also take a closer look at the full-stack ambitions of other modern frontend frameworks.
 ---

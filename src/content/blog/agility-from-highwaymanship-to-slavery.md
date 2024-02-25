@@ -1,7 +1,7 @@
 ---
 author: Andreas Schlapbach
 pubDatetime: 2023-01-26T18:00:00+00:00
-title: Agility: From Highwaymanship to Slavery
+title: "Agility: From Highwaymanship to Slavery"
 featured: false
 draft: false
 topics:
