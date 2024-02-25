@@ -21,7 +21,7 @@ export default function CodeTitlebar() {
           onClick={() => setShowDialog(true)}
         ></button>
       </div>
-      {showDialog && <Overlay42 onClick={() => setShowDialog(false)} />}
+      {showDialog && <Overlay42 />}
     </div>
   );
 }
