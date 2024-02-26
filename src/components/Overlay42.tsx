@@ -24,7 +24,7 @@ export default function Overlay42() {
                 </h1>
                 <p className="text-lg text-gray-200">
                   Answer to the Ultimate Question of Life, the Universe, and
-                  Everything
+                  Everything.
                 </p>
               </div>
               <div className="mt-5">
