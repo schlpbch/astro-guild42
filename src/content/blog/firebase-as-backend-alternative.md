@@ -1,5 +1,5 @@
 ---
-author: Andreas Schlapbch
+author: Andreas Schlapbach
 pubDatetime: 2022-04-25T18:00:00+00:00
 title: Firebase as a Backend Alternative
 featured: false
