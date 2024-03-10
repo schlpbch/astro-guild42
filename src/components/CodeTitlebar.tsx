@@ -6,7 +6,7 @@ export default function CodeTitlebar() {
 
   return (
     <div className="flex-none border-b border-slate-500">
-      <div className="flex h-8 items-center space-x-1.5">
+      <div className="flex h-8 items-center space-x-2">
         <button
           className="h-2.5 w-2.5 rounded-full bg-red-500 hover:bg-red-400"
           aria-label="Close"
