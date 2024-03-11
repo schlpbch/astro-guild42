@@ -105,11 +105,6 @@ export const PATRONS: Array<Patron> = [
     category: Category.Life,
   },
   {
-    name: "Aschi Hegg",
-    href: "https://www.linkedin.com/in/aschihegg/",
-    category: Category.Life,
-  },
-  {
     name: "Daniel Lorch",
     href: "https://www.linkedin.com/in/dlorch/",
     category: Category.Life,
