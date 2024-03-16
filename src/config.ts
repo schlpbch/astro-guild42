@@ -31,13 +31,13 @@ export const PATRONS: Array<Patron> = [
     category: Category.Everything,
   },
   {
-    name: "ti&m AG, Bern & Zürich",
-    href: "https://www.ti8m.ch/",
+    name: "mtrail, Bern",
+    href: "https://www.mtrail.ch/",
     category: Category.Everything,
   },
   {
-    name: "mtrail, Bern",
-    href: "https://www.mtrail.ch/",
+    name: "Zühlke Engineering AG, Bern",
+    href: "https://www.zuehlke.com/",
     category: Category.Everything,
   },
   {
