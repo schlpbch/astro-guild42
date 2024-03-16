@@ -2,11 +2,11 @@ import type { Site, SocialObjects, Patron } from "./types";
 import { Category } from "./types";
 
 export const SITE: Site = {
-  website: "https://guild42.ch/", // replace this with your deployed domain
+  website: "https://guild42.ch/",
   author: "Andreas Schlapbach",
   desc: "Guild42 - Event and Networking Platform for Software Engineering in Berne.",
   title: "Guild42",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "guild42-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 4,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
