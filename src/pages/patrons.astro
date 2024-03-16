@@ -7,18 +7,16 @@ import Footer from "@components/Footer.astro";
 import { Category } from "types";
 
 import PatronCategory from "../components/PatronCategory.astro";
+import EverythingPatronGrid from "../components/EverythingPatronGrid.astro";
 ---
 
 <Layout title={`Patrons | ${SITE.title}`}>
   <Header activeNav="patrons" />
-  <Main pageTitle="Patrons" pageDesc="Life, the Universe and Everything.">
-    <p class="py-3">
-      If you like to support us, please consider becoming a patron.
-    </p>
-    <PatronCategory
-      title="Category.Everything"
-      category={Category.Everything}
-    />
+  <Main
+    pageTitle="Patrons"
+    pageDesc="If you like to support us, please consider becoming a patron."
+  >
+    <EverythingPatronGrid title="Category.Everything" />
     <PatronCategory title="Category.Universe" category={Category.Universe} />
     <PatronCategory title="Category.Life" category={Category.Life} />
     <section class="pb-3 pl-0">

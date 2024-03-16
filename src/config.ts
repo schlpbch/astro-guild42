@@ -26,21 +26,6 @@ export const LOGO_IMAGE = {
 
 export const PATRONS: Array<Patron> = [
   {
-    name: "adesso Schweiz AG, Bern",
-    href: "https://www.adesso.ch/",
-    category: Category.Everything,
-  },
-  {
-    name: "mtrail, Bern",
-    href: "https://www.mtrail.ch/",
-    category: Category.Everything,
-  },
-  {
-    name: "Zühlke Engineering AG, Bern",
-    href: "https://www.zuehlke.com/",
-    category: Category.Everything,
-  },
-  {
     name: "avega IT AG, Bern",
     href: "https://www.avega.ch/",
     category: Category.Universe,
