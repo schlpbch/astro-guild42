@@ -24,7 +24,7 @@ const searchList = sortedEvents.map(({ data, slug }) => ({
 <Layout title={`Search | ${SITE.title}`}>
   <Header activeNav="search" />
   <Main pageTitle="Search" pageDesc="Search a topic ...">
-    <SearchBar client:load searchList={searchList} />
+    <SearchBar client:idle searchList={searchList} />
   </Main>
   <Footer />
 </Layout>
