@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 pubDatetime: 2021-09-13T18:00:00+00:00
 title: "Kubernetes - What Can Possibly Go Wrong"
-featured: false
+upcoming: false
 draft: false
 topics:
   - kubernetes

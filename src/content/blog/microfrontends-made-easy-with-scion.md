@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 pubDatetime: 2022-06-13T18:00:00+00:00
 title: Micro Frontend Made Easy with SCION
-featured: false
+upcoming: false
 draft: false
 topics:
   - micro frontend

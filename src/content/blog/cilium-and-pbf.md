@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 pubDatetime: 2022-01-17T18:00:00+00:00
 title: "Cilium & BPF: a Fundamentally Better Dataplane"
-featured: false
+upcoming: false
 draft: false
 topics:
   - linux

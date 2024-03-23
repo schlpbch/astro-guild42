@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 pubDatetime: 2023-11-23T18:00:00+00:00
 title: "The Race to Open-Source ChatGPT"
-featured: false
+upcoming: false
 draft: false
 topics:
   - chatGPT

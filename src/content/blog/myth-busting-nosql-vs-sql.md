@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 pubDatetime: 2021-11-08T18:00:00+00:00
 title: "Myth-Busting: NoSQL vs SQL Data Stores"
-featured: false
+upcoming: false
 draft: false
 topics:
   - sql

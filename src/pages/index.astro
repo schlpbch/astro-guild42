@@ -15,8 +15,8 @@ import CodeWindow from "@components/CodeWindow.astro";
 const events = await getCollection("blog");
 
 const sortedEvents = getSortedEvents(events);
-const featuredEvents = sortedEvents.filter(({ data }) => data.featured);
-const pastEvents = sortedEvents.filter(({ data }) => !data.featured);
+const upcomingEvents = sortedEvents.filter(({ data }) => data.upcoming);
+const pastEvents = sortedEvents.filter(({ data }) => !data.upcoming);
 ---
 
 <Layout>
@@ -30,11 +30,11 @@ const pastEvents = sortedEvents.filter(({ data }) => !data.featured);
     <Sponsors />
 
     {
-      featuredEvents.length > 0 && (
+      upcomingEvents.length > 0 && (
         <section class="py-8">
           <h2 class="text-2xl font-semibold tracking-wide">Upcoming Event</h2>
           <ul>
-            {featuredEvents.map(({ data, slug }) => (
+            {upcomingEvents.map(({ data, slug }) => (
               <Card
                 href={`/events/${slug}/`}
                 frontmatter={data}
@@ -105,12 +105,12 @@ const pastEvents = sortedEvents.filter(({ data }) => !data.featured);
     @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
   }
 
-  /* ===== Featured & Recent Posts Sections ===== */
-  #featured,
+  /* ===== upcoming & Recent Posts Sections ===== */
+  #upcoming,
   #recent-events {
     @apply pb-6 pt-12;
   }
-  #featured h2,
+  #upcoming h2,
   #recent-events h2 {
     @apply text-2xl font-semibold tracking-wide;
   }

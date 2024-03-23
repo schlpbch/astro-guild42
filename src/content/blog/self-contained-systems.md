@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 pubDatetime: 2024-01-22T18:00:00+00:00
 title: "Self Contained Systems and Micro Frontends in Practice"
-featured: false
+upcoming: false
 draft: false
 topics:
   - self contained systems

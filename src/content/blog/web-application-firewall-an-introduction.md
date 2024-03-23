@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 pubDatetime: 2021-06-14T18:00:00+00:00
 title: "Web Application Firewall - An Introduction"
-featured: false
+upcoming: false
 draft: false
 topics:
   - Web Application Firewall
