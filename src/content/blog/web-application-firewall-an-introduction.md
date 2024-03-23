@@ -8,6 +8,7 @@ topics:
   - Web Application Firewall
   - OWASP
   - security
+  - web development
 description: Fränzi Bühler gives an introduction how a Web Application Firewall helps to protect against common security flaws of web applications.
 ---
 
@@ -24,4 +25,4 @@ And we look at how we integrate a WAF into a continuous integration pipeline to 
 
 ## The speaker
 
-<a href="https://www.linkedin.com/in/franziska-buehler-bb037a163/">Fränzi Bühler</a> (<a href="https://twitter.com/bufrasch">@bufrasch </a>) is a security enthusiast who has been committed to security for over 10 years. While working as a security architect at <a href="https://www.puzzle.ch/">Puzzle ITC</a>, she can live out her passion for both Puzzle and external customers. In her free time, she is an OWASP (Open Web Application Security Project) member and OWASP ModSecurity Core Rule Set developer, helping to make the web application world a little more secure. She also <a href="https://franbuehler.github.io">blogs</a> and speaks at conferences.
+<a href="https://www.linkedin.com/in/franziska-buehler-bb037a163/">Fränzi Bühler</a> (<a href="https://twitter.com/bufrasch">@bufrasch</a>) is a security enthusiast who has been committed to security for over 10 years. While working as a security architect at <a href="https://www.puzzle.ch/">Puzzle ITC</a>, she can live out her passion for both Puzzle and external customers. In her free time, she is an OWASP (Open Web Application Security Project) member and OWASP ModSecurity Core Rule Set developer, helping to make the web application world a little more secure. She also <a href="https://franbuehler.github.io">blogs</a> and speaks at conferences.
