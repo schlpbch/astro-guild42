@@ -36,28 +36,59 @@ export const PATRONS: Array<Patron> = [
     owner: "Simon Martinelli",
     category: Category.Life,
   },
+    {
+      name: "Johann Fuchs",
+      href: "https://www.linkedin.com/in/johann-fuchs-b48a522/",
+      category: Category.Life,
+    },
   {
     name: "Lightware Solutions GmbH, Bern",
     href: "https://www.lightware-solutions.ch/",
     owner: "Andreas Pfeuti",
     category: Category.Life,
   },
+    {
+      name: "Daniel Lorch",
+      href: "https://www.linkedin.com/in/dlorch/",
+      category: Category.Life,
+    },
   {
-    name: "Noser Engineering AG, Bern",
-    href: "https://www.noser.com/",
-    owner: "Stephan Marti",
+    name: "ROKT GmbH",
+    href: "https://rokt.cloud/",
+    owner: "Thomas Philipona",
     category: Category.Life,
   },
+    {
+      name: "sourcefactory.ch",
+      href: "https://sourcefactory.ch/",
+      owner: "Marce Bouquet, Markus Wild",
+      category: Category.Life,
+    },
+  {
+    name: "IMS Informatik und Management Service AG",
+    href: "https://www.ims.ch/",
+    category: Category.Life,
+  },
+    {
+      name: "Markus Horisberger",
+      href: "https://www.linkedin.com/in/markushorisberger/",
+      category: Category.Life,
+    },
+  {
+    name: "Matthias Rüedlinger",
+    href: "https://www.linkedin.com/in/matthias-rueedlinger/",
+    category: Category.Life,
+  },
+    {
+      name: "Noser Engineering AG, Bern",
+      href: "https://www.noser.com/",
+      owner: "Stephan Marti",
+      category: Category.Life,
+    },
   {
     name: "Plaintext GmbH",
     href: "https://plaintext.ch/",
     owner: "Daniel Marthaler",
-    category: Category.Life,
-  },
-  {
-    name: "sourcefactory.ch",
-    href: "https://sourcefactory.ch/",
-    owner: "Marce Bouquet, Markus Wild",
     category: Category.Life,
   },
   {
@@ -73,47 +104,12 @@ export const PATRONS: Array<Patron> = [
     category: Category.Life,
   },
   {
-    name: "ROKT GmbH",
-    href: "https://rokt.cloud/",
-    owner: "Thomas Philipona",
-    category: Category.Life,
-  },
-  {
-    name: "IMS Informatik und Management Service AG",
-    href: "https://www.ims.ch/",
-    category: Category.Life,
-  },
-  {
     name: "Iterate GmbH",
     href: "https://iterate.ch/",
     owner: "David Kocher, Yves Langisch",
     category: Category.Life,
-  },
-  {
-    name: "Daniel Lorch",
-    href: "https://www.linkedin.com/in/dlorch/",
-    category: Category.Life,
-  },
-  {
-    name: "Johann Fuchs",
-    href: "https://www.linkedin.com/in/johann-fuchs-b48a522/",
-    category: Category.Life,
-  },
-  {
-    name: "Markus Horisberger",
-    href: "https://www.linkedin.com/in/markushorisberger/",
-    category: Category.Life,
-  },
-  {
-    name: "Matthias Rüedlinger",
-    href: "https://www.linkedin.com/in/matthias-rueedlinger/",
-    category: Category.Life,
-  },
-  {
-    name: "Beat Kappert",
-    href: "https://www.linkedin.com/in/beat-kappert-02bb2173/",
-    category: Category.Life,
-  },
+  }
+
 ];
 
 export const SOCIALS: SocialObjects = [
@@ -125,7 +121,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:vorstand@guild42.ch",
     linkTitle: `Send an email to ${SITE.title}`,
     active: false,
   },
