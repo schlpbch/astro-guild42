@@ -1,42 +1,54 @@
----
-
----
-
 <div class="relative flex min-h-0 flex-auto flex-col">
   <div class="flex min-h-0 w-full flex-auto overflow-auto">
     <div class="relative w-full flex-auto">
-      <pre
-        class="flex min-h-full text-sm leading-6">
-        <div class="hidden md:block text-slate-600 flex-none pr-2 text-right select-none" style="width: 50px;" />
-<code class="flex-auto relative block text-slate-50 overflow-auto">
-<span class="token tag"><span class="token punctuation">&lt;</span>div <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pt-6<span class="hidden"> </span><span class="hidden">m</span><span class="hidden">d</span><span class="hidden">:</span><span class="hidden">p</span><span class="hidden">-</span><span class="hidden">8</span><span> </span><span>t</span><span>e</span><span>x</span><span>t</span><span>-</span><span>c</span><span>e</span><span>n</span><span>t</span><span>e</span><span>r</span><span class="hidden"> </span><span class="hidden">m</span><span class="hidden">d</span><span class="hidden">:</span><span class="hidden">t</span><span class="hidden">e</span><span class="hidden">x</span><span class="hidden">t</span><span class="hidden">-</span><span class="hidden">l</span><span class="hidden">e</span><span class="hidden">f</span><span class="hidden">t</span> space-y-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token punctuation">&lt;</span>blockquote<span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token punctuation">&lt;</span>p <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-lg<span> </span><span>f</span><span>o</span><span>n</span><span>t</span><span>-</span><span>m</span><span>e</span><span>d</span><span>i</span><span>u</span><span>m</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-      We organize events in Berne related to the field of software engineering. The
-      focus is to exchange knowledge and experience between software developers and 
-      companies, both on the professional as on the personal level. We believe that 
-      this helps to increases the attractiveness of Berne as a location to develop
-      great software!
-    <span class="token tag"><span class="token punctuation">&lt;/</span>p<span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token punctuation">&lt;/</span>blockquote<span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token punctuation">&lt;/</span>div<span class="token punctuation">&gt;</span></span>
-</code> 
-      </pre>
+      <div
+        class="hidden md:block text-slate-600 flex-none pr-2 text-right select-none"
+      >
+      </div>
+      <code class="flex-auto relative block text-slate-50 overflow-auto">
+        <pre
+          class="flex min-h-full text-sm leading-6">
+<span class="token comment">
+'''
+ We organize events in Berne related to software engineering. The focus is to exchange knowledge 
+ and experience among software developers and software companies. We believe this increases the 
+ attractiveness of Berne as a place to develop great software!
+'''
+</span>
+<span class="token def">def</span> <span class="token method">ultimateQuestion</span><span class="token bracket">()</span>:
+  answer = <span class="token number">0</span>
+  counter = <span class="token number">0</span>
+  <span class="token keyword">while</span> counter &lt; <span class="token number">9</span>:
+    <span class="token keyword">if</span> <span class="token bracket">(</span>answer / <span class="token number">4</span><span class="token bracket">)</span> &lt; <span class="token number">7</span>:
+      answer += <span class="token number">4</span>
+    <span class="token keyword">else</span>:
+      answer += <span class="token bracket">(</span>counter - 1<span class="token bracket">)</span>
+    counter += <span class="token number">1</span>
+  <span class="token keyword">return</span> answer + <span class="token number">1</span>
+
+</pre>
+      </code>
     </div>
   </div>
 </div>
 
 <style>
-  span.token.tag {
+  span.token.keyword {
     @apply text-blue-400;
   }
-  span.token.punctuation {
-    @apply text-slate-200;
+  span.token.bracket {
+    @apply text-yellow-400;
   }
-  span.token.attr-name {
+  span.token.def {
+    @apply text-red-500;
+  }
+  span.token.comment {
     @apply text-cyan-500;
   }
-  span.token.attr-value {
+  span.token.number {
     @apply text-blue-300;
+  }
+  span.token.method {
+    @apply text-yellow-300;
   }
 </style>
