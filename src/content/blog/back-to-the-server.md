@@ -24,8 +24,6 @@ This talk shows how React Server Components work, what problems they address and
 
 Jonas is involved in a wide variety of projects: from aircraft control to industrial control platforms to business applications. He has also been teaching modern web development in CAS application development with JavaScript & HTML5 at the Bern University of Applied Sciences for several years.
 
-### Registration
+### Code & Slides
 
-Please register using [Meetup](https://www.meetup.com/guild42ch/events/298694012/) until April, 16th, 15:00.
-
-Thanks to our speaker, sponsors and patrons the event is free of charge.
+All the code examples presented in the [slides](https://github.com/jbandi/guild42-rsc/blob/main/RSC_Guild42.pdf) are available in this [GitHub repository](https://github.com/jbandi/guild42-rsc).
