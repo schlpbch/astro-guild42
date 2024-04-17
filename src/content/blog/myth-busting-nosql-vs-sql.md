@@ -19,7 +19,7 @@ In this talk we take a look at these myths and facts such as performance, scalab
 
 At the end of the talk you should know how to find the right database solution for your use case.
 
-## The speaker
+### Speaker
 
 [Jasmin Fluri](https://www.linkedin.com/in/jasminfluri/) works as a software and data engineer at [Schaltstelle GmbH](https://www.schaltstelle.ch) in Bern. She teaches software engineering and data warehousing at the University of Applied Sciences Northwestern Switzerland.
 

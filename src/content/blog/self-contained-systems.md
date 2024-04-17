@@ -17,6 +17,6 @@ What starts as a simple web application can, after 20 years, end up in a huge, s
 
 With Self-Contained Systems we have an architecture with which we design large web applications and customer portals. This architecture ensures that the system remains manageable and maintainable thanks to individual, independent modules. I would like to give an overview of the self-contained systems architecture and share our experiences with you.
 
-## Speaker
+### Speaker
 
 [Michael Lehmann](https://www.linkedin.com/in/michael-lehmann-694b6799/) is a developer, architect, technical team leader and occasional speaker. He works for Zühlke Engineering AG as lead software architect with the aim of supporting customers and team colleagues in the design and development of applications. He specializes in developing distributed systems with micro-services architectures and modern web technologies.

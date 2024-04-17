@@ -18,7 +18,7 @@ In the second part Thijs Feryn will introduce us to Varnish, a well-known and we
 
 As the domains of application of the HTTP protocol expand beyond basic websites, so do the acceleration solutions. In a globally connected world where end-user quality of experience is front end center, he will also show us how Varnish can be used to build an Edge CDN that accelerates websites, APIs and OTT video streaming platforms.
 
-## Speakers
+### Speakers
 
 [David Buchmann](https://www.xing.com/profile/David_Buchmann) is a web developer at Liip AG. He is an expert in PHP and APIs.
 

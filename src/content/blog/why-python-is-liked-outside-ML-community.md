@@ -18,6 +18,6 @@ As a long-time Java developer, the speaker is of course very familiar with the J
 
 In addition to technical and practice-relevant features, the talk examines the teachability and learnability of a (new) programming language.
 
-## Speaker
+### Speaker
 
 <a href="https://www.linkedin.com/in/christian-heitzmann/">Christian Heitzmann</a> is a Java, Python and Spring certified software developer with a CAS in Machine Learning and owner of <a href="https://www.simplexacode.ch/">SimplexaCode AG</a> in Lucerne. He has been developing software for over 20 years and has been teaching or lecturing in the areas of Java and Python programming, mathematics and algorithms for over 10 years. He regularly writes articles for IT specialist magazines.

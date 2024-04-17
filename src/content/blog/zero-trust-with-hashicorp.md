@@ -15,7 +15,7 @@ This shift requires a different approach to security, a different trust model. O
 
 Attend this event and you’ll learn from [Armon Dadgar](https://www.linkedin.com/in/armon-dadgar/), [HashiCorp](https://www.hashicorp.com/)’s Co-Founder and CTO, how your organization can enable scalable, dynamic security across clouds. He will show you, how you can contribute with your day to day work to a Zero Trust within your organization.
 
-## Speaker
+### Speaker
 
 ![Zero Trust with HashiCorp's Armon Dadgar](@assets/images/armon-dadgar.webp)
 
