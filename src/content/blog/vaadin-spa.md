@@ -1,7 +1,7 @@
 ---
 author: Andreas Schlapbch
 pubDatetime: 2022-11-14T18:00:00+00:00
-title: Vaadin – SPAs (not only) for Java developers
+title: Vaadin – SPAs (not only) for Java Developers
 upcoming: false
 draft: false
 topics:
