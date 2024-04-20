@@ -1,5 +1,7 @@
 ---
 author: Andreas Schlapbch
+speakers:
+  - Simon Martinelli
 pubDatetime: 2022-11-14T18:00:00+00:00
 title: Vaadin – SPAs (not only) for Java Developers
 upcoming: false

@@ -1,5 +1,7 @@
 ---
 author: Andreas Schlapbach
+speakers:
+  - Franziska Bühler
 pubDatetime: 2021-06-14T18:00:00+00:00
 title: "Web Application Firewall - An Introduction"
 upcoming: false

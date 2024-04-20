@@ -1,5 +1,7 @@
 ---
 author: Andreas Schlapbach
+speakers:
+  - Daniel Borkmann
 pubDatetime: 2022-01-17T18:00:00+00:00
 title: "Cilium & BPF: a Fundamentally Better Dataplane"
 upcoming: false

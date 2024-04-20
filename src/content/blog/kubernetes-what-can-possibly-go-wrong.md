@@ -1,5 +1,7 @@
 ---
 author: Andreas Schlapbach
+speakers:
+  - Sven Vetsch
 pubDatetime: 2021-09-13T18:00:00+00:00
 title: "Kubernetes - What Can Possibly Go Wrong"
 upcoming: false
