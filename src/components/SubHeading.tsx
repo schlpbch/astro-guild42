@@ -13,9 +13,8 @@ export default function SubHeading({
   speakers,
 }: SubHeadingProps) {
   return (
-    <div className="flex items-start gap-4 pt-2 ">
+    <div className="py-2">
       <Datetime pubDatetime={pubDatetime} modDatetime={modDatetime} size="lg" />
-      &ndash;
       <Speakers speakers={speakers} />
     </div>
   );
