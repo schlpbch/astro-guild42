@@ -1,7 +1,7 @@
 ---
 author: Andreas Schlapbach
 pubDatetime: 2022-09-12T18:00:00+00:00
-title: "Why Python is Liked Outside of the Machine Learning Community"
+title: "Why Python Is So Popular (Not Only in the Machine Learning Area)"
 upcoming: false
 draft: false
 topics:
