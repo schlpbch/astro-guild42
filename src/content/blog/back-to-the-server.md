@@ -4,7 +4,7 @@ speakers:
   - Jonas Bandi
 pubDatetime: 2024-04-16T18:00:00+00:00
 title: "Modern Web Development: Back to the Server!"
-upcoming: true
+upcoming: false
 draft: false
 topics:
   - react server components
