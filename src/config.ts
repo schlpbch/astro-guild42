@@ -18,10 +18,10 @@ export const LOCALE = {
 } as const;
 
 export const LOGO_IMAGE = {
-  enable: false,
+  enable: true,
   svg: true,
-  width: 216,
-  height: 46,
+  width: 42,
+  height: 42,
 };
 
 export const PATRONS: Array<Patron> = [
