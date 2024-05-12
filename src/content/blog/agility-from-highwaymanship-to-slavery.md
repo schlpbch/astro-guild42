@@ -38,11 +38,11 @@ A short song to get you in the mood: [The Unsung of Agile](https://www.youtube.c
 
 ### Speaker
 
-[Danilo Biella](linkedin.com/in/danilo-biella-3564a41) is a demystifier and evolutionary humanist, he likes to question things. In an enlightening way, he investigates half-truths, fraud and injustice and uncovers where things smell strange. Usually not without a touch of biting humor.
+[Danilo Biella](https://linkedin.com/in/danilo-biella-3564a41) is a demystifier and evolutionary humanist, he likes to question things. In an enlightening way, he investigates half-truths, fraud and injustice and uncovers where things smell strange. Usually not without a touch of biting humor.
 
 In his more than 20-year career in IT, the studied computer scientist has always had and continues to focus on quality, be it in development as well as in process design.
 
-After his first online appearance at Guild42, at the beginning of lock-down 2 ¾ years ago, which was unexpectedly popular, he appeared on various committees on topics in similar areas.
+After his first online appearance at [Guild42](https://www.guild42.ch), at the beginning of lock-down 3 years ago, which was unexpectedly popular, he appeared on various committees on topics in similar areas.
 
 In his free time he enjoys playing card and board games, making music and philosophizing over and about wine.
 
