@@ -4,7 +4,7 @@ import SponsorGrid from "./SponsorGrid.astro";
 
 <section class="py-8">
   <h2 class="text-2xl font-semibold tracking-wide">Our Sponsors</h2>
-  <p class="pt-4 pb-8">
+  <p class="pb-8 pt-4">
     Thanks to our <a href="/sponsors">sponsors</a> and
     <a href="./patrons">patrons</a> all events are free of charge.
   </p>
@@ -15,6 +15,6 @@ import SponsorGrid from "./SponsorGrid.astro";
 
 <style>
   a {
-    @apply relative underline decoration-dashed underline-offset-4 hover:text-skin-accent focus-visible:p-1;
+    @apply relative text-amber-400 hover:decoration-dashed underline-offset-4 hover:underline hover:decoration-amber-600 focus-visible:p-1 dark:text-amber-600;
   }
 </style>

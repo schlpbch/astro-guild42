@@ -159,7 +159,7 @@ const { activeNav } = Astro.props;
     @apply col-span-2 flex items-center justify-center;
   }
   nav ul li a {
-    @apply w-full px-4 py-3 text-center font-medium hover:text-skin-accent sm:my-0 sm:px-2 sm:py-1;
+    @apply w-full px-4 py-3 text-center font-medium decoration-dashed underline-offset-4  hover:text-amber-400  hover:underline hover:decoration-amber-600 sm:my-0 sm:px-2 sm:py-1;
   }
   nav ul li:nth-last-child(2) a {
     @apply w-auto;
@@ -169,7 +169,7 @@ const { activeNav } = Astro.props;
     @apply col-span-1;
   }
   nav a.active {
-    @apply relative underline decoration-dashed underline-offset-4 hover:text-skin-accent focus-visible:p-1;
+    @apply relative text-amber-400 underline decoration-dashed  underline-offset-4 focus-visible:p-1;
   }
   nav a.active svg {
     @apply fill-skin-accent;

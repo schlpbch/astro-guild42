@@ -19,7 +19,7 @@ const { category, title } = Astro.props;
           <li class="py-1">
             <a
               href={patron.href}
-              class="inline-block hover:text-skin-accent"
+              class="inline-block"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -34,6 +34,6 @@ const { category, title } = Astro.props;
 </section>
 <style>
   a {
-    @apply relative underline decoration-dashed underline-offset-4 hover:text-skin-accent focus-visible:p-1;
+    @apply relative  text-amber-400 hover:decoration-dashed underline-offset-4 hover:underline hover:decoration-amber-600 focus-visible:p-1;
   }
 </style>
