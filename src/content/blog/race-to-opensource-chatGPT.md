@@ -3,7 +3,7 @@ author: Andreas Schlapbach
 speakers:
   - Lewis Tunstall
 pubDatetime: 2023-11-23T18:00:00+00:00
-title: "The Race to Open-Source ChatGPT"
+title: The Race to Open-Source ChatGPT
 upcoming: false
 draft: false
 topics:
