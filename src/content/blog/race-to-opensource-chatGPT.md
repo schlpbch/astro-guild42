@@ -13,7 +13,7 @@ topics:
 description: Lewis Tunstall gives an overview of the community’s efforts to create an open-source ChatGPT, and discusses some of the challenges involved in training and evaluating these models effectively.
 ---
 
-Just one year ago, chatbots were out of fashion and most people hadn’t heard about large language models and techniques to align them with human preferences. Then, OpenAI broke the internet with ChatGPT and Meta followed suit by releasing the Llama series of language models which enabled the open-source community to build their very own capable chatbots. This has led to a rich ecosystem of open access datasets and models, with many of them hosted on the Hugging Face Hub.
+Just one year ago, chat bots were out of fashion and most people hadn’t heard about large language models and techniques to align them with human preferences. Then, OpenAI broke the internet with ChatGPT and Meta followed suit by releasing the Llama series of language models which enabled the open-source community to build their very own capable chat bots. This has led to a rich ecosystem of open access datasets and models, with many of them hosted on the Hugging Face Hub.
 
 In this talk, [Lewis Tunstall](https://www.linkedin.com/in/lewis-tunstall/) will give an overview of the community’s efforts to create an open-source ChatGPT, and discuss some of the challenges involved in training and evaluating these models effectively.
 
