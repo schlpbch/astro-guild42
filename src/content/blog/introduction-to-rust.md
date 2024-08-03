@@ -16,7 +16,7 @@ As is well known, many things can change quickly in the technology sector. Excep
 
 Several new language candidates have tried to gain a foothold in the embedded sector. Mostly with moderate success.
 
-With the [Rust Programming Language](https://www.rust-lang.org/) another candidate has joined in recent years. Rust was developed by Mozilla in 2010 and has since become the most popular programming language ever, according to the Annual Stackoverflow Developer Survey 2019.
+With the [Rust Programming Language](https://www.rust-lang.org/) another candidate has joined in recent years. Rust was developed by Mozilla in 2010 and has since become the most popular programming language ever, according to the Annual Stack Overflow Developer Survey 2019.
 
 Thanks to its features, Rust has also won the hearts of some embedded systems developers.
 
