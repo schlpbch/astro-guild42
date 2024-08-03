@@ -7,7 +7,7 @@ title: Is this Still Agile?
 topics:
   - Agile
   - methodology
-description: Danilo Biella demystifies and question the current direction agile methodologies are developing.
+description: Danilo Biella demystifies and questions the current direction agile methodologies are developing.
 ---
 
 Something is rotten in the state of Denmark. In the beginning everything sounded so good, but now something seems to be wrong anymore...

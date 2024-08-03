@@ -10,7 +10,7 @@ topics:
   - React Native
   - ExpressJS
   - kubernetes
-description: Relai which present the easiest way to invest in Bitcoin in Europe show how they scaled their app and architecture as their startup grows.
+description: The team of Relai app - which present the easiest way to invest in Bitcoin in Europe - shows how they scaled their app and architecture as their startup grows.
 ---
 
 [Relai](https://relai.app/) is the easiest way to invest in Bitcoin in Europe. As a fast growing startup we decided to rely on JS technology heavily. The Relai mobile app is developed in _React Native_ and available for both iOS and Android platforms. The Relai back-end is powered by _ExpressJS_ and hosted on _Jelastic_ cloud to allow quick scaling solutions. Security is a core principle of Relai as we are dealing with our user’s finances. Our second main topic is performance. We are currently working on our scaling solutions with Kubernetes and Docker containers and automating the whole process with CI/CD workflows. During the talk we will be presenting the early days of the Relai project and how we became more secure and stable over time by relying on best practices in the industry.
