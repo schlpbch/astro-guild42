@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Samuel Schüpbach
-pubDatetime: 2024-04-22T18:00:00+00:00
+pubDatetime: 2021-04-22T18:00:00+00:00
 title: An Introduction to Rust
 upcoming: false
 draft: false
@@ -12,11 +12,11 @@ topics:
 description: Rust is developing into a popular languages for (embedded) software engineering.
 ---
 
-As is well known, many things can change quickly in the technology sector. Except for the technology area, it is called "embedded software", where the 50-year-old C programming language is primarily used.
+As is well known, many things can change quickly in the technology sector. Except for the technology area of embedded software, where the 50-year-old C programming language is still primarily used.
 
-Since then, several language candidates have tried to gain a foothold in the embedded sector. Mostly with moderate success.
+Several new language candidates have tried to gain a foothold in the embedded sector. Mostly with moderate success.
 
-With the [Rust Programming Language](https://www.rust-lang.org/), another candidate has joined in recent years. Rust was developed by Mozilla in 2010 and has since become the most popular programming language ever, according to the Annual Stackoverflow Developer Survey 2019.
+With the [Rust Programming Language](https://www.rust-lang.org/) another candidate has joined in recent years. Rust was developed by Mozilla in 2010 and has since become the most popular programming language ever, according to the Annual Stackoverflow Developer Survey 2019.
 
 Thanks to its features, Rust has also won the hearts of some embedded systems developers.
 
