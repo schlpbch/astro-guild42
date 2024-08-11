@@ -4,7 +4,7 @@ speakers:
   - Iryna Dohndorf
 pubDatetime: 2024-09-09T17:00:00+01:00
 upcoming: true
-title: Can generative AI understand software engineering tasks? Should you worry?
+title: Can Generative AI Understand Software Engineering Tasks? Should You Worry?
 topics:
   - AI
   - software engineering
