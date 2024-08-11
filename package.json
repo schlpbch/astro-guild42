@@ -23,9 +23,7 @@
     "fuse.js": "^7.0.0",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
-    "satori": "^0.10.14",
-    "tailwindcss": "^3.4.9",
-    "typescript": "^5.5.4"
+    "satori": "^0.10.14"
   },
   "devDependencies": {
     "@astrojs/react": "^3.6.2",
@@ -33,7 +31,6 @@
     "@astrojs/tailwind": "^5.1.0",
     "@divriots/jampack": "^0.25.0",
     "@tailwindcss/typography": "^0.5.14",
-    "@types/github-slugger": "^2.0.0",
     "@types/react": "^18.3.3",
     "astro-eslint-parser": "^1.0.2",
     "commitizen": "^4.3.0",
@@ -46,7 +43,9 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.6",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.9",
+    "typescript": "^5.5.4"
   },
   "config": {
     "commitizen": {
