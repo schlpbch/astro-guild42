@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Danilo Biella
-pubDatetime: 2023-01-26T18:00:00+00:00
+pubDatetime: 2023-01-26T17:00:00+00:00
 title: "Agility: From Highwaymanship to Slavery"
 upcoming: false
 draft: false

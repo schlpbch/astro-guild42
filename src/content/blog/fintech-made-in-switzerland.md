@@ -3,7 +3,7 @@ author: Andreas Schlapbach
 speakers:
   - Adam Bilican
   - Julian Liniger
-pubDatetime: 2021-01-25T18:00:00+00:00
+pubDatetime: 2021-01-25T17:00:00+00:00
 title: Fintech – Made in Switzerland
 topics:
   - fintech

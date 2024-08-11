@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Danilo Biella
-pubDatetime: 2020-04-20T18:00:00+00:00
+pubDatetime: 2020-04-20T17:00:00+00:00
 title: Is this Still Agile?
 topics:
   - Agile

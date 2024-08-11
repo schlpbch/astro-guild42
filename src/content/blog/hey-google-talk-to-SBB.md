@@ -4,7 +4,7 @@ speakers:
   - Stefan Schöb
   - Nina Habicht
   - Andreas Schlapbach
-pubDatetime: 2021-04-26T18:00:00+00:00
+pubDatetime: 2021-04-26T17:00:00+00:00
 title: Hey Google, Talk to SBB
 topics:
   - chat bot

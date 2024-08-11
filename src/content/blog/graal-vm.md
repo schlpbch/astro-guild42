@@ -3,7 +3,7 @@ author: Andreas Schlapbach
 speakers:
   - Matthias Baumeler
   - Niroj Mahalingam
-pubDatetime: 2020-06-15T18:00:00+00:00
+pubDatetime: 2020-06-15T17:00:00+00:00
 title: GraalVM
 topics:
   - GraalVM

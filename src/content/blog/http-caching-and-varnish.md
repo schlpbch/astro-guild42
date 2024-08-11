@@ -3,7 +3,7 @@ author: Andreas Schlapbach
 speakers:
   - David Buchmann
   - Thijs Feryn
-pubDatetime: 2023-06-30T18:00:00+00:00
+pubDatetime: 2023-06-30T17:00:00+00:00
 title: HTTP Caching & Varnish
 topics:
   - web development
