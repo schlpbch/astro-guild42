@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Florian Kammermann
-pubDatetime: 2022-11-16T16:00:00+02:00
+pubDatetime: 2022-11-16T18:00:00+00:00
 title: Site Reliability Engineering (SRE) – What is that?
 topics:
   - SRE

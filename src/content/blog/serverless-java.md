@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Adam Bien
-pubDatetime: 2020-09-14T16:00:00+02:00
+pubDatetime: 2020-09-14T18:00:00+00:00
 title: Serverless Java
 topics:
   - serverless

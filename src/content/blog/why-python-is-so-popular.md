@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Christian Heitzmann
-pubDatetime: 2022-09-12T16:00:00+02:00
+pubDatetime: 2022-09-12T18:00:00+00:00
 title: "Why Python Is So Popular (Not Only in the Machine Learning Area)"
 upcoming: false
 draft: false

@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Stefan Lazarevski
-pubDatetime: 2022-04-25T16:00:00+02:00
+pubDatetime: 2022-04-25T18:00:00+00:00
 title: Firebase as a Backend Alternative
 upcoming: false
 draft: false

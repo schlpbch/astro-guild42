@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Michael Lehmann
-pubDatetime: 2024-01-22T16:00:00+02:00
+pubDatetime: 2024-01-22T18:00:00+00:00
 title: "Self Contained Systems and Micro Frontends in Practice"
 upcoming: false
 draft: false

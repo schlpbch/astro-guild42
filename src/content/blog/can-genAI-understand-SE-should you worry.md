@@ -2,7 +2,7 @@
 author: Florian Kammermann
 speakers:
   - Iryna Dohndorf
-pubDatetime: 2024-09-09T16:00:00+02:00
+pubDatetime: 2024-09-09T18:00:00+00:00
 upcoming: true
 title: Can Generative AI Understand Software Engineering Tasks? Should You Worry?
 topics:

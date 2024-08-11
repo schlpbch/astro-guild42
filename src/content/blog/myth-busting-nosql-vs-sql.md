@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Jasmin Fluri
-pubDatetime: 2021-11-08T16:00:00+02:00
+pubDatetime: 2021-11-08T18:00:00+00:00
 title: "Myth-Busting: NoSQL vs SQL Data Stores"
 upcoming: false
 draft: false

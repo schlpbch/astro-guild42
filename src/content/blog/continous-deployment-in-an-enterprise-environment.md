@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Simon Räss
-pubDatetime: 2023-04-24T16:00:00+02:00
+pubDatetime: 2023-04-24T18:00:00+00:00
 title: Continuous Deployment in an Enterprise Environment – Lessons Learned
 topics:
   - web development
