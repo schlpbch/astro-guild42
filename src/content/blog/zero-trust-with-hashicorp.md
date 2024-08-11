@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Armon Dadgar
-pubDatetime: 2023-09-20T17:00:00+00:00
+pubDatetime: 2023-09-20T16:00:00+02:00
 title: Zero Trust with HashiCorp's Armon Dadgar
 topics:
   - zero trust
