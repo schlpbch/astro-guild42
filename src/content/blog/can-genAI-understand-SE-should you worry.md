@@ -23,6 +23,6 @@ In this talk, we will first review the basics of Generative AI. Then, we will di
 
 In her work, Iryna develops innovative models and algorithms to tackle the challenges in data-driven decision making under uncertainty and applies the models in multiple domains, including predictive maintenance, transportation, logistics, finance, and psychological science. She is a passionate interdisciplinary researcher and software developer and has been actively collaborating with cross-domain researchers, computer scientists and engineers. Her most recent publication is [A Blockchain-Based Approach to Provenance and Reproducibility in Research Workflows](https://elib.dlr.de/142470/1/212995_1.pdf).'
 
-_Please register using [Meetup](https://www.meetup.com/guild42ch/events/302808510/)_.
+_Please register using [Meetup](https://www.meetup.com/guild42ch/events/302808510/)_. This talk will be held in _German_.
 
 Thanks to our [sponsors](../../sponsors/) and [patrons](../../patrons/) this event is free of charge and includes an apéro riche after the talk to socialize.
