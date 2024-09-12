@@ -31,12 +31,6 @@ export const PATRONS: Array<Patron> = [
     category: Category.Universe,
   },
   {
-    name: "72 Services AG, Bern",
-    href: "https://www.72services.com/",
-    owner: "Simon Martinelli",
-    category: Category.Life,
-  },
-  {
     name: "Johann Fuchs",
     href: "https://www.linkedin.com/in/johann-fuchs-b48a522/",
     category: Category.Life,
@@ -72,6 +66,12 @@ export const PATRONS: Array<Patron> = [
   {
     name: "Markus Horisberger",
     href: "https://www.linkedin.com/in/markushorisberger/",
+    category: Category.Life,
+  },
+  {
+    name: "Martinelli GmbH",
+    href: "https://www.martinelli.ch/",
+    owner: "Simon Martinelli",
     category: Category.Life,
   },
   {
