@@ -10,7 +10,7 @@ topics:
   - chat bot
   - conversational design
   - artificial intelligence
-description: This talk introduces SBB Voice Assistant to query trips and buy tickets build together with Paixon.
+description: This talk introduces SBB Voice Assistant to query trips and buy tickets using a voice chat bot build together with Paixon.
 ---
 
 Siri? Alexa? Google Assistant? There is more and more talk about such digital assistants. But what does it mean to use such a platform and implement innovative products on it?
