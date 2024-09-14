@@ -11,7 +11,7 @@ topics:
 description: In her talk Ursula Deriu delves in to applications of state of the language learning models (LLMs) in to real world applications.
 ---
 
-![GenaAI and SWE](@assets/images/gen-ai-software-engineering.webp)
+![GenaAI and SWE](@assets/images/empowering-applications-with-LLMs.webp)
 
 In the rapidly evolving landscape of artificial intelligence, Large Language Models (LLMs) have emerged as a transformative technology, capable of understanding and generating human-like text. This talk will explore how software developers can harness the power of LLMs to enhance their applications, delivering smarter, more intuitive user experiences.
 
@@ -25,7 +25,7 @@ Whether you are developing web applications, mobile apps, or enterprise solution
 
 ## Speaker
 
-Data systems, particularly search systems, have been a constant presence throughout [Ursula Deriu](https://www.linkedin.com/in/ursuladeriu/)’s professional life since her studies. She has held a variety of roles, including software engineer, project manager, and line manager. For many years, she has been teaching her specialist areas at various Swiss universities of applied sciences. Additionally, as the owner of Tirsus, she develops online courses and advises companies.
+Data systems, particularly search systems, have been a constant presence throughout [Ursula Deriu](https://www.linkedin.com/in/ursuladeriu/)’s professional life since her studies. She has held a variety of roles, including software engineer, project manager, and line manager. For many years, she has been teaching her specialist areas at various Swiss universities of applied sciences. Additionally, as the owner of [Tirsus](http://www.tirsus.com), she develops online courses and advises companies.
 
 The development of search systems has been the common thread running through her career. She is delighted that search systems are currently experiencing a revival thanks to generative AI. This revival is only possible due to well-designed data systems, bringing together the various strands of her expertise into a cohesive whole.
 
