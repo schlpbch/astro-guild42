@@ -47,8 +47,8 @@ export const PATRONS: Array<Patron> = [
     category: Category.Life,
   },
   {
-    name: "ROKT GmbH",
-    href: "https://rokt.cloud/",
+    name: "Tim&Koko AG",
+    href: "https://tim-koko.ch/blog/tim-koko/",
     owner: "Thomas Philipona",
     category: Category.Life,
   },
