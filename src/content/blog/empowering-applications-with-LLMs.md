@@ -2,7 +2,7 @@
 author: Simon Butcher
 speakers:
   - Ursula Deriu
-pubDatetime: 2024-10-06T18:00:00+00:00
+pubDatetime: 2024-10-07T18:00:00+00:00
 upcoming: true
 title: Empowering Your Applications with Large Language Models
 topics:
