@@ -4,7 +4,7 @@ and experience among software developers and software companies. We believe this
 attractiveness of Berne as a location to develop great software!
 '''
 
-def ultimateQuestion():
+def ultimateAnswer():
   answer = 0
   counter = 0
   while counter < 9:     # TODO: document magic numbers
@@ -15,4 +15,4 @@ def ultimateQuestion():
     counter += 1
   return answer + 1
 
-print(ultimateQuestion())
+print(ultimateAnswer())
