@@ -19,23 +19,23 @@
     "@astrojs/check": "^0.9.3",
     "@astrojs/rss": "^4.0.7",
     "@resvg/resvg-js": "^2.6.2",
-    "astro": "^4.15.6",
+    "astro": "^4.15.8",
     "fuse.js": "^7.0.0",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
-    "satori": "^0.10.14"
+    "satori": "^0.11.1"
   },
   "devDependencies": {
     "@astrojs/react": "^3.6.2",
     "@astrojs/sitemap": "^3.1.6",
-    "@astrojs/tailwind": "^5.1.0",
-    "@divriots/jampack": "^0.27.1",
+    "@astrojs/tailwind": "^5.1.1",
+    "@divriots/jampack": "^0.28.0",
     "@tailwindcss/typography": "^0.5.15",
-    "@types/react": "^18.3.5",
+    "@types/react": "^18.3.8",
     "astro-eslint-parser": "^1.0.3",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.10.0",
+    "eslint": "^9.11.0",
     "eslint-plugin-astro": "^1.2.4",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
@@ -44,7 +44,7 @@
     "prettier-plugin-tailwindcss": "^0.6.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwindcss": "^3.4.11",
+    "tailwindcss": "^3.4.12",
     "typescript": "^5.6.2"
   },
   "config": {
