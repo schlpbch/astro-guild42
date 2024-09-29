@@ -8,10 +8,10 @@ upcoming: true
 title: Galaxus and Digitec Webshops Explained (title to be finalized)
 topics:
   - web shop
-description: Galaxus and Digitec are the two largest Swiss retail online shops. Andreas and Boško give us insight into their architecture.
+description: Galaxus and Digitec are the two largest Swiss retail online stores. Andreas and Boško give us insight into their architecture.
 ---
 
-[Galaxus](https://www.galaxus.ch/en) and [digitec.ch](https://www.digitec.ch/en) are the two largest Swiss web shops. Andreas and Boško give us insight into their architecture.
+[Galaxus](https://www.galaxus.ch/en) and [Digitec](https://www.digitec.ch/en) are the two largest Swiss retail online stores. Andreas and Boško give us insight into their architecture.
 
 Talk to be finalized.
 
