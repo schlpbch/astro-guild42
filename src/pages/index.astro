@@ -32,7 +32,7 @@ const pastEvents = sortedEvents.filter(({ data }) => !data.upcoming);
     {
       upcomingEvents.length > 0 && (
         <section class="py-8">
-          <h2 class="text-2xl font-semibold tracking-wide">Upcoming Event</h2>
+          <h2 class="text-2xl font-semibold tracking-wide">Upcoming Events</h2>
           <ul>
             {upcomingEvents.map(({ data, slug }) => (
               <Card

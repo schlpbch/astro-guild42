@@ -13,7 +13,7 @@ description: In her talk Ursula Deriu delves in to applications of state of the 
 
 ![GenaAI and SWE](@assets/images/empowering-applications-with-LLMs.webp)
 
-In the rapidly evolving landscape of artificial intelligence, Large Language Models (LLMs) have emerged as a transformative technology, capable of understanding and generating human-like text. This talk will explore how software developers can harness the power of LLMs to enhance their applications, delivering smarter, more intuitive user experiences.
+In the rapidly evolving landscape of artificial intelligence, [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) have emerged as a transformative technology, capable of understanding and generating human-like text. This talk will explore how software developers can harness the power of LLMs to enhance their applications, delivering smarter, more intuitive user experiences.
 
 We will begin with an overview of what LLMs are, including popular models like GPT-4 and Gemini, and how they function.
 
