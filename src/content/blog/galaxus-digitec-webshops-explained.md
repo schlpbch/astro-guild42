@@ -5,7 +5,7 @@ speakers:
   - Boško Stupar
 pubDatetime: 2024-11-18T18:00:00+00:00
 upcoming: true
-title: Galaxus and Digitec Webshops Explained (title to be finalized)
+title: Galaxus and Digitec Webshops Explained (tbc)
 topics:
   - web shop
 description: Galaxus and Digitec are the two largest Swiss retail online stores. Andreas and Boško give us insight into their architecture.
