@@ -16,26 +16,26 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.3",
+    "@astrojs/check": "^0.9.4",
     "@astrojs/rss": "^4.0.7",
     "@resvg/resvg-js": "^2.6.2",
-    "astro": "^4.15.9",
+    "astro": "^4.15.12",
     "fuse.js": "^7.0.0",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
-    "satori": "^0.11.1"
+    "satori": "^0.11.2"
   },
   "devDependencies": {
     "@astrojs/react": "^3.6.2",
-    "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/sitemap": "^3.2.0",
     "@astrojs/tailwind": "^5.1.1",
     "@divriots/jampack": "^0.28.0",
     "@tailwindcss/typography": "^0.5.15",
-    "@types/react": "^18.3.10",
+    "@types/react": "^18.3.11",
     "astro-eslint-parser": "^1.0.3",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.11.1",
+    "eslint": "^9.12.0",
     "eslint-plugin-astro": "^1.2.4",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
