@@ -28,7 +28,3 @@ Whether you are developing web applications, mobile apps, or enterprise solution
 Data systems, particularly search systems, have been a constant presence throughout [Ursula Deriu](https://www.linkedin.com/in/ursuladeriu/)’s professional life since her studies. She has held a variety of roles, including software engineer, project manager, and line manager. For many years, she has been teaching her specialist areas at various Swiss universities of applied sciences. Additionally, as the owner of [Tirsus](http://www.tirsus.com), she develops online courses and advises companies.
 
 The development of search systems has been the common thread running through her career. She is delighted that search systems are currently experiencing a revival thanks to generative AI. This revival is only possible due to well-designed data systems, bringing together the various strands of her expertise into a cohesive whole.
-
-_Please register using [Meetup](https://www.meetup.com/guild42ch/events/303320520/)_. This talk will be held in _German_.
-
-Thanks to our [sponsors](../../sponsors/) and [patrons](../../patrons/) this event is free of charge and includes an apéro riche after the talk to socialize.
