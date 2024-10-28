@@ -9,7 +9,7 @@ title: "Scaling E-commerce: Architecture and Innovation at Digitec Galaxus"
 topics:
   - e-commerce
   - devops
-  - agility
+  - agile
   - architecture
 
 description: Join us for a technical deep-dive into how Digitec/Galaxus is building its platform serving for over 4 million customers while maintaining clean, maintainable code
