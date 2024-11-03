@@ -5,12 +5,13 @@ speakers:
   - Boško Stupar
 pubDatetime: 2024-11-18T18:00:00+00:00
 upcoming: true
-title: "Scaling E-commerce: Architecture and Innovation at Digitec Galaxus"
+title: "Scaling E-commerce: Architecture and Innovation at Digitec/Galaxus"
 topics:
   - e-commerce
   - devops
   - agile
   - architecture
+  - culture
 
 description: Join us for a technical deep-dive into how Digitec/Galaxus is building its platform serving for over 4 million customers while maintaining clean, maintainable code
 ---
