@@ -25,7 +25,17 @@ const shareLinks = [
     href: "mailto:?subject=See%20this%20post&body=",
     linkTitle: `Share this post via email`,
   },
-] as const;
+  {
+    name: "Mastodon",
+    href: "https://share.nitter.net/?url=",
+    linkTitle: `Share this post via Mastodon`,
+  },
+  {
+    name: "Bluesky",
+    href: "https://bluesky-web.com/share?url=",
+    linkTitle: `Share this post via Bluesky`,
+  },
+];
 ---
 
 <div class={`social-icons`}>

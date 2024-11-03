@@ -42,4 +42,5 @@ export type SocialMedia =
   | "Snapchat"
   | "Pinterest"
   | "Telegram"
-  | "Mastodon";
+  | "Mastodon"
+  | "Bluesky";
