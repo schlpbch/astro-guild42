@@ -13,7 +13,7 @@ topics:
   - architecture
   - culture
 
-description: Join us for a technical deep-dive into how Digitec/Galaxus is building its platform serving for over 4 million customers while maintaining clean, maintainable code.
+description: Join us for a technical deep-dive into how Digitec/Galaxus is building its platform serving over 4 million customers while maintaining clean, maintainable code.
 ---
 
 ![Scaling E-commerce: Architecture and Innovation at Digitec/Galaxus](@assets/images/scaling-e-commerce-digitec-galaxus.webp)
@@ -37,3 +37,9 @@ For developers and architects interested in real-world architecture at scale, ex
 [Andreas Caspers](https://www.linkedin.com/in/andreascaspers/) is domain architect of the online-shop core at Galaxus/Digitec.
 
 [Boško Stupar](https://www.linkedin.com/in/stuparbosko) is domain architect of logistics at Galaxus/Digitec.
+
+<br/>
+
+**Please register using [Meetup](https://www.meetup.com/guild42ch/events/304373952).**
+
+Thanks to our [sponsors](https://guild42.ch/sponsors) and [patrons](https://guild42.ch/patrons) the event is free of charge and a delicious apèro riche is being served after the talk.
