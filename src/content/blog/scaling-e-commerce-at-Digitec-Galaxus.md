@@ -13,8 +13,10 @@ topics:
   - architecture
   - culture
 
-description: Join us for a technical deep-dive into how Digitec/Galaxus is building its platform serving for over 4 million customers while maintaining clean, maintainable code
+description: Join us for a technical deep-dive into how Digitec/Galaxus is building its platform serving for over 4 million customers while maintaining clean, maintainable code.
 ---
+
+![Scaling E-commerce: Architecture and Innovation at Digitec/Galaxus](@assets/images/scaling-e-commerce-digitec-galaxus.webp)
 
 Join us for a technical deep-dive into how [Digitec](https://www.digitec.ch/en)/[Galaxus](https://www.galaxus.ch/en) is building its platform serving over 4 million customers while maintaining clean, maintainable code. This talk reveals their pragmatic approach to modern architecture, where they combine monolithic and microservices patterns to handle their scale (up to 90k daily purchases, more than 7M active products) without sacrificing development velocity.
 
