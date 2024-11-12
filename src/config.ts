@@ -55,7 +55,7 @@ export const PATRONS: Array<Patron> = [
   {
     name: "sourcefactory.ch",
     href: "https://sourcefactory.ch/",
-    owner: "Marce Bouquet, Markus Wild",
+    owner: "Marc Bouquet, Markus Wild",
     category: Category.Life,
   },
   {
