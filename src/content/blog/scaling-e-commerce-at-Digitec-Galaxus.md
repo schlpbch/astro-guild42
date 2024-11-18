@@ -34,7 +34,7 @@ For developers and architects interested in real-world architecture at scale, ex
 
 ### Speakers
 
-Andreas Caspers is the domain architect of the online-shop core at Galaxus/Digitec.
+[Andreas Caspers](https://www.linkedin.com/in/casperli) is the domain architect of the online-shop core at Galaxus/Digitec.
 
 [Boško Stupar](https://www.linkedin.com/in/stuparbosko) is the domain architect of logistics at Galaxus/Digitec.
 
