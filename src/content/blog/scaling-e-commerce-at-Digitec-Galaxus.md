@@ -4,7 +4,7 @@ speakers:
   - Andreas Caspers
   - Boško Stupar
 pubDatetime: 2024-11-18T18:00:00+00:00
-upcoming: true
+upcoming: false
 title: "Scaling E-commerce: Architecture and Innovation at Digitec/Galaxus"
 topics:
   - e-commerce
@@ -37,9 +37,3 @@ For developers and architects interested in real-world architecture at scale, ex
 [Andreas Caspers](https://www.linkedin.com/in/casperli) is the domain architect of the online-shop core at Galaxus/Digitec.
 
 [Boško Stupar](https://www.linkedin.com/in/stuparbosko) is the domain architect of logistics at Galaxus/Digitec.
-
-<br/>
-
-**Please register using [Meetup](https://www.meetup.com/guild42ch/events/304373952).**
-
-Thanks to our [sponsors](https://guild42.ch/sponsors) and [patrons](https://guild42.ch/patrons) the event is free of charge and a delicious apèro riche is being served after the talk.
