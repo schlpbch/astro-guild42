@@ -1,7 +1,7 @@
 ---
 author: Andreas Schlapbach
 speakers:
-  - all guild42.ch members
+  - guild42.ch members
 pubDatetime: 2025-08-14T16:00:00+00:00
 upcoming: true
 title: "Celebration of guild42's 15th Anniversary"
