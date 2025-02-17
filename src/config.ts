@@ -25,90 +25,96 @@ export const LOGO_IMAGE = {
 };
 
 export const PATRONS: Array<Patron> = [
-  {
-    name: "avega IT AG, Bern",
-    href: "https://www.avega.ch/",
-    category: Category.Universe,
-  },
-  {
-    name: "Johann Fuchs",
-    href: "https://www.linkedin.com/in/johann-fuchs-b48a522/",
-    category: Category.Life,
-  },
-  {
-    name: "Lightware Solutions GmbH, Bern",
-    href: "https://www.lightware-solutions.ch/",
-    owner: "Andreas Pfeuti",
-    category: Category.Life,
-  },
-  {
-    name: "Daniel Lorch",
-    href: "https://www.linkedin.com/in/dlorch/",
-    category: Category.Life,
-  },
-  {
-    name: "Tim&Koko AG",
-    href: "https://tim-koko.ch/blog/tim-koko/",
-    owner: "Thomas Philipona",
-    category: Category.Life,
-  },
-  {
-    name: "sourcefactory.ch",
-    href: "https://sourcefactory.ch/",
-    owner: "Marc Bouquet, Markus Wild",
-    category: Category.Life,
-  },
-  {
-    name: "IMS Informatik und Management Service AG",
-    href: "https://www.ims.ch/",
-    category: Category.Life,
-  },
-  {
-    name: "Markus Horisberger",
-    href: "https://www.linkedin.com/in/markushorisberger/",
-    category: Category.Life,
-  },
-  {
-    name: "Martinelli GmbH",
-    href: "https://www.martinelli.ch/",
-    owner: "Simon Martinelli",
-    category: Category.Life,
-  },
-  {
-    name: "Matthias Rüedlinger",
-    href: "https://www.linkedin.com/in/matthias-rueedlinger/",
-    category: Category.Life,
-  },
-  {
-    name: "Noser Engineering AG, Bern",
-    href: "https://www.noser.com/",
-    owner: "Stephan Marti",
-    category: Category.Life,
-  },
-  {
-    name: "Plaintext GmbH",
-    href: "https://plaintext.ch/",
-    owner: "Daniel Marthaler",
-    category: Category.Life,
-  },
-  {
-    name: "Codeblock GmbH",
-    href: "https://www.linkedin.com/company/codeblock-gmbh/",
-    owner: "Claude Gex",
-    category: Category.Life,
-  },
-  {
-    name: "Glue Software Engineering",
-    href: "https://glue.ch/",
-    owner: "Igor Metz",
-    category: Category.Life,
-  },
-  {
-    name: "Iterate GmbH",
-    href: "https://iterate.ch/",
-    owner: "David Kocher, Yves Langisch",
-    category: Category.Life,
-  },
+ {
+     "name": "Algosys GmbH",
+     "href": "https://algosys.ch/",
+     "owner": "Nicolas Regez",
+     "category": Category.Life
+   },
+   {
+     "name": "avega IT AG, Bern",
+     "href": "https://www.avega.ch/",
+     "category": Category.Universe
+   },
+   {
+     "name": "Codeblock GmbH",
+     "href": "https://www.linkedin.com/company/codeblock-gmbh/",
+     "owner": "Claude Gex",
+     "category": Category.Life
+   },
+   {
+     "name": "Daniel Lorch",
+     "href": "https://www.linkedin.com/in/dlorch/",
+     "category": Category.Life
+   },
+   {
+     "name": "Glue Software Engineering",
+     "href": "https://glue.ch/",
+     "owner": "Igor Metz",
+     "category": Category.Life
+   },
+   {
+     "name": "IMS Informatik und Management Service AG",
+     "href": "https://www.ims.ch/",
+     "category": Category.Life
+   },
+   {
+     "name": "Iterate GmbH",
+     "href": "https://iterate.ch/",
+     "owner": "David Kocher, Yves Langisch",
+     "category": Category.Life
+   },
+   {
+     "name": "Johann Fuchs",
+     "href": "https://www.linkedin.com/in/johann-fuchs-b48a522/",
+     "category": Category.Life
+   },
+   {
+     "name": "Lightware Solutions GmbH",
+     "href": "https://www.lightware-solutions.ch/",
+     "owner": "Andreas Pfeuti",
+     "category": Category.Life
+   },
+   {
+     "name": "Markus Horisberger",
+     "href": "https://www.linkedin.com/in/markushorisberger/",
+     "category": Category.Life
+   },
+   {
+     "name": "Martinelli GmbH",
+     "href": "https://www.martinelli.ch/",
+     "owner": "Simon Martinelli",
+     "category": Category.Life
+   },
+   {
+     "name": "Matthias Rüedlinger",
+     "href": "https://www.linkedin.com/in/matthias-rueedlinger/",
+     "category": Category.Life
+   },
+
+   {
+     "name": "Noser Engineering AG, Bern",
+     "href": "https://www.noser.com/",
+     "category": Category.Life
+   },
+   {
+     "name": "Plaintext GmbH",
+     "href": "https://plaintext.ch/",
+     "owner": "Daniel Marthaler",
+     "category": Category.Life
+   },
+   {
+     "name": "sourcefactory.ch",
+     "href": "https://sourcefactory.ch/",
+     "owner": "Marc Bouquet",
+     "category": Category.Life
+   },
+   {
+     "name": "Tim&Koko AG",
+     "href": "https://tim-koko.ch/blog/tim-koko/",
+     "owner": "Thomas Philipona",
+     "category": Category.Life
+   }
 ];
 
 export const SOCIALS: SocialObjects = [
