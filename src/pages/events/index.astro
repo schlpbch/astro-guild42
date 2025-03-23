@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Events from "@layouts/Events.astro";
-import getSortedEvents from "@utils/getSortedEvents";
+import getSortedEvents from "@utils/getSortedPastEvents";
 import getPagination from "@utils/getPagination";
 
 const events = await getCollection("blog");

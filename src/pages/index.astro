@@ -5,18 +5,19 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Card from "@components/Card";
-import getSortedEvents from "@utils/getSortedEvents";
-import { SOCIALS } from "@config";
+import getSortedPastEvents from "@utils/getSortedPastEvents";
 import Hero from "@components/Hero.astro";
-import CodeWinow from "@components/CodeWindow.astro";
 import Sponsors from "@components/Sponsors.astro";
 import CodeWindow from "@components/CodeWindow.astro";
+import getSortedForthcomingEvents from "@utils/getSortedForthcomingEvents";
 
 const events = await getCollection("blog");
 
-const sortedEvents = getSortedEvents(events);
-const upcomingEvents = sortedEvents.filter(({ data }) => data.upcoming);
-const pastEvents = sortedEvents.filter(({ data }) => !data.upcoming);
+let forthcomingEvents = events.filter(({ data }) => data.upcoming);
+forthcomingEvents = getSortedForthcomingEvents(forthcomingEvents);
+
+let pastEvents = events.filter(({ data }) => !data.upcoming);
+pastEvents = getSortedPastEvents(pastEvents);
 ---
 
 <Layout>
@@ -30,11 +31,11 @@ const pastEvents = sortedEvents.filter(({ data }) => !data.upcoming);
     <Sponsors />
 
     {
-      upcomingEvents.length > 0 && (
+      forthcomingEvents.length > 0 && (
         <section class="py-8">
-          <h2 class="text-2xl font-semibold tracking-wide">Upcoming Event</h2>
+          <h2 class="text-2xl font-semibold tracking-wide">Upcoming Events</h2>
           <ul>
-            {upcomingEvents.map(({ data, slug }) => (
+            {forthcomingEvents.map(({ data, slug }) => (
               <Card
                 href={`/events/${slug}/`}
                 frontmatter={data}

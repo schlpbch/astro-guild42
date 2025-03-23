@@ -1,5 +1,5 @@
 import type { CollectionEntry } from "astro:content";
-import getSortedEvents from "./getSortedEvents";
+import getSortedEvents from "./getSortedPastEvents";
 import { slugifyAll } from "./slugify";
 
 const getEventsByTopic = (events: CollectionEntry<"blog">[], topic: string) =>
