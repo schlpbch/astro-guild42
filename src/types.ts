@@ -25,6 +25,11 @@ export type Patron = {
   category: Category;
 };
 
+export type Community = {
+  name: string;
+  href: string;
+};
+
 export enum Category {
   Life,
   Universe,

@@ -1,0 +1,18 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import { Category } from "types";
+
+import Communities from "../components/Communities.astro";
+---
+
+<Layout title={`Community | ${SITE.title}`}>
+  <Header activeNav="community" />
+  <Main pageTitle="Community" pageDesc="The IT scene of Bern">
+    <Communities title="IT Engineering Communities" />
+  </Main>
+  <Footer />
+</Layout>
