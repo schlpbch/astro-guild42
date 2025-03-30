@@ -167,13 +167,17 @@ export const COMMUNITY: Array<Community> = [
     href: "https://www.meetup.com/net-user-group-bern/",
   },
   {
-    name: "hackergarten bern",
-    href: "https://www.meetup.com/hackergarten-bern/",
-  },
-  {
     name: "bärn häckt",
     href: "https://www.bernhackt.ch/",
   },
+  {
+    name: "digital impact network",
+    href: "https://digitalimpact.ch/",
+  },
+  {
+    name: "powercoders",
+    href: "https://powercoders.org/",
+  }
 ];
 
 export const SOCIALS: SocialObjects = [
