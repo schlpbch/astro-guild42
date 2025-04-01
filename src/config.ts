@@ -139,7 +139,7 @@ export const COMMUNITY: Array<Community> = [
     href: "https://www.uphillconf.com/about",
   },
   {
-    name: "/ch/open",
+    name: "CH Open",
     href: "ttps://www.ch-open.ch/ueber-ch-open/",
   },
   {
