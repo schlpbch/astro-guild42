@@ -181,8 +181,7 @@ export const COMMUNITY: Array<Community> = [
   {
     name: "Swiss PostgreSQL Users Group",
     href: "https://www.swisspug.org/",
-  }
-  
+  },
 ];
 
 export const SOCIALS: SocialObjects = [
