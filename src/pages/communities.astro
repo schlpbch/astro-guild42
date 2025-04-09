@@ -5,13 +5,13 @@ import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 
-import Communities from "../components/Communities.astro";
+import CommunityListing from "@components/CommunityListing.astro";
 ---
 
 <Layout title={`Communities | ${SITE.title}`}>
   <Header activeNav="communities" />
   <Main pageTitle="Communities" pageDesc="Berne's vibrant IT scene.">
-    <Communities title="IT Engineering Communities" />
+    <CommunityListing title="IT Engineering Communities" />
   </Main>
   <Footer />
 </Layout>
