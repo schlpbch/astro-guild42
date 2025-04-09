@@ -140,7 +140,7 @@ export const COMMUNITY: Array<Community> = [
   },
   {
     name: "CH Open",
-    href: "ttps://www.ch-open.ch/ueber-ch-open/",
+    href: "https://www.ch-open.ch/ueber-ch-open/",
   },
   {
     name: "java user group",
