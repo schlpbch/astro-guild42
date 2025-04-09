@@ -28,3 +28,7 @@ This keynote is tailored for IT security officers, engineers, corporate leaders,
 ## Bio
 
 [Kai Yu](https://www.linkedin.com/in/kaiyuofficial/) has been with [Swiss Infosec AG](https://www.infosec.ch/) since 2019, focusing intensively on artificial intelligence, particularly deep learning, within the context of security awareness since 2021. In 2023, he initiated phishing simulations using deepfakes, assisting organizations in enhancing their security strategies. His expertise was also showcased on the SRF program "Rundschau," where he demonstrated live how fraudsters utilize deepfakes to deceive unsuspecting victims.
+
+_Please register using [Meetup](https://www.meetup.com/guild42ch/events/306567984/)_. This talk will be held in _German_.
+
+Thanks to our [sponsors](../../sponsors/) and [patrons](../../patrons/) this event is free of charge and includes an apéro riche after the talk to socialize.
