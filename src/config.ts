@@ -139,8 +139,8 @@ export const COMMUNITY: Array<Community> = [
     href: "https://www.uphillconf.com/about",
   },
   {
-    name: "/ch/open",
-    href: "ttps://www.ch-open.ch/ueber-ch-open/",
+    name: "CH Open",
+    href: "https://www.ch-open.ch/ueber-ch-open/",
   },
   {
     name: "java user group",
@@ -177,7 +177,11 @@ export const COMMUNITY: Array<Community> = [
   {
     name: "powercoders",
     href: "https://powercoders.org/",
-  }
+  },
+  {
+    name: "Swiss PostgreSQL Users Group",
+    href: "https://www.swisspug.org/",
+  },
 ];
 
 export const SOCIALS: SocialObjects = [

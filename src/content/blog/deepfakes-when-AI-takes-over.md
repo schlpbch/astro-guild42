@@ -3,7 +3,7 @@ author: Kai Yu
 speakers:
   - Kai Yu
 pubDatetime: 2025-04-14T18:00:00+00:00
-upcoming: true
+upcoming: false
 title: "Deepfakes: When AI Takes Deception to the Next Level"
 topics:
   - artificial-intelligence
