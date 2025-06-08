@@ -10,7 +10,8 @@ export interface Props {
     | "patrons"
     | "topics"
     | "communities"
-    | "about"
+    | "about"    
+    | "codeofconduct"
     | "search";
 }
 
@@ -86,11 +87,13 @@ const { activeNav } = Astro.props;
             </a>
           </li>
           <li>
-            <a
-              href="/communities/"
-              class={activeNav === "communities" ? "active" : ""}
-            >
+            <a href="/communities/" class={activeNav === "communities" ? "active" : ""}>
               Communities
+            </a>
+          </li>
+          <li>
+            <a href="/codeofconduct/" class={activeNav === "codeofconduct" ? "active" : ""}>
+              Code of Conduct
             </a>
           </li>
           <li>
