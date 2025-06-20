@@ -3,7 +3,7 @@ author: Bertrand Delacretaz
 speakers:
   - Bertrand Delacretaz
 pubDatetime: 2025-05-26T18:00:00+00:00
-upcoming: true
+upcoming: false
 title: "The Power of Simplicity: Crafting Durable Software Systems"
 topics:
   - architecture
