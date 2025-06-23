@@ -119,6 +119,38 @@ export const PATRONS: Array<Patron> = [
 
 export const COMMUNITY: Array<Community> = [
   {
+    name: ".net user group bern",
+    href: "https://www.meetup.com/net-user-group-bern/",
+  },
+  {
+    name: "aws user group bern",
+    href: "https://www.meetup.com/aws-swiss-user-group-bern/",
+  },
+  {
+    name: "BATbern / berner architekten treffen",
+    href: "https://www.berner-architekten-treffen.ch/",
+  },
+  {
+    name: "be like GRACE",
+    href: "https://belikegrace.ch/#about",
+  },
+  {
+    name: "bärn häckt",
+    href: "https://www.bernhackt.ch/",
+  },
+  {
+    name: "bärner go meetup",
+    href: "https://berne.gophers.ch/",
+  },
+  {
+    name: "bärner js talks",
+    href: "https://www.meetup.com/barner-js-talks/",
+  },
+  {
+    name: "CH Open",
+    href: "https://www.ch-open.ch/ueber-ch-open/",
+  },
+  {
     name: "cloud native bern",
     href: "https://www.meetup.com/cloudnativebern/",
   },
@@ -127,60 +159,44 @@ export const COMMUNITY: Array<Community> = [
     href: "https://cloudnativeday.ch/",
   },
   {
-    name: "bärner go meetup",
-    href: "https://berne.gophers.ch/",
-  },
-  {
-    name: "berner architekten treffen",
-    href: "https://www.berner-architekten-treffen.ch/",
-  },
-  {
-    name: "uphill conf",
-    href: "https://www.uphillconf.com/about",
-  },
-  {
-    name: "CH Open",
-    href: "https://www.ch-open.ch/ueber-ch-open/",
-  },
-  {
-    name: "java user group",
-    href: "https://www.jug.ch/events/bern/",
-  },
-  {
     name: "devops bern",
     href: "https://www.meetup.com/devops-bern/",
-  },
-  {
-    name: "microsoft azure bern user group",
-    href: "https://www.meetup.com/de-DE/Azure-Cloud-Bern-User-Group/",
-  },
-  {
-    name: "bärner js talks",
-    href: "https://www.meetup.com/barner-js-talks/",
-  },
-  {
-    name: "rust bern",
-    href: "https://www.meetup.com/rust-bern/",
-  },
-  {
-    name: ".net user group bern",
-    href: "https://www.meetup.com/net-user-group-bern/",
-  },
-  {
-    name: "bärn häckt",
-    href: "https://www.bernhackt.ch/",
   },
   {
     name: "digital impact network",
     href: "https://digitalimpact.ch/",
   },
   {
-    name: "powercoders",
+    name: "java user group",
+    href: "https://www.jug.ch/events/bern/",
+  },
+  {
+    name: "microsoft azure bern user group",
+    href: "https://www.meetup.com/de-DE/Azure-Cloud-Bern-User-Group/",
+  },
+  {
+    name: "ml & ai meetup",
+    href: "https://www.meetup.com/machine-learning-artificial-intelligence-meetup-bern/",
+  },
+  {
+    name: "power coders",
     href: "https://powercoders.org/",
+  },
+  {
+    name: "remote coders",
+    href: "https://remotecoders.org/",
+  },
+  {
+    name: "rust bern",
+    href: "https://www.meetup.com/rust-bern/",
   },
   {
     name: "Swiss PostgreSQL Users Group",
     href: "https://www.swisspug.org/",
+  },
+  {
+    name: "uphill conf",
+    href: "https://www.uphillconf.com/about",
   },
 ];
 
