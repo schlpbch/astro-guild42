@@ -14,21 +14,21 @@ description: Celebrate with us 15 years of networking in the IT engineering comm
 
 ![füüri](https://image.jimcdn.com/app/cms/image/transf/dimension=950x10000:format=jpg/path/s4851942e8d59e01c/image/if0f4686e2ea30211/version/1638873072/f%C3%BC%C3%BCri-story.jpg)
 
-## 🥳 IT Summer Grill & Party – Das wird legendär! 
+## 🥳 IT Summer Grill & Party – This Will Be Legendary!
 
-Am 14. August 2025 feiern wir ein ganz besonderes Jubiläum: 15 Jahre Networking, Austausch und Leidenschaft in der IT-Engineering-Community Bern! Und du solltest auf keinen Fall fehlen.
+On August 14, 2025, we’re celebrating a very special anniversary: 15 years of networking, exchange, and passion in the IT engineering community of Bern! And you definitely don’t want to miss it.
 
-## 🔥 Was dich erwartet:
-- 300 Tech-Enthusiast:innen, Entwickler:innen, Architekt:innen, Community-Builders
-- Spannende Begegnungen, gute Gespräche, kalte Getränke und warme Feuerschalen in der füüri am Uferweg 42, 3013 Bern
-- Ein Abend für alle, die Technologie lieben und Berns IT-Standort stärken wollen
-- Networking at its best – mit Menschen, die Technologie nicht nur leben, sondern gestalten
+## 🔥 What to Expect:
+- 300 tech enthusiasts, developers, architects, and community builders
+- Exciting encounters, great conversations, cold drinks, and warm fire pits at [füüri](https://www.fueueri.ch), Uferweg 42, 3013 Bern
+- An evening for everyone who loves technology and wants to strengthen Bern’s IT ecosystem
+- Networking at its best – with people who don’t just work in tech but shape it
 
-## 💡 Wer steckt dahinter?
- guild42.ch und die IT Community von Bern – seit 15 Jahren ist guild42.ch ein Teil der IT-Community in Bern. Ein Verein, der durch Events und Austausch die lokale Tech-Szene verbindet, inspiriert und weiterbringt.
+## 💡 Who’s Behind It?
+ guild42.ch and the IT community of Bern – for 15 years, guild42.ch has been part of Bern’s IT scene. An association that connects, inspires, and advances the local tech scene through events and knowledge exchange.
 
-## 💸 Und das Beste:
-Dank unserer grossartigen Sponsoren ist der Event kostenlos!
+## 💸 And the Best Part:
+Thanks to our amazing sponsors, the event is free of charge!
 
 ### Everything
 - [acend](https://acend.ch)
@@ -51,15 +51,18 @@ Dank unserer grossartigen Sponsoren ist der Event kostenlos!
 - [PUZZLE ICT](https://www.puzzle.ch)
 - [Zühlke](https://www.zuehlke.com)
 
-Wir bedanken uns bei unseren Sponsoren für die wertvolle Unterstützung.
+We sincerely thank our sponsors for their valuable support.
 
-Ein riesiges Dankeschön an alle, die das ermöglichen und sich gemeinsam mit uns für die Community engagieren. 🙏
+A huge thank-you to everyone making this possible and joining us in strengthening the community. 🙏
 
-## 📅 Save the Date & sei dabei:
-- 🕕 14.08.2025, ab 18:00
+## 📅 Save the Date & Join Us:
+- 🕕 August 14, 2025, from 18:00
 - 📍 füüri, Uferweg 42, 3013 Bern, https://www.fueueri.ch
-- 🔗 Anmeldung via Meetup: https://meetup.com/guild42ch  
+- 🔗 Register via Meetup: https://meetup.com/guild42ch  
 - 👨‍👩‍👧‍👦 Community:  https://guild42.ch/communities/
-- 📹 Letzter Event: https://youtu.be/3j8fcxBXvLg?feature=shared
+- 📹 Last event:: https://youtu.be/3j8fcxBXvLg?feature=shared
 
-Mach den Kalender auf, schnapp deine Engineering-Crew – und komm feiern! 🚀
+Open your calendar, gather your engineering crew – and come celebrate! 🚀
+
+Warm regards from the organizing team ❤️
+[Melanie Noser](https://www.linkedin.com/in/mnoser/) | [Matthias Fritschi](https://www.linkedin.com/in/matthias-fritschi/) | [Sandra Hochstein](https://www.linkedin.com/in/sandra-hochstein/) | [Kateryna Schütz](https://www.linkedin.com/in/kateryna-schuetz-b5927745/) | [Daniel Kühni](https://www.linkedin.com/in/dani-kuehni/) | [Florian Kammermann](https://www.linkedin.com/in/florian-k-9196651a/) | [Daniel Marthaler](https://www.linkedin.com/in/daniel-marthaler-34b36814/) | [Andreas Schlapbach](https://www.linkedin.com/in/andreas-schlapbach/) | [Simon M. Butscher](https://www.linkedin.com/in/simonbutscher/)
