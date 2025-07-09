@@ -171,6 +171,10 @@ export const COMMUNITY: Array<Community> = [
     href: "https://www.jug.ch/events/bern/",
   },
   {
+    name: "messaging & streaming switerzland",
+    href: "https://www.meetup.com/messaging-streaming-switzerland/",
+  },
+  {
     name: "microsoft azure bern user group",
     href: "https://www.meetup.com/de-DE/Azure-Cloud-Bern-User-Group/",
   },
