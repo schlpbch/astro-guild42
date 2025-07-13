@@ -53,7 +53,13 @@ import SocialLink from "@components/SocialLink.astro";
             icon="LinkedIn"
           />
         </li>
-        <li class="py-0.5">Website: Niklaus Röthlisberger</li>
+        <li class="py-0.5">
+          Marketing: Steve Bechstein
+          <SocialLink
+            href="https://www.linkedin.com/in/steve-bechstein/"
+            icon="LinkedIn"
+          />
+        </li>
         <li class="py-0.5">
           Assessor: Florian Kammermann
           <SocialLink
@@ -71,31 +77,37 @@ import SocialLink from "@components/SocialLink.astro";
     </section>
     <section class="pb-3 pl-0">
       <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">
-        Payment Details
+        Code of Conduct
       </h2>
-      Postal Account Number: 60-255581-5 <br />
-      IBAN: CH91 0900 0000 6025 5581 5 <br />
-      BIC: POFICHBEXXX
-    </section>
-    <section class="pb-3 pl-0">
-      <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">Address</h2>
-      guild42.ch <br />
-      c/o Simon Butscher <br />
-      Marquard-Wocher-Strasse 35 <br />
-      3600 Thun
-    </section>
-    <section class="pb-3 pl-0">
-      <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">
-        Trademark Protection
-      </h2>
-      The Guild42 name is a <a
-        href="https://www.swissreg.ch/database-client/register/detail/trademark/1206505137"
-        >registered trademark</a
-      >.
+      Our <a href="/code-of-conduct">code of conduct</a> is based on mutual respect
+      and support.
     </section>
   </Main>
-  <Footer />
+  <section class="pb-3 pl-0">
+    <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">Payment Details</h2>
+    Postal Account Number: 60-255581-5 <br />
+    IBAN: CH91 0900 0000 6025 5581 5 <br />
+    BIC: POFICHBEXXX
+  </section>
+  <section class="pb-3 pl-0">
+    <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">Address</h2>
+    guild42.ch <br />
+    c/o Simon Butscher <br />
+    Marquard-Wocher-Strasse 35 <br />
+    3600 Thun
+  </section>
+  <section class="pb-3 pl-0">
+    <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">
+      Trademark Protection
+    </h2>
+    The Guild42 name is a <a
+      href="https://www.swissreg.ch/database-client/register/detail/trademark/1206505137"
+      >registered trademark</a
+    >.
+  </section>
 </Layout>
+<Footer />
+
 <style>
   a {
     @apply relative text-amber-400 decoration-dashed underline-offset-4 hover:underline hover:decoration-amber-600 focus-visible:p-1;
