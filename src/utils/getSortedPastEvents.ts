@@ -1,7 +1,7 @@
 import type { CollectionEntry } from "astro:content";
 import eventFilter from "./eventFilter";
 
-const getSortedEvents = (events: CollectionEntry<"events">[]) => {
+const getSortedPastEvents = (events: CollectionEntry<"events">[]) => {
   return events
     .filter(eventFilter)
     .sort(
@@ -15,4 +15,4 @@ const getSortedEvents = (events: CollectionEntry<"events">[]) => {
     );
 };
 
-export default getSortedEvents;
+export default getSortedPastEvents;
