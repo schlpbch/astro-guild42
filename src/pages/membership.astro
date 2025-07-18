@@ -30,7 +30,6 @@ import Footer from "@components/Footer.astro";
           placeholder="Your name"
           required
         />
-
         <label for="email">Email:</label>
         <input
           type="email"
@@ -40,16 +39,14 @@ import Footer from "@components/Footer.astro";
           placeholder="Your email"
           required
         />
-
-        <label for="message">Message:</label>
+        <label for="billing-address">Billing Address:</label>
         <textarea
-          id="message"
-          name="message"
+          id="billing-address"
+          name="billing-address"
           class="block w-full rounded border border-skin-fill border-opacity-40 bg-skin-fill p-3 placeholder:italic placeholder:text-opacity-75 focus:border-skin-accent focus:outline-none"
-          placeholder="Your message"
+          placeholder="Your billing address"
           rows="4"
           required></textarea>
-
         <button
           type="submit"
           class="relative p-4 text-amber-400 decoration-dashed underline-offset-4 hover:underline hover:decoration-amber-600 focus-visible:p-1"
