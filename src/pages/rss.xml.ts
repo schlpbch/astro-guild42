@@ -4,7 +4,7 @@ import getSortedEvents from "@utils/getSortedPastEvents";
 import { SITE } from "@config";
 
 export async function GET() {
-  const events = await getCollection("blog");
+  const events = await getCollection("events");
   const sortedEvents = getSortedEvents(events);
   return rss({
     title: SITE.title,

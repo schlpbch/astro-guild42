@@ -1,7 +1,7 @@
 import { SITE } from "@config";
 import type { CollectionEntry } from "astro:content";
 
-const eventFilter = ({ data }: CollectionEntry<"blog">) => {
+const eventFilter = ({ data }: CollectionEntry<"events">) => {
   /*
     const isPublishTimePassed =
     Date.now() >

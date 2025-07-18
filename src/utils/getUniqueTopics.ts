@@ -7,7 +7,7 @@ interface Topic {
   topicName: string;
 }
 
-const getUniqueTopics = (events: CollectionEntry<"blog">[]) => {
+const getUniqueTopics = (events: CollectionEntry<"events">[]) => {
   const topics: Topic[] = events
     .filter(eventFilter)
     .flatMap(event => event.data.topics)

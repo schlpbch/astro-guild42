@@ -4,7 +4,7 @@ import { generateOgImageForEvent } from "@utils/generateOgImages";
 import { slugifyStr } from "@utils/slugify";
 
 export async function getStaticPaths() {
-  const events = await getCollection("blog").then(p =>
+  const events = await getCollection("events").then(p =>
     p.filter(({ data }) => !data.draft && !data.ogImage)
   );
 
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 
 export const GET: APIRoute = async ({ props }) =>
   new Response(
-    await generateOgImageForEvent(props as CollectionEntry<"blog">),
+    await generateOgImageForEvent(props as CollectionEntry<"events">),
     {
       headers: { "Content-Type": "image/png" },
     }

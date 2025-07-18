@@ -1,7 +1,7 @@
 import type { CollectionEntry } from "astro:content";
 import eventFilter from "./eventFilter";
 
-const getSortedForthcomingEvents = (events: CollectionEntry<"blog">[]) => {
+const getSortedForthcomingEvents = (events: CollectionEntry<"events">[]) => {
   return events
     .filter(eventFilter)
     .sort(
