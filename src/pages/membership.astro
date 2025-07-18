@@ -1,0 +1,62 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Main from "@layouts/Main.astro";
+import Footer from "@components/Footer.astro";
+---
+
+<Layout title={`Contact | ${SITE.title}`}>
+  <Header activeNav="membership" />
+  <Main pageTitle="Become a Member" pageDesc="Welcome on board!">
+    <form
+      name="membership"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      netlify
+    >
+      <input type="hidden" name="form-name" value="membership" />
+      <p hidden>
+        Do not fill this out: <input name="bot-field" />
+      </p>
+      <div class="grid space-y-2">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="block w-full rounded border border-skin-fill border-opacity-40 bg-skin-fill p-3 placeholder:italic placeholder:text-opacity-75 focus:border-skin-accent focus:outline-none"
+          placeholder="Your name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="block w-full rounded border border-skin-fill border-opacity-40 bg-skin-fill p-3 placeholder:italic placeholder:text-opacity-75 focus:border-skin-accent focus:outline-none"
+          placeholder="Your email"
+          required
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          class="block w-full rounded border border-skin-fill border-opacity-40 bg-skin-fill p-3 placeholder:italic placeholder:text-opacity-75 focus:border-skin-accent focus:outline-none"
+          placeholder="Your message"
+          rows="4"
+          required></textarea>
+
+        <button
+          type="submit"
+          class="relative p-4 text-amber-400 decoration-dashed underline-offset-4 hover:underline hover:decoration-amber-600 focus-visible:p-1"
+          >Submit</button
+        >
+      </div>
+    </form>
+  </Main>
+  <Footer />
+</Layout>
