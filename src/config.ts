@@ -171,15 +171,15 @@ export const COMMUNITY: Array<Community> = [
     href: "https://www.jug.ch/events/bern/",
   },
   {
-    name: "messaging & streaming switerzland",
+    name: "Messaging & Streaming Switzerland",
     href: "https://www.meetup.com/messaging-streaming-switzerland/",
   },
   {
-    name: "microsoft azure bern user group",
+    name: "Microsoft Azure Bern User Group",
     href: "https://www.meetup.com/de-DE/Azure-Cloud-Bern-User-Group/",
   },
   {
-    name: "ml & ai meetup",
+    name: "Machine Learning & Artificial Intelligence Meetup Bern",
     href: "https://www.meetup.com/machine-learning-artificial-intelligence-meetup-bern/",
   },
   {
