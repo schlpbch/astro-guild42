@@ -6,7 +6,7 @@ import getPagination from "@utils/getPagination";
 import getUniqueTopics from "@utils/getUniqueTopics";
 
 export async function getStaticPaths() {
-  const events = await getCollection("blog");
+  const events = await getCollection("events");
 
   const topics = getUniqueTopics(events);
 

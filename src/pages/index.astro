@@ -11,7 +11,7 @@ import Sponsors from "@components/Sponsors.astro";
 import CodeWindow from "@components/CodeWindow.astro";
 import getSortedForthcomingEvents from "@utils/getSortedForthcomingEvents";
 
-const events = await getCollection("blog");
+const events = await getCollection("events");
 
 let forthcomingEvents = events.filter(({ data }) => data.upcoming);
 forthcomingEvents = getSortedForthcomingEvents(forthcomingEvents);

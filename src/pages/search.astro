@@ -9,7 +9,7 @@ import SearchBar from "@components/Search";
 import getSortedEvents from "@utils/getSortedPastEvents";
 
 // Retrieve all published articles
-const events = await getCollection("blog", ({ data }) => !data.draft);
+const events = await getCollection("events", ({ data }) => !data.draft);
 const sortedEvents = getSortedEvents(events);
 
 // List of items to search in

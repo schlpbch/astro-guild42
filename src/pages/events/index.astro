@@ -4,7 +4,7 @@ import Events from "@layouts/Events.astro";
 import getSortedPastEvents from "@utils/getSortedPastEvents";
 import getPagination from "@utils/getPagination";
 
-const events = await getCollection("blog");
+const events = await getCollection("events");
 
 const sortedPastEvents = getSortedPastEvents(events);
 

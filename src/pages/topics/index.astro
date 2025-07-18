@@ -8,7 +8,7 @@ import Topic from "@components/Topic.astro";
 import getUniqueTopics from "@utils/getUniqueTopics";
 import { SITE } from "@config";
 
-const events = await getCollection("blog");
+const events = await getCollection("events");
 
 let topics = getUniqueTopics(events);
 ---
