@@ -50,6 +50,9 @@ Thanks to our amazing sponsors, the event is free of charge!
 - [mimacom](https://www.mimacom.com)
 - [PUZZLE ICT](https://www.puzzle.ch)
 - [Zühlke](https://www.zuehlke.com)
+- [approppo](https://www.approppo.ch)
+- [Fabasoft 4teamwork](https://www.4teamwork.ch/en/company/about-us)
+- [Red Hat](https://www.redhat.com/en)
 
 We sincerely thank our sponsors for their valuable support.
 
