@@ -62,6 +62,16 @@ A huge thank-you to everyone making this possible and joining us in strengthenin
 - 👨‍👩‍👧‍👦 Community:  https://guild42.ch/communities/
 - 📹 Last event:: https://youtu.be/3j8fcxBXvLg?feature=shared
 
+## 📢 Evening Program
+
+- 18:00 Doors open and Apéro
+- 18:45 Starters
+- 19:00 Welcome speech by the organizing committee
+- 19:30 Speech by the event director
+- 19:45 Main course
+- 21:30 Dessert
+- 24:00 End of event
+
 Open your calendar, gather your engineering crew – and come celebrate! 🚀
 
 Warm regards from the organizing team ❤️
