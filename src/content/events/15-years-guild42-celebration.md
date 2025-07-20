@@ -50,25 +50,39 @@ Thanks to our amazing sponsors, the event is free of charge!
 - [bespinian](https://bespinian.io)
 
 ### Life
-
 - [Bedag](https://www.bedag.ch)
 - [BEGASOFT](https://www.begasoft.ch)
 - [mimacom](https://www.mimacom.com)
 - [PUZZLE ICT](https://www.puzzle.ch)
 - [Zühlke](https://www.zuehlke.com)
-- [approppo](https://www.approppo.ch/)
+- [approppo](https://www.approppo.ch)
+- [Fabasoft 4teamwork](https://www.4teamwork.ch/en/company/about-us)
+- [Red Hat](https://www.redhat.com/en)
 
 We sincerely thank our sponsors for their valuable support.
 
 A huge thank-you to everyone making this possible and joining us in strengthening the community. 🙏
 
 ## 📅 Save the Date & Join Us:
-
 - 🕕 August 14, 2025, from 18:00
 - 📍 füüri, Uferweg 42, 3013 Bern, https://www.fueueri.ch
-- 🔗 Register via Meetup: https://meetup.com/guild42ch
-- 👨‍👩‍👧‍👦 Community: https://guild42.ch/communities/
+- 🔗 Register via Meetup: https://meetup.com/guild42ch  
+- 👨‍👩‍👧‍👦 Community:  https://guild42.ch/communities/
 - 📹 Last event:: https://youtu.be/3j8fcxBXvLg?feature=shared
+
+## 📢 Evening Program
+
+- 18:00 Doors open and Apéro
+- 18:45 Starters
+- 19:00 Welcome speech by the organizing committee
+- 19:30 Speech by the event director
+- 19:45 Main course
+- 21:30 Dessert
+- 24:00 End of event
+
+We sincerely thank our sponsors for their valuable support.
+
+A huge thank-you to everyone making this possible and joining us in strengthening the community. 🙏
 
 Open your calendar, gather your engineering crew – and come celebrate! 🚀
 
