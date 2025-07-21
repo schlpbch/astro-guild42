@@ -44,20 +44,20 @@ Thanks to our amazing sponsors, the event is free of charge!
 
 - [AKROS](https://www.akros.ch)
 - [aws](https://aws.amazon.com)
-- [PEAK SCALE](https://peakscale.ch)
-- [glue](https://www.glue.ch/de/startseite/)
-- [tim&koko](https://tim-koko.ch)
 - [bespinian](https://bespinian.io)
+- [glue](https://www.glue.ch/de/startseite/)
+- [PEAK SCALE](https://peakscale.ch)
+- [tim&koko](https://tim-koko.ch)
 
 ### Life
-- [Bedag](https://www.bedag.ch)
+- [approppo](https://www.approppo.ch)
 - [BEGASOFT](https://www.begasoft.ch)
+- [Bedag](https://www.bedag.ch)
+- [Fabasoft 4teamwork](https://www.4teamwork.ch/en/company/about-us)
 - [mimacom](https://www.mimacom.com)
 - [PUZZLE ICT](https://www.puzzle.ch)
-- [Zühlke](https://www.zuehlke.com)
-- [approppo](https://www.approppo.ch)
-- [Fabasoft 4teamwork](https://www.4teamwork.ch/en/company/about-us)
 - [Red Hat](https://www.redhat.com/en)
+- [Zühlke](https://www.zuehlke.com)
 
 We sincerely thank our sponsors for their valuable support.
 
@@ -79,10 +79,6 @@ A huge thank-you to everyone making this possible and joining us in strengthenin
 - 19:45 Main course
 - 21:30 Dessert
 - 24:00 End of event
-
-We sincerely thank our sponsors for their valuable support.
-
-A huge thank-you to everyone making this possible and joining us in strengthening the community. 🙏
 
 Open your calendar, gather your engineering crew – and come celebrate! 🚀
 
