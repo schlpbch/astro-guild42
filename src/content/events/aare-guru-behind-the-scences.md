@@ -4,7 +4,7 @@ speakers:
   - Christian Studer
 pubDatetime: 2025-09-01T18:00:00+00:00
 upcoming: true
-title: "Aare Guru - Behind the scenes"
+title: "Aare Guru - Behind the Scenes"
 topics:
   - api
   - web development
