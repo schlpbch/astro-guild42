@@ -1,7 +1,7 @@
 {
   "name": "astro-guild42",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.1.0",
+  "private": false,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
