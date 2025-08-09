@@ -55,7 +55,7 @@ Thanks to our amazing sponsors, the event is free of charge!
 - [Bedag](https://www.bedag.ch)
 - [Fabasoft 4teamwork](https://www.4teamwork.ch/en/company/about-us)
 - [mimacom](https://www.mimacom.com)
-- [PUZZLE ICT](https://www.puzzle.ch)
+- [PUZZLE ITC](https://www.puzzle.ch)
 - [Red Hat](https://www.redhat.com/en)
 - [Zühlke](https://www.zuehlke.com)
 
