@@ -57,7 +57,7 @@ Thanks to our amazing sponsors, the event is free of charge!
 - [mimacom](https://www.mimacom.com)
 - [PUZZLE ITC](https://www.puzzle.ch)
 - [Red Hat](https://www.redhat.com/en)
-- [Zühlke](https://www.zuehlke.com)
+- [Zühlke](https://www.zuehlke.com) -> Coffee Bar Sponsor
 
 We sincerely thank our sponsors for their valuable support.
 
