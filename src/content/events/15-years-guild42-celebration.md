@@ -78,6 +78,7 @@ A huge thank-you to everyone making this possible and joining us in strengthenin
 - 19:30 Speech by the event director
 - 19:45 Main course
 - 21:30 Dessert
+- 22:00 Drawing of the winners of the networking game
 - 24:00 End of event
 
 Open your calendar, gather your engineering crew – and come celebrate! 🚀
