@@ -3,7 +3,7 @@ author: Andreas Schlapbach
 speakers:
   - guild42.ch members
 pubDatetime: 2025-08-14T18:00:00+00:00
-upcoming: true
+upcoming: false
 title: "Summer IT Grill & Party by guild42 and Community"
 topics:
   - party
@@ -50,6 +50,7 @@ Thanks to our amazing sponsors, the event is free of charge!
 - [tim&koko](https://tim-koko.ch)
 
 ### Life
+
 - [approppo](https://www.approppo.ch)
 - [BEGASOFT](https://www.begasoft.ch)
 - [Bedag](https://www.bedag.ch)
@@ -64,10 +65,11 @@ We sincerely thank our sponsors for their valuable support.
 A huge thank-you to everyone making this possible and joining us in strengthening the community. 🙏
 
 ## 📅 Save the Date & Join Us:
+
 - 🕕 August 14, 2025, from 18:00
 - 📍 füüri, Uferweg 42, 3013 Bern, https://www.fueueri.ch
-- 🔗 Register via Meetup: https://meetup.com/guild42ch  
-- 👨‍👩‍👧‍👦 Community:  https://guild42.ch/communities/
+- 🔗 Register via Meetup: https://meetup.com/guild42ch
+- 👨‍👩‍👧‍👦 Community: https://guild42.ch/communities/
 - 📹 Last event:: https://youtu.be/3j8fcxBXvLg?feature=shared
 
 ## 📢 Evening Program
