@@ -47,6 +47,35 @@ import Footer from "@components/Footer.astro";
           placeholder="Your billing address"
           rows="4"
           required></textarea>
+        <label for="membership-type">Membership Type:</label>
+        <div class="flex flex-col space-y-2">
+          <label class="flex items-center">
+            <input
+              type="radio"
+              name="membership-type"
+              value="basic"
+              class="mr-2"
+              checked
+            />
+            <span class="text-lg">Basic Membership</span>
+          </label>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Includes access to all events and workshops.
+          </p>
+          <label class="flex items-center">
+            <input
+              type="radio"
+              name="membership-type"
+              value="advanced"
+              class="mr-2"
+            />
+            <span class="text-lg">Advanced Membership</span>
+          </label>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Includes all benefits of the basic membership, plus access to
+            exclusive content and early bird tickets.
+          </p>
+        </div>
         <button
           type="submit"
           class="relative p-4 text-amber-400 decoration-dashed underline-offset-4 hover:underline hover:decoration-amber-600 focus-visible:p-1"
