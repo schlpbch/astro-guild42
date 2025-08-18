@@ -4,7 +4,7 @@ import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-
+import PdfCarousel from "@components/PdfCarousel.astro";
 import CommunityListing from "@components/CommunityListing.astro";
 ---
 
@@ -12,6 +12,7 @@ import CommunityListing from "@components/CommunityListing.astro";
   <Header activeNav="communities" />
   <Main pageTitle="Communities" pageDesc="Berne's vibrant IT scene.">
     <CommunityListing title="IT Engineering Communities" />
+    <PdfCarousel src="/docs/Communities.pdf" height={640} startPage={1} />
   </Main>
   <Footer />
 </Layout>
