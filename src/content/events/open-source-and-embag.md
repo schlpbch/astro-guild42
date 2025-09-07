@@ -4,7 +4,7 @@ speakers:
   - Matthias Stürmer
 pubDatetime: 2025-10-06T18:00:00+00:00
 upcoming: true
-title: "Open Source and EMBAG"
+title: "Digital Sovereignty with Open Source including EMBAG"
 topics:
   - engineering
   - api
@@ -13,9 +13,13 @@ topics:
 description: The federal administration is increasingly adopting open source software under the EMBAG law, which mandates that software developed by or for the government be made publicly available unless legal or security concerns prevent it.
 ---
 
-![Matthias Stürmer](@assets/images/matthias-stuermer.jpg)
+![Matthias Stürmer](@assets/images/Matthias_Stuermer.jpeg)
 
-The abstract is not yet complete. The speaker and date are fixed. More details will follow soon.
+This presentation and discussion provides a concise overview of current trends and platforms in open source software, highlighting success stories and lessons learned from Switzerland. It introduces developments such as openDesk and openCode by the Centre for Digital Sovereignty (ZenDiS), European cloud initiatives, and the SDS – Souveräne Digitale Schweiz network, all of which advance digital sovereignty and are highly relevant to Switzerland’s IT landscape.
+
+The talk also addresses the Federal Act on the Use of Electronic Means for the Performance of Government Tasks (EMBAG), which came into force in 2024. EMBAG establishes the legal framework for the federal administration’s digital transformation, with principles such as digital first, open by default for government data, and a strong emphasis on open source and interoperability.
+Together, these initiatives and frameworks illustrate how open technologies and legal foundations strengthen digital sovereignty and foster innovation in Switzerland.
+
 
 ### Speaker
 
