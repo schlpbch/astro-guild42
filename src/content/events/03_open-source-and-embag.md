@@ -2,7 +2,7 @@
 author: Simon Butscher
 speakers:
   - Matthias Stürmer
-pubDatetime: 2025-10-06T18:00:00+02:00
+pubDatetime: 2025-10-06T18:00:00+00:00
 upcoming: true
 title: "Digital Sovereignty with Open Source including EMBAG"
 topics:
