@@ -3,7 +3,8 @@ author: Simon Butscher
 speakers:
   - Christian Studer
 pubDatetime: 2025-09-01T18:00:00+00:00
-upcoming: true
+date: 2025-09-01
+upcoming: false
 title: "Aare Guru - Behind the Scenes"
 topics:
   - api

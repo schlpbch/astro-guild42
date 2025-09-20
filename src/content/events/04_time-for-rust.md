@@ -3,7 +3,7 @@ author: Ramon Lopez Narvaez & Scott Gerring
 speakers:
   - Ramon Lopez Narvaez
   - Scott Gerring
-pubDatetime: 2025-09-01T18:00:00+00:00
+pubDatetime: 2025-11-01T18:00:00+01:00
 upcoming: true
 title: "Moving out of systems programming into Kubernetes: is it time to adopt Rust ?"
 topics:

@@ -3,6 +3,7 @@ author: Andreas Schlapbach
 speakers:
   - guild42.ch members
 pubDatetime: 2025-08-14T18:00:00+00:00
+date: 2025-08-14
 upcoming: false
 title: "Summer IT Grill & Party by guild42 and Community"
 topics:
