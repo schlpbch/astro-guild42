@@ -5,7 +5,7 @@ speakers:
   - Scott Gerring
 pubDatetime: 2025-11-01T18:00:00+00:00
 upcoming: true
-title: "Moving out of systems programming into Kubernetes: is it time to adopt Rust ?"
+title: "Moving Out of Systems Programming into Kubernetes: is it Time to Adopt Rust?"
 topics:
   - rust
   - kubernetes
@@ -27,13 +27,12 @@ This talk will equip you with the skills needed to decide if and where Rust make
 
 ### Speakers
 
-**Ramon Lopez Narvaez**  
-Ramon is a Solutions Architect at AWS. He has a strong background in distributed systems engineering and all things Cloud. From his past as a software engineer at Amazon Prime he learned how to build and scale web apps to 150+ million customers around the globe. He is a strong believer in the “You build it, you run it” operational model.
+[Ramon Lopez Narvaez](https://www.linkedin.com/in/ramonlopez2/) is a Solutions Architect at AWS. He has a strong background in distributed systems engineering and all things Cloud. From his past as a software engineer at Amazon Prime he learned how to build and scale web apps to 150+ million customers around the globe. He is a strong believer in the “You build it, you run it” operational model.
 
-**Scott Gerring**  
-I’ve worked as various exciting variants of a code-pusher since who-knows-when. These days I work as a Developer Advocate @ Datadog. I live in Switzerland in the rather scenic Berner Oberland.
+[Scott Gerring](https://www.linkedin.com/in/scottgerring/) worked as various exciting variants of a code-pusher since who-knows-when. These days he works as a Developer Advocate @ Datadog. He's living in Switzerland in the rather scenic Berner Oberland.
 
-I focus on the technical foundations of software engineering – what does it take to build high-quality software, how can we best use our tools and languages, and how can an awareness of the lower levels of the stack help? I work on the [opentelemetry-rust project](https://github.com/open-telemetry/opentelemetry-rust) and a couple of [obscure](https://github.com/DataDog/cargo-pup) [tools](https://github.com/scottgerring/minderbinder) that will hopefully, one day, be enormously popular.
+He focuses on the technical foundations of software engineering – what does it take to build high-quality software, how can we best use our tools and languages, and how can an awareness of the lower levels of the stack help? Scott works on the [opentelemetry-rust project](https://github.com/open-telemetry/opentelemetry-rust) and a couple of [obscure](https://github.com/DataDog/cargo-pup) [tools](https://github.com/scottgerring/minderbinder) that will hopefully, one day, be enormously popular.
 
 ### Registration
+
 You can register via [Meetup](https://www.meetup.com/guild42ch/events/307260207) – we look forward to seeing you there!
