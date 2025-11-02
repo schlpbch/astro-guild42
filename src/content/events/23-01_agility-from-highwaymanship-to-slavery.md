@@ -18,6 +18,7 @@ description: Three years ago we asked ourselves “Is this still agile?”, but 
 
 Three years ago we asked ourselves “Is this still agile?”, but it has now become clear what the answer is.
 
+
 - How could that happen?
 - What have we started?
 - Aren't we the good guys after all?
