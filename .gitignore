@@ -35,3 +35,6 @@ pnpm-debug.log*
 !.yarn/versions
 .pnp.*
 /.idea/*
+
+# Claude artifacts
+claude-mad/
