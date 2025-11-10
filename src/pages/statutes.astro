@@ -1,0 +1,398 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+
+import SocialLink from "@components/SocialLink.astro";
+---
+
+<Layout title={`Statutes | ${SITE.title}`}>
+  <Header activeNav="statutes" />
+  <Main
+    pageTitle="Statutes"
+    pageDesc="The statutes define the legal framework and organizational structure of Guild42."
+  >
+    <section class="pb-3 pl-0">
+      <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">
+        Statuten des Vereins guild42.ch
+      </h2>
+      <p class="py-2">
+        Version 2025 – Genehmigt an der Hauptversammlung vom 10.03.2025
+      </p>
+    </section>
+
+    <section class="pb-3 pl-0">
+      <h3 class="pb-2 pt-4 text-lg font-semibold sm:text-xl">Änderungen</h3>
+      <ul class="list-outside list-disc pl-6 marker:text-blue-400">
+        <li class="py-0.5">28.04.2010 Gründung</li>
+        <li class="py-0.5">
+          12.06.2023 Anpassungen:
+          <ul class="list-outside list-circle pl-6 marker:text-blue-300">
+            <li class="py-0.5">Art 2: Neuer Sitz in Münsingen</li>
+            <li class="py-0.5">
+              Art 3: Ergänzung Software Entwickler*in
+            </li>
+            <li class="py-0.5">
+              Art 5: Neue Mitgliederkategorie The Answer für Privatpersonen;
+              Vorstand und Ehrenmitglieder bezahlen keinen Jahresbeitrag
+            </li>
+            <li class="py-0.5">
+              Art 20: Statutenänderungen: Die Anwesenheitspflicht von 2/3 aller
+              Mitglieder an der HV entfällt
+            </li>
+          </ul>
+        </li>
+        <li class="py-0.5">
+          10.03.2025 Anpassungen
+          <ul class="list-outside list-circle pl-6 marker:text-blue-300">
+            <li class="py-0.5">Art 2: Sitz in Thun</li>
+            <li class="py-0.5">
+              Art 5: Erhöhung des Mitgliederbeitrags, Gönnerbeträge in der
+              Zweierpotenz
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="pb-3 pl-0">
+      <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">
+        I. Name und Sitz
+      </h2>
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 1</h3>
+      <p>
+        Unter dem Namen "guild42.ch" besteht ein Verein im Sinne von Art. 60
+        ff. ZGB als juristische Person. Der Verein besteht auf unbestimmte
+        Dauer.
+      </p>
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 2</h3>
+      <p>Der Verein hat seinen Sitz in 3600 Thun.</p>
+    </section>
+
+    <section class="pb-3 pl-0">
+      <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">
+        II. Ziel und Zweck
+      </h2>
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 3</h3>
+      <p class="pb-2">
+        Der Verein hat die Steigerung der Attraktivität des Standortes Bern für
+        Software Entwickler*innen und Software Entwicklungs-Unternehmen zum
+        Zweck.
+      </p>
+      <p class="pb-1">Dazu engagiert sich der Verein in folgenden Bereichen:</p>
+      <ul class="list-outside list-disc pl-6 marker:text-blue-400">
+        <li class="py-0.5">
+          Wissens-, Erfahrungs- und Informationsaustausch für Software
+          Entwickler*innen aus und für die Praxis.
+        </li>
+        <li class="py-0.5">
+          Networking zwischen Software Entwickler*innen aber auch zwischen
+          Unternehmen und Software Entwickler*innen wie auch zwischen
+          Unternehmen.
+        </li>
+      </ul>
+      <p class="pt-2">
+        Die Erbringung von geldwerten Vorteilen durch den Verein zugunsten der
+        Mitglieder ist ausgeschlossen. Der Verein ist nicht gewinnstrebig.
+      </p>
+    </section>
+
+    <section class="pb-3 pl-0">
+      <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">
+        III. Mitgliedschaft
+      </h2>
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 4</h3>
+      <p class="pb-2">
+        Mitglieder des Vereins guild42.ch können natürliche und juristische
+        Personen werden, welche Ziel und Zweck des Vereins anerkennen und zu
+        fördern bereit sind. Der Verein besteht aus Mitgliedern und Gönnern.
+        Die Gönner sind gleichzeitig auch Mitglieder und daher auch
+        stimmberechtigt.
+      </p>
+      <p class="pb-2">
+        Gönner werden je nach Höhe des Beitrages in drei verschiedene
+        Kategorien unterteilt. Es sind dies Life, The Universe und Everything.
+        Die Gönner werden auf der Webseite des Vereins aufgelistet, unterteilt
+        nach Kategorien. Zusätzlich werden die Everything-Gönner jeweils an den
+        Vereinsanlässen am Schluss erwähnt.
+      </p>
+      <p>
+        Aufnahmegesuche sind schriftlich oder per E-Mail an den Präsidenten
+        oder Sekretär/-in zu richten. Über die Aufnahme entscheidet der
+        Vorstand.
+      </p>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 5</h3>
+      <p class="pb-2">
+        Jedes Mitglied hat einen Jahresbeitrag von CHF 32.- (2<sup>5</sup>) zu leisten.
+        Privatpersonen haben ferner die Möglichkeit eine Mitgliedschaft der
+        Kategorie The Answer für einen Jahresbeitrag von CHF 42.- (101010<sub
+          >2</sub
+        >) zu erwerben. Mitglieder dieser Kategorie werden auf der
+        Vereinswebseite erwähnt.
+      </p>
+      <p class="pb-2">
+        Die Gönner bezahlen einen Jahresbeitrag von mindestens CHF 128.- (2<sup
+          >7</sup
+        >). Die Einteilung in die Kategorie wird anhand der Höhe des
+        Jahresbeitrages vorgenommen:
+      </p>
+      <ul class="list-outside list-disc pl-6 marker:text-blue-400">
+        <li class="py-0.5">
+          Kategorie Life: CHF 128.- (2<sup>7</sup>) bis 511.-
+        </li>
+        <li class="py-0.5">
+          Kategorie The Universe: CHF 512.- (2<sup>8</sup>) bis 1023.-
+        </li>
+        <li class="py-0.5">
+          Kategorie Everything: ab CHF 1024.- (2<sup>9</sup>)
+        </li>
+      </ul>
+      <p class="pt-2">
+        Ehrenmitglieder und amtierende Vorstandsmitglieder sind vom Betrag
+        befreit.
+      </p>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 6</h3>
+      <p class="pb-1">Die Mitgliedschaft erlischt durch:</p>
+      <ul class="list-outside list-[lower-alpha] pl-6 marker:text-blue-400">
+        <li class="py-0.5">Austritt</li>
+        <li class="py-0.5">Ausschluss</li>
+        <li class="py-0.5">Todesfall</li>
+      </ul>
+      <p class="pt-2 pb-2">
+        Der Austritt muss schriftlich erklärt werden. Der Austritt kann jeweils
+        auf Ende des laufenden Monats erfolgen. Es erfolgt in keinem Falle eine
+        Rückerstattung des Mitgliederbeitrages bei Austritt vor Jahresende.
+      </p>
+      <p>
+        Der Ausschluss kann vom Vorstand gegen jedes Mitglied ausgesprochen
+        werden, welches sich eines unehrenhaften Verhaltens schuldig macht oder
+        welches die Interessen des Vereins schädigt. Der Beschluss des
+        Ausschlusses erfolgt nach Anhörung des Mitgliedes, wird diesem
+        schriftlich mitgeteilt und gilt sofort. Eine Rekursmöglichkeit an die
+        Hauptversammlung besteht nicht.
+      </p>
+    </section>
+
+    <section class="pb-3 pl-0">
+      <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">IV. Organe</h2>
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 7</h3>
+      <p class="pb-1">Die Organe des Vereins guild42.ch sind:</p>
+      <ul class="list-outside list-[lower-alpha] pl-6 marker:text-blue-400">
+        <li class="py-0.5">Die Hauptversammlung</li>
+        <li class="py-0.5">Der Vorstand</li>
+        <li class="py-0.5">Die Rechnungsrevisoren</li>
+      </ul>
+
+      <h3 class="pb-2 pt-3 text-lg font-semibold">A. Die Hauptversammlung</h3>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 8</h3>
+      <p class="pb-2">
+        Die ordentliche Hauptversammlung findet alljährlich innerhalb der
+        ersten sechs Monate des Jahres statt.
+      </p>
+      <p class="pb-2">
+        Die Einladung zur Hauptversammlung erfolgt unter Einhaltung einer Frist
+        von mindestens 20 Tagen schriftlich oder per E-Mail durch den Vorstand
+        unter Angabe der Traktanden.
+      </p>
+      <p>
+        Anträge zuhanden der Hauptversammlung sind spätestens zwei Wochen im
+        Voraus schriftlich oder per E-Mail an den Präsidenten zu richten.
+      </p>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 9</h3>
+      <p class="pb-2">
+        Eine ausserordentliche Hauptversammlung ist auf Beschluss des
+        Vorstandes, auf Antrag von mindestens einem Fünftel der Mitglieder oder
+        auf Antrag der Revisionsstelle einzuberufen. Die Einladung hat zehn
+        Tage vor der Versammlung zu erfolgen.
+      </p>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 10</h3>
+      <p class="pb-1">
+        Die Aufgaben und Kompetenzen der Hauptversammlung sind folgende:
+      </p>
+      <ul class="list-outside list-[lower-alpha] pl-6 marker:text-blue-400">
+        <li class="py-0.5">
+          Abnahme des Jahresberichts, der Jahresrechnung und der Bilanz
+        </li>
+        <li class="py-0.5">Entlastung des Vorstandes</li>
+        <li class="py-0.5">Festsetzung des Jahresbudgets</li>
+        <li class="py-0.5">
+          Wahl des Präsidenten, der übrigen Vorstandsmitglieder
+        </li>
+        <li class="py-0.5">
+          Behandlung von Anträgen des Vorstandes und der Mitglieder, Behandlung
+          von Rekursen
+        </li>
+        <li class="py-0.5">Änderung der Statuten</li>
+        <li class="py-0.5">Auflösung des Vereins</li>
+      </ul>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 11</h3>
+      <p class="pb-2">
+        Beschlüsse an der Hauptversammlung werden in offener Abstimmung mit
+        einfachem Mehr gefasst. Die Abstimmung erfolgt nur dann geheim, wenn
+        dies ausdrücklich von der Mehrheit der anwesenden Mitglieder verlangt
+        wird. Bei Stimmengleichheit hat der Präsident Stichentscheid.
+      </p>
+      <p>
+        Alle anwesenden Mitglieder haben das gleiche Stimmrecht. Stellvertretung
+        ist nicht zulässig.
+      </p>
+
+      <h3 class="pb-2 pt-3 text-lg font-semibold">B. Vorstand</h3>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 12</h3>
+      <p class="pb-2">
+        Der Vorstand besteht aus mindestens drei Mitgliedern und wird von der
+        Hauptversammlung auf eine Amtsdauer von einem Jahr gewählt. Er
+        konstituiert sich selbst. Der Vorstand ist beschlussfähig, sofern
+        mindestens drei Mitglieder anwesend sind. Er wird einberufen auf Antrag
+        des Präsidenten oder auf Verlangen eines Vorstandsmitgliedes. Auch bei
+        Stimmengleichheit zählt die Stimme des Präsidenten einfach.
+      </p>
+      <p>
+        Scheiden Vorstandsmitglieder während der Amtsdauer aus, wird die
+        Position ad interim besetzt und bei der nächsten Hauptversammlung
+        offiziell gewählt.
+      </p>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 13</h3>
+      <p class="pb-1">Der Vorstand setzt sich zusammen aus:</p>
+      <ul class="list-outside list-[lower-alpha] pl-6 marker:text-blue-400">
+        <li class="py-0.5">Präsident/-in</li>
+        <li class="py-0.5">Kassier/-in</li>
+        <li class="py-0.5">Aktuar/-in resp. Sekretär/-in</li>
+        <li class="py-0.5">Verantwortlicher Werbung, Sponsoren, Medien</li>
+        <li class="py-0.5">Verantwortlicher Anlässe</li>
+        <li class="py-0.5">Beisitzer</li>
+      </ul>
+      <p class="pt-2 pb-2">
+        Der Vorstand entscheidet selbst über das Amt des Vizepräsidenten,
+        welches ein Mitglied des Vorstandes übernehmen muss.
+      </p>
+      <p>Ämterkumulation ist zulässig.</p>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 14</h3>
+      <p class="pb-1">
+        Dem Vorstand stehen grundsätzlich alle Befugnisse zu, welche nicht
+        ausdrücklich der Hauptversammlung vorbehalten sind. Es sind dies
+        insbesondere:
+      </p>
+      <ul class="list-outside list-[lower-alpha] pl-6 marker:text-blue-400">
+        <li class="py-0.5">
+          Vorbereitung und Durchführung der ordentlichen und ausserordentlichen
+          Hauptversammlungen
+        </li>
+        <li class="py-0.5">
+          Ausarbeiten von Statuten, Anträgen und Reglementen
+        </li>
+        <li class="py-0.5">Aufnahme und Ausschluss von Mitgliedern</li>
+      </ul>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 15</h3>
+      <p>
+        Der Vorstand vertritt den Verein nach aussen. Er zeichnet kollektiv zu
+        zweien mit dem Präsidenten resp. der Präsidentin.
+      </p>
+
+      <h3 class="pb-2 pt-3 text-lg font-semibold">C. Rechnungsrevisoren</h3>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 16</h3>
+      <p class="pb-2">
+        Die Hauptversammlung wählt jährlich zwei Rechnungsrevisoren. Der Verein
+        ist gemäss OR nicht zur Revision verpflichtet, weder zur ordentlichen
+        noch zur eingeschränkten Revision. Daher müssen die zwei
+        Rechnungsrevisoren nicht zugelassene Revisoren sein.
+      </p>
+      <p>
+        Die Revisoren prüfen jeweils nach Ende des Vereinsjahres die Buchführung
+        machen mindestens einmal jährlich eine Stichkontrolle.
+      </p>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 17</h3>
+      <p>
+        Das Geschäftsjahr fällt mit dem Kalenderjahr zusammen. Auf den 31.
+        Dezember wird die Jahresrechnung abgeschlossen und ein Inventar
+        erstellt.
+      </p>
+    </section>
+
+    <section class="pb-3 pl-0">
+      <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">
+        V. Das Vereinsvermögen
+      </h2>
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 18</h3>
+      <p>
+        Das Vermögen des Vereins bildet sich aus den Mitglieder- und
+        Gönnerbeiträgen, Überschüssen der Betriebsrechnung, aus allfälligen
+        Schenkungen, Veranstaltungsbeiträgen und Vermächtnissen.
+      </p>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 19</h3>
+      <p class="pb-2">
+        Für die Verbindlichkeiten des Vereins haftet ausschliesslich das
+        Vereinsvermögen. Die persönliche Haftbarkeit der Mitglieder für die
+        Verbindlichkeiten des Vereins ist ausgeschlossen.
+      </p>
+      <p>
+        Mitglieder, deren Mitgliedschaft vor einer allfälligen Auflösung des
+        Vereins erlischt, haben keinen Anspruch auf das Vereinsvermögen.
+      </p>
+    </section>
+
+    <section class="pb-3 pl-0">
+      <h2 class="pb-2 pt-4 text-xl font-semibold sm:text-2xl">
+        VI. Statutenänderung und Auflösung
+      </h2>
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 20</h3>
+      <p>
+        Für die Statutenänderung ist die Abstimmung von mindestens drei
+        Vierteln aller Mitglieder erforderlich. Die Zustimmung oder Ablehnung
+        kann per Onlineabstimmung vor der Hauptversammlung erfolgen.
+      </p>
+
+      <h3 class="pb-1 pt-2 text-lg font-semibold">Art. 21</h3>
+      <p>
+        Im Falle der Auflösung des Vereins bestimmt die Hauptversammlung über
+        die Aufteilung des Liquidationserlöses.
+      </p>
+    </section>
+
+    <section class="pb-3 pl-0">
+      <p class="pt-4 pb-2">
+        Diese Statuten wurden in der vorliegenden Form an der
+        Gründerversammlung genehmigt. Die letzten Anpassungen der Statuten
+        wurden am 10.03.2025 durch die HV genehmigt.
+      </p>
+      <p class="pb-2">Thun, den 03.11.2025</p>
+      <div class="grid grid-cols-2 gap-4 pt-2">
+        <div>
+          <p class="pb-1">Der Präsident:</p>
+          <p>Simon Butscher</p>
+        </div>
+        <div>
+          <p class="pb-1">Der Aktuar:</p>
+          <p>Daniel Marthaler</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-3 pl-0">
+      <p class="pt-4 text-sm text-gray-500">
+        Vereinsstatuten © 2025, guild42.ch
+      </p>
+    </section>
+  </Main>
+  <Footer />
+</Layout>
+<style>
+  a {
+    @apply relative text-amber-400 decoration-dashed underline-offset-4 hover:underline hover:decoration-amber-600 focus-visible:p-1;
+  }
+</style>
