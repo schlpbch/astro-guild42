@@ -32,13 +32,13 @@ export const PATRONS: Array<Patron> = [
     category: Category.Life,
   },
   {
-    name: "Peak Scale GmbH, Bern",
-    href: "https://peakscale.ch/",
+    name: "avega IT AG, Bern",
+    href: "https://www.avega.ch/",
     category: Category.Universe,
   },
   {
-    name: "avega IT AG, Bern",
-    href: "https://www.avega.ch/",
+    name: "Peak Scale GmbH, Bern",
+    href: "https://peakscale.ch/",
     category: Category.Universe,
   },
   {
