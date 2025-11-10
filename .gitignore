@@ -35,3 +35,4 @@ pnpm-debug.log*
 !.yarn/versions
 .pnp.*
 /.idea/*
+/claude-mad/.claude/settings.local.json
