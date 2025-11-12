@@ -37,6 +37,11 @@ export const PATRONS: Array<Patron> = [
     category: Category.Universe,
   },
   {
+    name: "Peak Scale GmbH, Bern",
+    href: "https://peakscale.ch/",
+    category: Category.Universe,
+  },
+  {
     name: "Codeblock GmbH",
     href: "https://www.linkedin.com/company/codeblock-gmbh/",
     owner: "Claude Gex",
