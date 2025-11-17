@@ -36,5 +36,3 @@ pnpm-debug.log*
 .pnp.*
 /.idea/*
 
-# Claude artifacts
-claude-mad/
