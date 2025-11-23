@@ -4,7 +4,7 @@ speakers:
   - Ramon Lopez Narvaez
   - Scott Gerring
 pubDatetime: 2025-11-03T18:00:00+00:00
-upcoming: true
+upcoming: false
 title: "Moving Out of Systems Programming into Kubernetes: is it Time to Adopt Rust?"
 topics:
   - rust
