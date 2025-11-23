@@ -110,6 +110,12 @@ export const PATRONS: Array<Patron> = [
     category: Category.Life,
   },
   {
+    name: "SimplexaCode AG",
+    href: "https://www.simplexacode.ch",
+    owner: "Christian Heitzmann",
+    category: Category.Life,
+  },
+  {
     name: "Tim&Koko AG",
     href: "https://tim-koko.ch/blog/tim-koko/",
     owner: "Thomas Philipona",
