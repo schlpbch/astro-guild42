@@ -1,0 +1,148 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { BarChartJS } from '../../components/charts/BarChartJS';
+import { HorizontalBarChartJS } from '../../components/charts/HorizontalBarChartJS';
+import { PieChartJS } from '../../components/charts/PieChartJS';
+import { MetricCard } from '../../components/metrics/MetricCard';
+import surveyData from '../../data/surveys/guild42-survey-2026.json';
+import type { ChartDataPoint } from '../../config/survey-schemas';
+import { guild42Theme } from '../../config/theme';
+
+const { metadata, questions } = surveyData;
+
+// Question 1: Topics
+const topicsQuestion = questions[0];
+const topTopics = topicsQuestion.responses.slice(0, 10).map(r => ({
+  category: r.answer.length > 40 ? r.answer.substring(0, 40) + '...' : r.answer,
+  value: r.count,
+  percentage: r.percentage,
+})) as ChartDataPoint[];
+
+// Question 2: Speakers (text responses)
+const speakersQuestion = questions[1];
+
+// Question 3: Event Formats
+const formatsQuestion = questions[2];
+const formatsData = formatsQuestion.responses.map(r => ({
+  category: r.answer,
+  value: r.count,
+  percentage: r.percentage,
+})) as ChartDataPoint[];
+
+// Question 4: Roles
+const rolesQuestion = questions[3];
+const rolesData = rolesQuestion.responses.map(r => ({
+  category: r.answer,
+  value: r.count,
+  percentage: r.percentage,
+})) as ChartDataPoint[];
+
+// Question 5: Attendance
+const attendanceQuestion = questions[4];
+const attendanceData = attendanceQuestion.responses.map(r => ({
+  category: r.answer,
+  value: r.count,
+  percentage: r.percentage,
+})) as ChartDataPoint[];
+---
+
+<Layout title={metadata.title} description={metadata.description}>
+  <Header activeNav="surveys" />
+  <main id="main-content">
+  <div class="w-full px-8 py-8">
+    <!-- Header -->
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+        {metadata.title}
+      </h1>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">
+        {metadata.description}
+      </p>
+      <p class="text-sm text-gray-500 mt-1">
+        Survey Date: {new Date(metadata.createdAt).toLocaleDateString('de-CH')}
+      </p>
+    </header>
+
+    <!-- Summary Info -->
+    <div class="mb-12 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+      <p class="text-2xl text-gray-700 dark:text-gray-300">
+        <strong class="text-3xl font-bold text-gray-900 dark:text-white">{metadata.totalParticipants}</strong> participants completed this survey
+      </p>
+    </div>
+
+    <!-- Question 1: Top Topics -->
+    <div class="mb-16">
+      <HorizontalBarChartJS
+        client:load
+        data={topTopics}
+        title={`Top 10: ${topicsQuestion.questionText}`}
+        color={guild42Theme.colors.primary}
+        height={700}
+      />
+    </div>
+
+    <!-- Question 2: Desired Speakers -->
+    <div class="mb-12">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+          {speakersQuestion.questionText}
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {speakersQuestion.textResponses?.map((speaker: string) => (
+            <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-5 border border-gray-200 dark:border-gray-600">
+              <p class="text-base text-gray-800 dark:text-gray-200 font-medium">{speaker}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 3: Event Formats -->
+    <div class="mb-16">
+      <BarChartJS
+        client:load
+        data={formatsData}
+        title={formatsQuestion.questionText}
+        color={guild42Theme.colors.accent}
+        height={1000}
+      />
+    </div>
+
+    <!-- Question 4: Roles -->
+    <div class="mb-16">
+      <BarChartJS
+        client:load
+        data={rolesData}
+        title={rolesQuestion.questionText}
+        color={guild42Theme.colors.secondary}
+        height={1000}
+      />
+    </div>
+
+    <!-- Question 5: Attendance -->
+    <div class="mb-16">
+      <PieChartJS
+        client:load
+        data={attendanceData}
+        title={attendanceQuestion.questionText}
+        height={600}
+      />
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 text-center text-gray-500 dark:text-gray-400 text-sm">
+      <p>Survey Results Dashboard • Guild42</p>
+      <p class="mt-1">Generated with Chart.js & Astro</p>
+    </div>
+  </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .container {
+    max-width: 1400px;
+  }
+</style>
