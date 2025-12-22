@@ -1,0 +1,47 @@
+participant_id,question_position,question_type,question_title,question_row,answer
+9912760,1,closed,Which topics would you most like to see at Guild42 in 2026?,,Ethical Clouds
+9912760,1,closed,Which topics would you most like to see at Guild42 in 2026?,,Software Architecture & Design (DDD Microservices Event-driven)
+9912760,1,closed,Which topics would you most like to see at Guild42 in 2026?,,Quantum Computing
+9912762,1,closed,Which topics would you most like to see at Guild42 in 2026?,,Applied AI & Machine Learning
+9912762,1,closed,Which topics would you most like to see at Guild42 in 2026?,,AI Agents & LLM Engineering
+9912762,1,closed,Which topics would you most like to see at Guild42 in 2026?,,Software Architecture & Design (DDD Microservices Event-driven)
+9912762,1,closed,Which topics would you most like to see at Guild42 in 2026?,,Robotics
+9912762,1,closed,Which topics would you most like to see at Guild42 in 2026?,,Rocket Science
+9912762,1,closed,Which topics would you most like to see at Guild42 in 2026?,,The future of Software Engineering in Bern alongside with near shoring and artificial intelligence
+9912762,1,closed,Which topics would you most like to see at Guild42 in 2026?,,IoT / Edge Computing / Hardware
+9912762,1,closed,Which topics would you most like to see at Guild42 in 2026?,,FinTech GovTech RailTech or Industry Case Studies
+9912762,1,closed,Which topics would you most like to see at Guild42 in 2026?,,A field report to organization and workflow patterns like SAFe Flight Level Scrum etc
+9912784,1,closed,Which topics would you most like to see at Guild42 in 2026?,,AI Agents & LLM Engineering
+9912784,1,closed,Which topics would you most like to see at Guild42 in 2026?,,Cloud Native Kubernetes & Platform Engineering
+9912784,1,closed,Which topics would you most like to see at Guild42 in 2026?,,DevOps / SRE Best Practices
+9912784,1,closed,Which topics would you most like to see at Guild42 in 2026?,,Security Zero Trust & Software Supply Chain
+9912784,1,closed,Which topics would you most like to see at Guild42 in 2026?,,Software Architecture & Design (DDD Microservices Event-driven)
+9912760,2,form,Whom would you like to see as a speaker?,,Lize Raes
+9912940,2,form,Whom would you like to see as a speaker?,,People who know their stuff
+9912957,2,form,Whom would you like to see as a speaker?,,Annemarie (Migge) Bracher
+9912968,2,form,Whom would you like to see as a speaker?,,Doris Rogger
+9913010,2,form,Whom would you like to see as a speaker?,,Simon Martinelli
+9913027,2,form,Whom would you like to see as a speaker?,,Astronaut Simon Butscher
+9913031,2,form,Whom would you like to see as a speaker?,,Steve Jobs
+9913194,2,form,Whom would you like to see as a speaker?,,Sepp Renfer: mongoDB
+9913465,2,form,Whom would you like to see as a speaker?,,Julia Kordick
+9913676,2,form,Whom would you like to see as a speaker?,,MathWorks
+9914225,2,form,Whom would you like to see as a speaker?,,Oncle Bob Martin
+9915829,2,form,Whom would you like to see as a speaker?,,Elon Musk
+9922789,2,form,Whom would you like to see as a speaker?,,As you wrote in your mail: more women
+9912760,3,closed,Which event formats do you prefer?,,Talks / Keynotes
+9912762,3,closed,Which event formats do you prefer?,,Talks / Keynotes
+9912784,3,closed,Which event formats do you prefer?,,Talks / Keynotes
+9912784,3,closed,Which event formats do you prefer?,,Live Coding Sessions
+9912792,3,closed,Which event formats do you prefer?,,Talks / Keynotes
+9912792,3,closed,Which event formats do you prefer?,,Networking-focused Events
+9912792,3,closed,Which event formats do you prefer?,,Hybrid / Remote-friendly Content
+9912760,4,closed,About You - What is your current role?,,Architect
+9912762,4,closed,About You - What is your current role?,"What else?",Business Analyst
+9912762,4,closed,About You - What is your current role?,,Architect
+9912784,4,closed,About You - What is your current role?,,Architect
+9912792,4,closed,About You - What is your current role?,"What else?",Management
+9912760,5,closed,How many Guild42 events did you attend in the past year?,,3+
+9912762,5,closed,How many Guild42 events did you attend in the past year?,,3+
+9912784,5,closed,How many Guild42 events did you attend in the past year?,,3+
+9912792,5,closed,How many Guild42 events did you attend in the past year?,,1–2

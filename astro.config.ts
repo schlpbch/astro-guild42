@@ -38,6 +38,9 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
     },
+    ssr: {
+      noExternal: ["@observablehq/plot"],
+    },
   },
   scopedStyleStrategy: "where",
 });

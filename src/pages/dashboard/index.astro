@@ -1,0 +1,74 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const surveys = [
+  {
+    id: 'survey-2026',
+    title: 'Guild42 Member Survey 2026',
+    description: 'Topics, Speakers, and Event Formats for 2026',
+    date: '2025-12-01',
+    participants: 61,
+  },
+];
+---
+
+<Layout title="Survey Dashboards" description="View all Guild42 survey results">
+  <Header activeNav="surveys" />
+  <main id="main-content">
+  <div class="container mx-auto px-4 py-8 max-w-4xl">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+        Survey Dashboards
+      </h1>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">
+        Interactive visualizations of Guild42 community feedback
+      </p>
+    </header>
+
+    <!-- Survey Cards -->
+    <div class="grid grid-cols-1 gap-6">
+      {surveys.map((survey) => (
+        <a
+          href={`/dashboard/${survey.id}`}
+          class="block bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-l-4 border-yellow-500"
+        >
+          <div class="flex items-start justify-between">
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
+                {survey.title}
+              </h2>
+              <p class="text-gray-600 dark:text-gray-400 mt-2">
+                {survey.description}
+              </p>
+              <div class="flex gap-4 mt-4 text-sm text-gray-500">
+                <span>📅 {new Date(survey.date).toLocaleDateString('de-CH')}</span>
+                <span>👥 {survey.participants} participants</span>
+              </div>
+            </div>
+            <div class="ml-4 text-2xl">📊</div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <!-- Info Box -->
+    <div class="mt-12 bg-blue-50 dark:bg-gray-800 border border-blue-200 dark:border-gray-700 rounded-lg p-6">
+      <h3 class="font-bold text-gray-900 dark:text-white mb-2">About these dashboards</h3>
+      <p class="text-gray-700 dark:text-gray-300 text-sm">
+        These interactive dashboards visualize feedback from Guild42 community members.
+        All charts are built with <strong>Chart.js</strong> and <strong>Astro</strong>,
+        providing fast, accessible, and beautiful data visualizations.
+      </p>
+    </div>
+  </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .container {
+    max-width: 1000px;
+  }
+</style>

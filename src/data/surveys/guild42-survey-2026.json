@@ -1,0 +1,257 @@
+{
+  "metadata": {
+    "id": "guild42-survey-2026",
+    "title": "Guild42 Member Survey 2026",
+    "description": "Member feedback on topics, speakers, and event formats for 2026",
+    "totalParticipants": 65,
+    "completedParticipants": 65,
+    "createdAt": "2025-12-22"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "questionText": "Which topics would you most like to see at Guild42 in 2026?",
+      "questionType": "multiple_choice",
+      "totalResponses": 413,
+      "responses": [
+        {
+          "answer": "The future of Software Engineering in Bern",
+          "count": 38,
+          "percentage": 9.2
+        },
+        {
+          "answer": "Software Architecture & Design (DDD, Microservices, Event-driven)",
+          "count": 32,
+          "percentage": 7.75
+        },
+        {
+          "answer": "AI Agents & LLM Engineering",
+          "count": 29,
+          "percentage": 7.02
+        },
+        {
+          "answer": "Security, Zero Trust & Software Supply Chain",
+          "count": 29,
+          "percentage": 7.02
+        },
+        {
+          "answer": "Applied AI & Machine Learning",
+          "count": 27,
+          "percentage": 6.54
+        },
+        {
+          "answer": "Modern Web & Mobile Technologies",
+          "count": 27,
+          "percentage": 6.54
+        },
+        {
+          "answer": "Programming Languages (Rust, Go, TypeScript, Java etc.)",
+          "count": 27,
+          "percentage": 6.54
+        },
+        {
+          "answer": "Cloud Native, Kubernetes & Platform Engineering",
+          "count": 21,
+          "percentage": 5.08
+        },
+        {
+          "answer": "Quantum Computing",
+          "count": 20,
+          "percentage": 4.84
+        },
+        {
+          "answer": "FinTech, GovTech, RailTech or Industry Case Studies",
+          "count": 18,
+          "percentage": 4.36
+        },
+        {
+          "answer": "A field report to organization and workflow patterns",
+          "count": 17,
+          "percentage": 4.12
+        },
+        {
+          "answer": "Requirements Engineering with https://req42.de",
+          "count": 16,
+          "percentage": 3.87
+        },
+        {
+          "answer": "Software documentation with https://arc42.org and more",
+          "count": 15,
+          "percentage": 3.63
+        },
+        {
+          "answer": "Robotics",
+          "count": 13,
+          "percentage": 3.15
+        },
+        {
+          "answer": "Rocket Science",
+          "count": 13,
+          "percentage": 3.15
+        },
+        {
+          "answer": "IoT / Edge Computing / Hardware",
+          "count": 13,
+          "percentage": 3.15
+        },
+        {
+          "answer": "Green IT",
+          "count": 13,
+          "percentage": 3.15
+        },
+        {
+          "answer": "Data Engineering / Observability",
+          "count": 13,
+          "percentage": 3.15
+        },
+        {
+          "answer": "Testing & Quality Engineering",
+          "count": 13,
+          "percentage": 3.15
+        },
+        {
+          "answer": "Ethical Clouds",
+          "count": 10,
+          "percentage": 2.42
+        },
+        {
+          "answer": "DevOps / SRE Best Practices",
+          "count": 7,
+          "percentage": 1.69
+        },
+        {
+          "answer": "Something else",
+          "count": 2,
+          "percentage": 0.48
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "questionText": "Whom would you like to see as a speaker?",
+      "questionType": "text",
+      "totalResponses": 14,
+      "responses": [],
+      "textResponses": [
+        "Lize Raes",
+        "People who know their stuff",
+        "Annemarie (Migge) Bracher",
+        "Doris Rogger",
+        "Simon Martinelli",
+        "Astronaut Simon Butscher",
+        "Steve Jobs",
+        "Sepp Renfer: mongoDB 😂",
+        "Julia Kordick",
+        "MathWorks",
+        "Oncle Bob Martin",
+        "Elon Musk",
+        "As you wrote in your mail: more women",
+        "Danilo Biella"
+      ]
+    },
+    {
+      "id": "q3",
+      "questionText": "Which event formats do you prefer?",
+      "questionType": "multiple_choice",
+      "totalResponses": 178,
+      "responses": [
+        {
+          "answer": "Talks / Keynotes",
+          "count": 63,
+          "percentage": 35.39
+        },
+        {
+          "answer": "Lightning Talks (5–10 min)",
+          "count": 22,
+          "percentage": 12.36
+        },
+        {
+          "answer": "Live Coding Sessions",
+          "count": 20,
+          "percentage": 11.24
+        },
+        {
+          "answer": "Hands-on Workshops",
+          "count": 20,
+          "percentage": 11.24
+        },
+        {
+          "answer": "Hybrid / Remote-friendly Content",
+          "count": 19,
+          "percentage": 10.67
+        },
+        {
+          "answer": "Networking-focused Events",
+          "count": 17,
+          "percentage": 9.55
+        },
+        {
+          "answer": "Panel Discussions",
+          "count": 17,
+          "percentage": 9.55
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "questionText": "About You - What is your current role?",
+      "questionType": "single_choice",
+      "totalResponses": 83,
+      "responses": [
+        {
+          "answer": "Architect",
+          "count": 29,
+          "percentage": 34.94
+        },
+        {
+          "answer": "Software Engineer",
+          "count": 19,
+          "percentage": 22.89
+        },
+        {
+          "answer": "Senior/Lead Engineer",
+          "count": 18,
+          "percentage": 21.69
+        },
+        {
+          "answer": "Product / Other",
+          "count": 13,
+          "percentage": 15.66
+        },
+        {
+          "answer": "Security Engineer",
+          "count": 3,
+          "percentage": 3.61
+        },
+        {
+          "answer": "Data/AI Engineer",
+          "count": 1,
+          "percentage": 1.2
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "questionText": "How many Guild42 events did you attend in the past year?",
+      "questionType": "single_choice",
+      "totalResponses": 64,
+      "responses": [
+        {
+          "answer": "1–2",
+          "count": 37,
+          "percentage": 57.81
+        },
+        {
+          "answer": "3+",
+          "count": 16,
+          "percentage": 25.0
+        },
+        {
+          "answer": "0",
+          "count": 11,
+          "percentage": 17.19
+        }
+      ]
+    }
+  ]
+}

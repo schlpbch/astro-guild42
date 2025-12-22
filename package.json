@@ -18,9 +18,16 @@
   "dependencies": {
     "@astrojs/check": "^0.9.5",
     "@astrojs/rss": "^4.0.14",
+    "@nanostores/react": "^1.0.0",
+    "@observablehq/plot": "^0.6.17",
     "@resvg/resvg-js": "^2.6.2",
+    "arquero": "^8.0.3",
     "astro": "^5.16.0",
+    "chart.js": "^4.5.1",
     "fuse.js": "^7.1.0",
+    "gsap": "^3.13.0",
+    "nanostores": "^1.1.0",
+    "react-chartjs-2": "^5.3.1",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
     "satori": "^0.18.3"
