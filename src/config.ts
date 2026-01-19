@@ -53,7 +53,7 @@ export const PATRONS: Array<Patron> = [
     category: Category.Life,
   },
   {
-    name: "Glue Software Engineering",
+    name: "Glue AG",
     href: "https://glue.ch/",
     owner: "Igor Metz",
     category: Category.Life,
