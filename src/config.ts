@@ -129,7 +129,7 @@ export const PATRONS: Array<Patron> = [
   {
     name: "Zooey GmbH",
     href: "https://zooey.ch/",
-    owner: "Christoph Rühlmann",
+    owner: "Christoph Bühlmann, Gilles Zimmermann",
     category: Category.Life,
   },
 ];
