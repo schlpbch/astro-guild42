@@ -126,6 +126,12 @@ export const PATRONS: Array<Patron> = [
     owner: "Thomas Philipona",
     category: Category.Life,
   },
+  {
+    name: "Zooey GmbH",
+    href: "https://zooey.ch/",
+    owner: "Christoph Rühlmann",
+    category: Category.Life,
+  },
 ];
 
 export const COMMUNITY: Array<Community> = [
