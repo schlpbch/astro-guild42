@@ -132,6 +132,12 @@ export const PATRONS: Array<Patron> = [
     owner: "Christoph Bühlmann, Gilles Zimmermann",
     category: Category.Life,
   },
+  {
+    name: "David Berger",
+    href: "https://guild42.ch/", // You may want to update this with David's actual URL
+    category: Category.Life,
+    subcategory: "Member.42",
+  },
 ];
 
 export const COMMUNITY: Array<Community> = [

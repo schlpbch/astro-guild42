@@ -23,6 +23,7 @@ export type Patron = {
   href: string;
   owner?: string;
   category: Category;
+  subcategory?: string;
 };
 
 export type Community = {
