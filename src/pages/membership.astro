@@ -47,7 +47,7 @@ import Footer from "@components/Footer.astro";
           placeholder="Your billing address"
           rows="4"
           required></textarea>
-        <label for="membership-type">Membership Type:</label>
+        <label for="membership-type">Membership Type / Patron:</label>
         <div class="flex flex-col space-y-2">
           <label class="flex items-center">
             <input
@@ -72,6 +72,42 @@ import Footer from "@components/Footer.astro";
           </label>
           <p class="text-sm text-gray-500 dark:text-gray-400">
             Includes all benefits of the basic membership, plus a mention on the Patrons page in the Member.42 category.
+          </p>
+          <label class="flex items-center">
+            <input
+              type="radio"
+              name="membership-type"
+              value="category-life"
+              class="mr-2"
+            />
+            <span class="text-md font-semibold">Category.LIFE</span>: starting from 128 CHF (2^7)
+          </label>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Patron tier supporting Guild42's mission with enhanced benefits and recognition.
+          </p>
+          <label class="flex items-center">
+            <input
+              type="radio"
+              name="membership-type"
+              value="category-universe"
+              class="mr-2"
+            />
+            <span class="text-md font-semibold">Category.UNIVERSE</span>: starting from 512 CHF (2^9)
+          </label>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Premium patron tier with greater support for Guild42's initiatives.
+          </p>
+          <label class="flex items-center">
+            <input
+              type="radio"
+              name="membership-type"
+              value="category-everything"
+              class="mr-2"
+            />
+            <span class="text-md font-semibold">Category.EVERYTHING</span>: starting from 1'024 CHF (2^10)
+          </label>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Top-tier patron support helping Guild42 organize events free of charge for all participants.
           </p>
         </div>
         <button
