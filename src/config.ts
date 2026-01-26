@@ -134,9 +134,7 @@ export const PATRONS: Array<Patron> = [
   },
   {
     name: "David Berger",
-    href: "https://guild42.ch/", // You may want to update this with David's actual URL
-    category: Category.Life,
-    subcategory: "Member.42",
+    category: Category.Member42,
   },
 ];
 

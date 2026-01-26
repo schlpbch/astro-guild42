@@ -20,10 +20,9 @@ export type SocialObjects = {
 
 export type Patron = {
   name: string;
-  href: string;
+  href?: string;
   owner?: string;
   category: Category;
-  subcategory?: string;
 };
 
 export type Community = {
@@ -32,6 +31,7 @@ export type Community = {
 };
 
 export enum Category {
+  Member42,
   Life,
   Universe,
   Everything,

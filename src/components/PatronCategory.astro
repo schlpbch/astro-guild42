@@ -12,59 +12,29 @@ const { category, title } = Astro.props;
 
 <section class="pb-3 pl-0">
   <h2 class="pb-2 pt-4 text-2xl font-semibold tracking-wide">{title}</h2>
-  {
-    /* First display patrons without subcategory */
-    PATRONS.filter((patron: Patron) => patron.category === category && !patron.subcategory).length > 0 && (
-      <ul class="list-outside list-[square] pl-6 marker:text-blue-400">
-        {
-          PATRONS.filter((patron: Patron) => patron.category === category && !patron.subcategory).map(
-            (patron: Patron) => (
-              <li class="py-1">
-                <a
-                  href={patron.href}
-                  class="inline-block"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {patron.name}
-                </a>
-                {patron.owner && <>({patron.owner})</>}
-              </li>
-            )
-          )
-        }
-      </ul>
-    )
-  }
-  {
-    /* Group and display patrons by subcategory */
-    [...new Set(PATRONS.filter((patron: Patron) => patron.category === category && patron.subcategory).map(p => p.subcategory))].map(
-      (subcategory) => (
-        <>
-          <h3 class="pb-2 pt-3 pl-4 text-xl font-semibold tracking-wide">{subcategory}</h3>
-          <ul class="list-outside list-[square] pl-10 marker:text-blue-400">
-            {
-              PATRONS.filter((patron: Patron) => patron.category === category && patron.subcategory === subcategory).map(
-                (patron: Patron) => (
-                  <li class="py-1">
-                    <a
-                      href={patron.href}
-                      class="inline-block"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {patron.name}
-                    </a>
-                    {patron.owner && <>({patron.owner})</>}
-                  </li>
-                )
-              )
-            }
-          </ul>
-        </>
+  <ul class="list-outside list-[square] pl-6 marker:text-blue-400">
+    {
+      PATRONS.filter((patron: Patron) => patron.category === category).map(
+        (patron: Patron) => (
+          <li class="py-1">
+            {patron.href ? (
+              <a
+                href={patron.href}
+                class="inline-block"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {patron.name}
+              </a>
+            ) : (
+              <span class="inline-block">{patron.name}</span>
+            )}
+            {patron.owner && <>({patron.owner})</>}
+          </li>
+        )
       )
-    )
-  }
+    }
+  </ul>
 </section>
 <style>
   a {
