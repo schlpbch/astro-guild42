@@ -50,3 +50,23 @@ export type SocialMedia =
   | "Telegram"
   | "Mastodon"
   | "Bluesky";
+
+export interface ImageResolution {
+  imageUrl: string;
+  imageType: string;
+}
+
+export interface RssItemData {
+  link: string;
+  title: string;
+  description: string;
+  pubDate: Date;
+  author: string;
+  categories: string[];
+  enclosure: {
+    url: string;
+    type: string;
+    length: number;
+  };
+  customData: string;
+}
