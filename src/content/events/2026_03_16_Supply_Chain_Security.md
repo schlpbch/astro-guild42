@@ -17,7 +17,7 @@ topics:
 description: Endless CVEs (Common Vulnerabilities and Exposures) in open-source images are turning security into noise and slowing IT down.
 ---
 
-![Supply Chain Security in Software Development](@assets/images/2016_03_16_Supply_Chain_Security.png)
+![Supply Chain Security in Software Development](@assets/images/2026_03_16_Supply_Chain_Security.png)
 Abstract comming soon.
 
 The talk will be held in German with some Bernese sprinkled in.
