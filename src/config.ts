@@ -274,4 +274,10 @@ export const SOCIALS: SocialObjects = [
     linkTitle: `${SITE.title} on Bluesky`,
     active: true,
   },
+  {
+    name: "RSS",
+    href: `${SITE.website}rss.xml`,
+    linkTitle: `RSS Feed for ${SITE.title}`,
+    active: true,
+  },
 ];

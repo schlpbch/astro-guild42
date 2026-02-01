@@ -7,7 +7,7 @@ upcoming: true
 title: "Trust by Design"
 topics:
   - trust
-  - identity 
+  - identity
   - ssi
   - verifiable credentials
 

@@ -90,7 +90,7 @@ Warm regards from the organizing team ❤️
 [Melanie Noser](https://www.linkedin.com/in/mnoser/) | [Matthias Fritschi](https://www.linkedin.com/in/matthias-fritschi/) | [Sandra Hochstein](https://www.linkedin.com/in/sandra-hochstein/) | [Kateryna Schütz](https://www.linkedin.com/in/kateryna-schuetz-b5927745/) | [Daniel Kühni](https://www.linkedin.com/in/dani-kuehni/) | [Florian Kammermann](https://www.linkedin.com/in/florian-k-9196651a/) | [Daniel Marthaler](https://www.linkedin.com/in/daniel-marthaler-34b36814/) | [Andreas Schlapbach](https://www.linkedin.com/in/andreas-schlapbach/) | [Simon M. Butscher](https://www.linkedin.com/in/simonbutscher/)
 
 ## 😍 Impressions
+
 ![Impressionen: OK](@assets/images/2025-Summer-Event-OK.jpg)
 
 278 more pictures of the event on NextCloud > [Here!](https://home.plaintext.ch/s/2Ecfc7Dyi2cwL69)
-

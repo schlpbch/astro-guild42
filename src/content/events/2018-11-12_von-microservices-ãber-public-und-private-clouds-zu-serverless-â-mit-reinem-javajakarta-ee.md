@@ -26,7 +26,7 @@ Der Vortrag ist **auf Deutsch**.
 
 ### Speaker
 
-**Adam Bien** ist Autor der Bücher *Real World JavaEE Patterns* und *Real World JavaEE Night Hacks*.  
+**Adam Bien** ist Autor der Bücher _Real World JavaEE Patterns_ und _Real World JavaEE Night Hacks_.  
 Er schreibt Fachartikel, ist seit Jahren **regelmässiger Sprecher auf internationalen Java-Konferenzen** und betreibt einen Blog, produziert Screencasts, Online-Workshops und Podcasts rund um Java und verwandte Themen.
 
 In seinen unterhaltsamen und lehrreichen Vorträgen zeigt Adam, wie man **nahe an den Standards und ohne überflüssigen Ballast robuste Lösungen** erstellt.

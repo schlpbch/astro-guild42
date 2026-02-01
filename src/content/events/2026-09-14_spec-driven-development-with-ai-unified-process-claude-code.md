@@ -16,14 +16,11 @@ topics:
   - engineering
 
 description: Many software projects work code-centered, requirements are collected roughly, code is written – and documentation, tests, and specifications lag behind. The result, specifications become outdated, documentation is incomplete, tests are missing.
-
 ---
 
 ![Simon Martinelli](@assets/images/2026_09_14_SimonMartinelli.jpg)
 
-Coming soon! [Spec Driven Development](https://martinelli.ch/training/spec-driven-development/) 
-
-
+Coming soon! [Spec Driven Development](https://martinelli.ch/training/spec-driven-development/)
 
 The talk will be held in German with some Bernese sprinkled in.
 
@@ -31,7 +28,6 @@ The talk will be held in German with some Bernese sprinkled in.
 
 Coming soon of:
 [Simon Martinelli](https://www.linkedin.com/in/simonmartinelli/) and [Andreas Schlapbach](https://www.linkedin.com/in/andreas-schlapbach/)
-
 
 ### Registration
 
