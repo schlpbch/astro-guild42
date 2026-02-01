@@ -45,7 +45,3 @@ In his more than 20-year career in IT, the studied computer scientist has always
 After his first online appearance at [Guild42](https://www.guild42.ch), at the beginning of lock-down 3 years ago, which was unexpectedly popular, he appeared on various committees on topics in similar areas.
 
 In his free time he enjoys playing card and board games, making music and philosophizing over and about wine.
-
-### Slides
-
-[Agility: From Highwaymanship to Slavery](https://guild42.ch/wp-content/uploads/2023/01/Slavery-GER-static.pdf)
