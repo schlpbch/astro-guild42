@@ -1,6 +1,16 @@
 # Build stage
 FROM node:22-alpine AS builder
 
+# Install system dependencies required for Sharp
+RUN apk add --no-cache \
+    libc6-compat \
+    vips-dev \
+    glib-dev \
+    expat-dev \
+    python3 \
+    make \
+    g++
+
 # Install pnpm
 RUN corepack enable pnpm
 
