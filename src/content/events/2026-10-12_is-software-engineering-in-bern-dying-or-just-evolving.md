@@ -13,7 +13,7 @@ topics:
 description: Bern’s software engineering scene is changing, new skills, new roles, and new expectations are reshaping what it means to build software today.
 ---
 
-![SEnvolving of Bern's Software Engineering](@assets/images/2026_10_12_Future_of_Eng_in_Bern.png)
+![The Future of Software Engineering in Bern](@assets/images/2026_10_12_Future_of_Eng_in_Bern.png)
 Abstract comming soon.
 
 The talk will be held in German with some Bernese sprinkled in.

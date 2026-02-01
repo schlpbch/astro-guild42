@@ -12,7 +12,7 @@ topics:
 description: Gain practical insights and learn how to protect your organization from deepfakes as an emerging form of digital deception.
 ---
 
-![Deepfakes](@assets/images/deepfakes-when-AI-takes-over.webp)
+![Deepfakes and AI Deception Technology](@assets/images/deepfakes-when-AI-takes-over.webp)
 
 Immerse yourself in the realm of deepfakes and understand how these AI-generated, deceptively realistic forgeries blur the lines between reality and manipulation. In this keynote, [Kai Yu](https://www.linkedin.com/in/kaiyuofficial/), Security Consultant AI at [Swiss Infosec AG](https://www.infosec.ch/), sheds light on the current challenges and threats that deepfakes pose to organizations and individuals. Learn how malicious actors exploit deepfakes to extract sensitive information via video calls or incite harmful actions and discover strategies to raise awareness and defend against such attacks.
 

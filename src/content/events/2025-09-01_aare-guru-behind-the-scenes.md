@@ -16,7 +16,7 @@ topics:
 description: Aare Guru is amongst the most popular websites & apps for urban swimming in the larger Bern area.
 ---
 
-![Aare.guru: Behind the scenes](@assets/images/aare_guru_banner_page_curl.png)
+![Aare Guru - Behind the Scenes of Bern's Popular Swimming App](@assets/images/aare_guru_banner_page_curl.png)
 
 Since 2015 [Aare Guru](https://aare.guru) provide information about swimming conditions for the Aare river and, inadvertently, an outlet for lovers and haters of the Bernese language as well. This talk will give you an insight into the tech stack of our pretty successful little side project. We will cover the history & architecture, what we're doing with Blockchain (Spoiler: Nothing), what we're doing with AI (Spoiler: Almost nothing) and how we're using the organizational pattern of mutually assured destruction to keep running the project interesting.
 

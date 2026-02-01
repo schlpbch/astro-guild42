@@ -14,7 +14,7 @@ topics:
 description: Digital trust starts with identity. This session explores how modern identity systems form the foundation for secure, scalable, and user-centric digital services.
 ---
 
-![Trust by Design](@assets/images/2026_11_02_e-ID.png)
+![Trust by Design - Digital Identity and SSI](@assets/images/2026_11_02_e-ID.png)
 Abstract comming soon.
 
 The talk will be held in German with some Bernese sprinkled in.

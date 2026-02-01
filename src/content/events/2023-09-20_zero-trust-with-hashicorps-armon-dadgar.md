@@ -19,6 +19,6 @@ Attend this event and you’ll learn from [Armon Dadgar](https://www.linkedin.co
 
 ### Speaker
 
-![Zero Trust with HashiCorp's Armon Dadgar](@assets/images/armon-dadgar.webp)
+![Armon Dadgar - HashiCorp CTO and Co-Founder](@assets/images/armon-dadgar.webp)
 
 [Armon Dadgar](https://www.linkedin.com/in/armon-dadgar/) is one of the Co-founders and CTO of HashiCorp. He has a passion for security and distributed systems and applies those to the world of DevOps tooling and cloud infrastructure. As a former engineer, he has worked on the design and implementation of many of the core HashiCorp products. He has been named to the Forbes and Inc 30-under-30 lists for transforming enterprise technology. He studied computer science at the University of Washington, where he met his Co-founder [Mitchell Hashimoto](https://www.linkedin.com/in/mitchellh/).

@@ -13,7 +13,7 @@ topics:
 description: With Self-Contained Systems we have an architecture to design large web applications and customer portals. This architecture ensures that the system remains manageable and maintainable thanks to individual, independent modules. This talk gives an overview of the self-contained systems architecture as well as lessons learned.
 ---
 
-![Self Contained Systems](@assets/images/self-contained-systems.svg)
+![Self-Contained Systems and Micro Frontends Architecture](@assets/images/self-contained-systems.svg)
 
 What starts as a simple web application can, after 20 years, end up in a huge, sluggish monolith that can hardly be maintained, let alone developed further. There are always customer projects in which we have to replace such old systems. A modern, flexible and future-oriented architecture is often a driving requirement in these cases.
 

@@ -13,7 +13,7 @@ topics:
 description: The federal administration is increasingly adopting open source software under the EMBAG law, which mandates that software developed by or for the government be made publicly available unless legal or security concerns prevent it.
 ---
 
-![Matthias Stürmer](@assets/images/Matthias_Stuermer.jpeg)
+![Matthias Stürmer - Digital Sovereignty and Open Source Expert](@assets/images/Matthias_Stuermer.jpeg)
 
 This presentation and discussion provides a concise overview of current trends and platforms in open source software, highlighting success stories and lessons learned from Switzerland. It introduces developments such as openDesk and openCode by the Centre for Digital Sovereignty (ZenDiS), European cloud initiatives, and the SDS – Souveräne Digitale Schweiz network, all of which advance digital sovereignty and are highly relevant to Switzerland’s IT landscape.
 

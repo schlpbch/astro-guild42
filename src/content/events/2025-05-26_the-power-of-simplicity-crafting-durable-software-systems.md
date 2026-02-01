@@ -12,7 +12,7 @@ topics:
 description: Simplicity often takes a back seat in software engineering. Yet, it’s absolutely key for creating durable and efficient systems.
 ---
 
-![Deepfakes](@assets/images/simplicity.webp)
+![The Power of Simplicity in Software Design](@assets/images/simplicity.webp)
 
 Simplicity often takes a back seat in software engineering. Yet, it’s absolutely key for creating durable and efficient systems.
 

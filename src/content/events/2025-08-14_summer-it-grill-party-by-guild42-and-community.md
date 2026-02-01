@@ -13,7 +13,7 @@ topics:
 description: Celebrate with us 15 years of networking in the IT engineering community Bern and the existence of guild42.ch!
 ---
 
-![füüri](https://image.jimcdn.com/app/cms/image/transf/dimension=950x10000:format=jpg/path/s4851942e8d59e01c/image/if0f4686e2ea30211/version/1638873072/f%C3%BC%C3%BCri-story.jpg)
+![Guild42 Summer IT Grill & Party](@assets/images/2025-Summer-Event-OK.jpg)
 
 ## 🥳 IT Summer Grill & Party – This Will Be Legendary!
 
@@ -91,6 +91,6 @@ Warm regards from the organizing team ❤️
 
 ## 😍 Impressions
 
-![Impressionen: OK](@assets/images/2025-Summer-Event-OK.jpg)
+![Guild42 Summer IT Grill & Party - Event Impressions](@assets/images/2025-Summer-Event-OK.jpg)
 
 278 more pictures of the event on NextCloud > [Here!](https://home.plaintext.ch/s/2Ecfc7Dyi2cwL69)

@@ -16,7 +16,7 @@ topics:
 description: Java Strikes Back, Engineering the Agentic Era
 ---
 
-![Lize Raes](@assets/images/2026_04_20_Lize_profile-pic.jpg)
+![Lize Raes - Java and AI Engineering Expert](@assets/images/2026_04_20_Lize_profile-pic.jpg)
 
 AI systems are moving beyond prompts to agents that plan, act and interact. And this time, Java is not catching up, it’s leading. Frameworks like LangChain4j and Embabel bring agentic capabilities with the strengths Java is built on: type safety, structure, reliability and testability.
 Agents aren’t a passing hype. They are a necessary design pattern for robust AI systems, enforcing separation of concerns, controlled execution flows and human-in-the-loop checkpoints. They make complex AI interactions predictable, auditable and production ready.

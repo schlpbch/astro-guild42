@@ -11,7 +11,7 @@ topics:
 description: In her talk Ursula Deriu delves in to applications of state of the language learning models (LLMs) in to real world applications.
 ---
 
-![GenaAI and SWE](@assets/images/empowering-applications-with-LLMs.webp)
+![Large Language Models in Applications](@assets/images/empowering-applications-with-LLMs.webp)
 
 In the rapidly evolving landscape of artificial intelligence, [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) have emerged as a transformative technology, capable of understanding and generating human-like text. This talk will explore how software developers can harness the power of LLMs to enhance their applications, delivering smarter, more intuitive user experiences.
 

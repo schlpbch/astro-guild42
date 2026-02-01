@@ -18,7 +18,7 @@ topics:
 description: Many software projects work code-centered, requirements are collected roughly, code is written – and documentation, tests, and specifications lag behind. The result, specifications become outdated, documentation is incomplete, tests are missing.
 ---
 
-![Simon Martinelli](@assets/images/2026_09_14_SimonMartinelli.jpg)
+![Simon Martinelli - Spec-Driven Development Speaker](@assets/images/2026_09_14_SimonMartinelli.jpg)
 
 Coming soon! [Spec Driven Development](https://martinelli.ch/training/spec-driven-development/)
 

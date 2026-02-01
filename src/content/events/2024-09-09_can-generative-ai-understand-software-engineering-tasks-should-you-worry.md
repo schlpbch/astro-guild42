@@ -11,7 +11,7 @@ topics:
 description: In her talk Iryna Dohndorf explains whether we software engineers should embrace Generative AI and Deep Learning for our daily work or whether we should worry about our jobs instead.
 ---
 
-![GenaAI and SWE](@assets/images/gen-ai-software-engineering.webp)
+![Generative AI and Software Engineering Tasks](@assets/images/gen-ai-software-engineering.webp)
 
 AI-based services such as [ChatGPT](https://openai.com/chatgpt/) and [Copilot](https://copilot.microsoft.com/) promise to increase the quality and efficiency of programming. Such tools can strongly influence which information developers consume and reuse - thus impacting our knowledge, beliefs, decisions, and actions. But at the same time, these systems can create substantial business value for different stakeholders. Generative AI and deep learning can generate code, develop prototypes, optimize algorithms, and perform security audits, to name just a few. Given the growing potential impact of AI-based tools on developers, organizations, and society, questions of biases, copyrights, lack of explainability, trustworthiness and fairness have gained increased attention in recent years.
 

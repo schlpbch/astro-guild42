@@ -17,7 +17,7 @@ topics:
 description: Rust has made the leap from systems programming to modern web and cloud services. This talk explores the opportunities, limitations, and real-world experiences of using Rust in Kubernetes environments.
 ---
 
-![Rust & Kubernetes](@assets/images/rust.png)
+![Rust Programming Language - Moving to Kubernetes](@assets/images/rust.png)
 
 Despite its initial systems programming focus, Rust has seen rapid uptake as a general-purpose programming language for modern application development – when does it make sense to adopt it in your own services over more established choices such as Java and golang?
 
