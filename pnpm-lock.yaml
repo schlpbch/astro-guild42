@@ -35,6 +35,9 @@ importers:
       fuse.js:
         specifier: ^7.1.0
         version: 7.1.0
+      github-slugger:
+        specifier: ^2.0.0
+        version: 2.0.0
       gsap:
         specifier: ^3.14.2
         version: 3.14.2
