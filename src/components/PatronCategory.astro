@@ -17,14 +17,18 @@ const { category, title } = Astro.props;
       PATRONS.filter((patron: Patron) => patron.category === category).map(
         (patron: Patron) => (
           <li class="py-1">
-            <a
-              href={patron.href}
-              class="inline-block"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {patron.name}
-            </a>
+            {patron.href ? (
+              <a
+                href={patron.href}
+                class="inline-block"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {patron.name}
+              </a>
+            ) : (
+              <span class="inline-block">{patron.name}</span>
+            )}
             {patron.owner && <>({patron.owner})</>}
           </li>
         )

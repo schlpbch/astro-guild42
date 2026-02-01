@@ -132,6 +132,10 @@ export const PATRONS: Array<Patron> = [
     owner: "Christoph Bühlmann, Gilles Zimmermann",
     category: Category.Life,
   },
+  {
+    name: "David Berger",
+    category: Category.Member42,
+  },
 ];
 
 export const COMMUNITY: Array<Community> = [
