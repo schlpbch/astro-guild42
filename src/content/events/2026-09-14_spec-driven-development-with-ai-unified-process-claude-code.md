@@ -4,7 +4,7 @@ speakers:
   - Simon Martinelli
   - Andreas Schlapbach
 pubDatetime: 2026-09-14T18:00:00+00:00
-upcoming: false
+upcoming: true
 title: "Spec-Driven Development with AI Unified Process & Claude Code"
 topics:
   - ai
