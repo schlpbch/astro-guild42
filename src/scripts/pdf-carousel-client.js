@@ -1,14 +1,36 @@
 // src/scripts/pdf-carousel-client.js
-// Browser ESM module for PDF carousel with pdf.js
-// Uses CDN worker for reliable cross-platform builds
+// Browser ESM module for PDF carousel
+// Loads pdf.js entirely from CDN for maximum compatibility
 
-import * as pdfjsLib from "pdfjs-dist";
+const PDFJS_VERSION = "4.4.168";
+const PDFJS_CDN = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}`;
 
-// Use CDN-hosted worker for reliable Netlify builds
-const PDFJS_VERSION = pdfjsLib.version;
-pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}/pdf.worker.min.mjs`;
+// Dynamically load pdf.js from CDN
+async function loadPdfJs() {
+  if (window.pdfjsLib) return window.pdfjsLib;
 
-export default function initPdfCarousel(host) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = `${PDFJS_CDN}/pdf.min.mjs`;
+    script.type = "module";
+    script.onload = () => {
+      // pdf.js exposes itself on window.pdfjsLib when loaded as script
+      // But with module, we need to import it differently
+      import(`${PDFJS_CDN}/pdf.min.mjs`)
+        .then(mod => {
+          const pdfjsLib = mod;
+          pdfjsLib.GlobalWorkerOptions.workerSrc = `${PDFJS_CDN}/pdf.worker.min.mjs`;
+          window.pdfjsLib = pdfjsLib;
+          resolve(pdfjsLib);
+        })
+        .catch(reject);
+    };
+    script.onerror = reject;
+    document.head.appendChild(script);
+  });
+}
+
+export default async function initPdfCarousel(host) {
   const data = host.dataset || {};
   const src = data.src || "";
   const start = parseInt(data.start || "1", 10) || 1;
@@ -62,25 +84,29 @@ export default function initPdfCarousel(host) {
     }
     rendering = true;
 
-    const page = await pdfDoc.getPage(num);
-    const baseVp = page.getViewport({ scale: 1 });
-    const scale = fitScaleFor(baseVp) * zoom;
-    const vp = page.getViewport({ scale });
+    try {
+      const page = await pdfDoc.getPage(num);
+      const baseVp = page.getViewport({ scale: 1 });
+      const scale = fitScaleFor(baseVp) * zoom;
+      const vp = page.getViewport({ scale });
 
-    if (vp.width <= 1 || vp.height <= 1) {
-      rendering = false;
-      return;
+      if (vp.width <= 1 || vp.height <= 1) {
+        rendering = false;
+        return;
+      }
+
+      canvas.width = Math.floor(vp.width);
+      canvas.height = Math.floor(vp.height);
+
+      const renderContext = { canvasContext: ctx, viewport: vp };
+      await page.render(renderContext).promise;
+
+      pageNumEl.textContent = String(num);
+      prevBtn.disabled = num <= 1;
+      nextBtn.disabled = num >= pdfDoc.numPages;
+    } catch (e) {
+      console.error("[PdfCarousel] render error:", e);
     }
-
-    canvas.width = Math.floor(vp.width);
-    canvas.height = Math.floor(vp.height);
-
-    const renderContext = { canvasContext: ctx, viewport: vp };
-    await page.render(renderContext).promise;
-
-    pageNumEl.textContent = String(num);
-    prevBtn.disabled = num <= 1;
-    nextBtn.disabled = num >= pdfDoc.numPages;
 
     rendering = false;
     if (pendingPage !== null) {
@@ -103,15 +129,24 @@ export default function initPdfCarousel(host) {
   };
 
   const init = async () => {
+    let pdfjsLib;
+    try {
+      pdfjsLib = await loadPdfJs();
+    } catch (e) {
+      console.error("[PdfCarousel] failed to load pdf.js:", e);
+      if (errorMsg) errorMsg.style.display = "block";
+      return;
+    }
+
     try {
       pdfDoc = await pdfjsLib.getDocument(src).promise;
-      // Hide error message on success
       if (errorMsg) errorMsg.style.display = "none";
     } catch (e) {
       console.error("[PdfCarousel] getDocument failed for", src, e);
       if (errorMsg) errorMsg.style.display = "block";
       return;
     }
+
     pageCountEl.textContent = String(pdfDoc.numPages);
     scrub.max = String(pdfDoc.numPages);
     scrub.value = String(Math.min(Math.max(1, start), pdfDoc.numPages));

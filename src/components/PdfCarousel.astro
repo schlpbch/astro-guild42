@@ -127,9 +127,9 @@ const {
     font-size: 0.9rem;
     display: none;
   }
-  .download-fallback {
+  .download-header {
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 0.75rem 0;
   }
   .download-link {
     display: inline-block;
@@ -153,6 +153,12 @@ const {
   data-start={startPage}
   data-fit={fit}
 >
+  <div class="download-header">
+    <a href={src} download class="download-link"
+      >📥 Download Community Overview</a
+    >
+  </div>
+
   <div class="stage" id="stage" aria-live="polite">
     <div class="top-right">
       <span class="pill" id="zoomLabel">100%</span>
@@ -189,56 +195,188 @@ const {
       <button class="btn" id="fitBtn" aria-label="Toggle fit mode">Fit</button>
     </div>
   </div>
-
-  <div class="download-fallback">
-    <a href={src} download class="download-link">📥 PDF herunterladen</a>
-  </div>
 </div>
 
-<!-- Load the client module that initializes pdf.js. This is bundled by Vite, so Netlify can resolve it. -->
-<script type="module">
-  import initPdfCarousel from "../scripts/pdf-carousel-client.js";
+<!-- Load pdf.js from CDN -->
+<script
+  is:inline
+  src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs"
+  type="module"></script>
+<script is:inline type="module">
+  const PDFJS_VERSION = "4.4.168";
 
-  const findHost = scriptEl => {
-    if (scriptEl) {
-      let n = scriptEl.previousElementSibling;
-      while (n) {
-        if (n.classList && n.classList.contains("pdf-carousel")) return n;
-        n = n.previousElementSibling;
-      }
-      let p = scriptEl.parentElement;
-      while (p) {
-        const el = p.querySelector(":scope > .pdf-carousel");
-        if (el) return el;
-        p = p.parentElement;
-      }
+  // Wait for pdf.js to be available
+  async function waitForPdfJs() {
+    // Import pdf.js as ES module from CDN
+    const pdfjsLib =
+      await import("https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs");
+    pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}/pdf.worker.min.mjs`;
+    return pdfjsLib;
+  }
+
+  async function initPdfCarousel() {
+    const host = document.querySelector(".pdf-carousel");
+    if (!host) return;
+
+    const data = host.dataset || {};
+    const src = data.src || "";
+    const start = parseInt(data.start || "1", 10) || 1;
+    let fit = data.fit || "contain";
+
+    const stage = host.querySelector("#stage");
+    const canvas = host.querySelector("#pageCanvas");
+    if (!stage || !canvas) {
+      console.error("[PdfCarousel] missing stage/canvas");
+      return;
     }
-    return document.querySelector(".pdf-carousel");
-  };
+    const ctx = canvas.getContext("2d");
+    const pageNumEl = host.querySelector("#pageNum");
+    const pageCountEl = host.querySelector("#pageCount");
+    const scrub = host.querySelector("#scrubber");
+    const prevBtn = host.querySelector("#prevBtn");
+    const nextBtn = host.querySelector("#nextBtn");
+    const zoomInBtn = host.querySelector("#zoomIn");
+    const zoomOutBtn = host.querySelector("#zoomOut");
+    const zoomLabel = host.querySelector("#zoomLabel");
+    const fitBtn = host.querySelector("#fitBtn");
+    const errorMsg = host.querySelector("#errorMsg");
 
-  const scriptEl = document.currentScript;
-  let host = findHost(scriptEl);
-  const boot = () => {
-    if (host) {
-      initPdfCarousel(host);
-    }
-  };
+    let pdfDoc = null;
+    let currentPage = start;
+    let zoom = 1;
+    let rendering = false;
+    let pendingPage = null;
 
-  if (host) {
-    boot();
-  } else {
-    const tryLater = () => {
-      host = findHost(scriptEl);
-      if (host) {
-        boot();
+    const fitScaleFor = viewport => {
+      const r = stage.getBoundingClientRect();
+      if (r.width === 0 || r.height === 0) return 1;
+      switch (fit) {
+        case "width":
+          return r.width / viewport.width;
+        case "height":
+          return r.height / viewport.height;
+        case "cover":
+          return Math.max(r.width / viewport.width, r.height / viewport.height);
+        case "contain":
+        default:
+          return Math.min(r.width / viewport.width, r.height / viewport.height);
+      }
+    };
+
+    const renderPage = async num => {
+      if (!pdfDoc) return;
+      if (rendering) {
+        pendingPage = num;
         return;
       }
-      requestAnimationFrame(tryLater);
+      rendering = true;
+      try {
+        const page = await pdfDoc.getPage(num);
+        const baseVp = page.getViewport({ scale: 1 });
+        const scale = fitScaleFor(baseVp) * zoom;
+        const vp = page.getViewport({ scale });
+        if (vp.width <= 1 || vp.height <= 1) {
+          rendering = false;
+          return;
+        }
+        canvas.width = Math.floor(vp.width);
+        canvas.height = Math.floor(vp.height);
+        await page.render({ canvasContext: ctx, viewport: vp }).promise;
+        pageNumEl.textContent = String(num);
+        prevBtn.disabled = num <= 1;
+        nextBtn.disabled = num >= pdfDoc.numPages;
+      } catch (e) {
+        console.error("[PdfCarousel] render error:", e);
+      }
+      rendering = false;
+      if (pendingPage !== null) {
+        const p = pendingPage;
+        pendingPage = null;
+        renderPage(p);
+      }
     };
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", tryLater, { once: true });
-    } else {
-      tryLater();
+
+    const queueRenderPage = num => {
+      if (!pdfDoc || num < 1 || num > pdfDoc.numPages) return;
+      currentPage = num;
+      scrub.value = String(num);
+      renderPage(num);
+    };
+
+    const updateZoomLabel = () => {
+      zoomLabel.textContent = Math.round(zoom * 100) + "%";
+    };
+
+    // Load pdf.js and initialize
+    let pdfjsLib;
+    try {
+      pdfjsLib = await waitForPdfJs();
+    } catch (e) {
+      console.error("[PdfCarousel] failed to load pdf.js:", e);
+      if (errorMsg) errorMsg.style.display = "block";
+      return;
     }
+
+    try {
+      pdfDoc = await pdfjsLib.getDocument(src).promise;
+      if (errorMsg) errorMsg.style.display = "none";
+    } catch (e) {
+      console.error("[PdfCarousel] getDocument failed for", src, e);
+      if (errorMsg) errorMsg.style.display = "block";
+      return;
+    }
+
+    pageCountEl.textContent = String(pdfDoc.numPages);
+    scrub.max = String(pdfDoc.numPages);
+    scrub.value = String(Math.min(Math.max(1, start), pdfDoc.numPages));
+    currentPage = parseInt(scrub.value, 10);
+    updateZoomLabel();
+    await renderPage(currentPage);
+
+    // Controls
+    prevBtn.addEventListener("click", () => queueRenderPage(currentPage - 1));
+    nextBtn.addEventListener("click", () => queueRenderPage(currentPage + 1));
+    scrub.addEventListener("input", e =>
+      queueRenderPage(parseInt(e.target.value, 10))
+    );
+    zoomInBtn.addEventListener("click", () => {
+      zoom = Math.min(zoom * 1.2, 6);
+      updateZoomLabel();
+      renderPage(currentPage);
+    });
+    zoomOutBtn.addEventListener("click", () => {
+      zoom = Math.max(zoom / 1.2, 0.2);
+      updateZoomLabel();
+      renderPage(currentPage);
+    });
+    fitBtn.addEventListener("click", () => {
+      const modes = ["contain", "cover", "width", "height"];
+      const idx = modes.indexOf(fit);
+      fit = modes[(idx + 1) % modes.length];
+      renderPage(currentPage);
+    });
+
+    // Keyboard
+    window.addEventListener("keydown", e => {
+      if (e.key === "ArrowRight" || e.key === "PageDown") {
+        e.preventDefault();
+        queueRenderPage(currentPage + 1);
+      }
+      if (e.key === "ArrowLeft" || e.key === "PageUp") {
+        e.preventDefault();
+        queueRenderPage(currentPage - 1);
+      }
+    });
+
+    // Resize
+    const ro = new ResizeObserver(() => renderPage(currentPage));
+    ro.observe(stage);
+  }
+
+  // Start when DOM ready
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initPdfCarousel);
+  } else {
+    initPdfCarousel();
   }
 </script>
