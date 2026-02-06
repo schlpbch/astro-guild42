@@ -1,3 +1,10 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5fd77187-a1d7-44bd-b63e-8df5761e9bbf/deploy-status)](https://app.netlify.com/projects/guild42ch/deploys)
+[![Built with Astro](https://img.shields.io/badge/Built%20with-Astro-FF5D01?logo=astro&logoColor=white)](https://astro.build)
+[![Styled with Tailwind CSS](https://img.shields.io/badge/Styled%20with-Tailwind%20CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![Package Manager: PNPM](https://img.shields.io/badge/Package%20Manager-PNPM-F69220?logo=pnpm&logoColor=white)](https://pnpm.io)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![RSS Feed](https://img.shields.io/badge/RSS-Feed-orange?logo=rss&logoColor=white)](/rss.xml)
+
 # Guild42 website
 
 The Guild42 website is a static site built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com). It serves as the online presence for the Guild42 community, showcasing our events, and resources.
