@@ -12,42 +12,151 @@
 //   ---
 //   <PdfCarousel src="/docs/Communities.pdf" height={640} startPage={1} />
 
-const { src = '/docs/Communities.pdf', height = 640, startPage = 1, fit = 'contain' } = Astro.props as {
+const {
+  src = "/docs/Communities.pdf",
+  height = 640,
+  startPage = 1,
+  fit = "contain",
+} = Astro.props as {
   src?: string;
   height?: number;
   startPage?: number; // 1-based
-  fit?: 'contain' | 'cover' | 'width' | 'height';
+  fit?: "contain" | "cover" | "width" | "height";
 };
 ---
 
 <style>
-  .pdf-carousel { position: relative; width: 100%; display: grid; gap: 0.75rem; }
-  .stage { position: relative; width: 100%; height: var(--h); background: #0b0b0c; border-radius: 1rem; overflow: hidden; display: grid; place-items: center;}
-  .stage canvas { max-width: 100%; height: auto; display: block; }
-  .chrome { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
-  .btn { appearance: none; border: 0; background: #111; color: #fff; padding: .6rem .9rem; border-radius: .9rem; cursor: pointer; font-size: .95rem; }
-  .btn[disabled] { opacity: .5; cursor: not-allowed; }
-  .meta { display: flex; align-items: center; gap: .6rem; color: #bbb; font-size: .9rem; }
-  .pager { font-variant-numeric: tabular-nums; }
-  .scrub { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 999px; background: #2a2a2e; outline: none; }
-  .scrub::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 18px; height: 18px; border-radius: 50%; background: #fff; cursor: pointer; box-shadow: 0 0 0 2px #111; }
-  .scrub::-moz-range-thumb { width: 18px; height: 18px; border-radius: 50%; background: #fff; cursor: pointer; box-shadow: 0 0 0 2px #111; }
-  .top-right { position: absolute; top: .75rem; right: .75rem; display: flex; gap: .5rem; }
-  .pill { background: rgba(255,255,255,.08); color: #eee; padding: .35rem .6rem; border-radius: 999px; font-size: .8rem; }
-  .error { position:absolute; inset:auto 0 0 0; padding:.5rem 1rem; background:#c1121f; color:#fff; font-size:.9rem; display:none; }
+  .pdf-carousel {
+    position: relative;
+    width: 100%;
+    display: grid;
+    gap: 0.75rem;
+  }
+  .stage {
+    position: relative;
+    width: 100%;
+    height: var(--h);
+    background: #0b0b0c;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+  .stage canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .chrome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+  .btn {
+    appearance: none;
+    border: 0;
+    background: #111;
+    color: #fff;
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.9rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+  .btn[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .meta {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #bbb;
+    font-size: 0.9rem;
+  }
+  .pager {
+    font-variant-numeric: tabular-nums;
+  }
+  .scrub {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 999px;
+    background: #2a2a2e;
+    outline: none;
+  }
+  .scrub::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px #111;
+  }
+  .scrub::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px #111;
+  }
+  .top-right {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .pill {
+    background: rgba(255, 255, 255, 0.08);
+    color: #eee;
+    padding: 0.35rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+  }
+  .error {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 0.5rem 1rem;
+    background: #c1121f;
+    color: #fff;
+    font-size: 0.9rem;
+    display: none;
+  }
 </style>
 
-<div class="pdf-carousel" style={`--h:${height}px`} data-src={src} data-start={startPage} data-fit={fit}>
+<div
+  class="pdf-carousel"
+  style={`--h:${height}px`}
+  data-src={src}
+  data-start={startPage}
+  data-fit={fit}
+>
   <div class="stage" id="stage" aria-live="polite">
     <div class="top-right">
       <span class="pill" id="zoomLabel">100%</span>
       <a class="pill" href={src} download>Download</a>
     </div>
     <canvas id="pageCanvas"></canvas>
-    <div id="errorMsg" class="error">Failed to load/render PDF. Check the console for details and verify the path (<code>{src}</code>).</div>
+    <div id="errorMsg" class="error">
+      Failed to load/render PDF. Check the console for details and verify the
+      path (<code>{src}</code>).
+    </div>
   </div>
 
-  <input class="scrub" id="scrubber" type="range" min="1" value="1" step="1" aria-label="Select page" />
+  <input
+    class="scrub"
+    id="scrubber"
+    type="range"
+    min="1"
+    value="1"
+    step="1"
+    aria-label="Select page"
+  />
 
   <div class="chrome">
     <div class="left">
@@ -55,7 +164,9 @@ const { src = '/docs/Communities.pdf', height = 640, startPage = 1, fit = 'conta
       <button class="btn" id="nextBtn" aria-label="Next page">⟩</button>
     </div>
     <div class="meta">
-      <span class="pager"><span id="pageNum">1</span>/<span id="pageCount">-</span></span>
+      <span class="pager"
+        ><span id="pageNum">1</span>/<span id="pageCount">-</span></span
+      >
       <button class="btn" id="zoomOut" aria-label="Zoom out">−</button>
       <button class="btn" id="zoomIn" aria-label="Zoom in">＋</button>
       <button class="btn" id="fitBtn" aria-label="Toggle fit mode">Fit</button>
@@ -65,33 +176,48 @@ const { src = '/docs/Communities.pdf', height = 640, startPage = 1, fit = 'conta
 
 <!-- Load the client module that initializes pdf.js. This is bundled by Vite, so Netlify can resolve it. -->
 <script type="module">
-  import initPdfCarousel from "../src/scripts/pdf-carousel-client.js";
+  import initPdfCarousel from "../scripts/pdf-carousel-client.js";
 
-  const findHost = (scriptEl) => {
+  const findHost = scriptEl => {
     if (scriptEl) {
       let n = scriptEl.previousElementSibling;
-      while (n) { if (n.classList && n.classList.contains('pdf-carousel')) return n; n = n.previousElementSibling; }
+      while (n) {
+        if (n.classList && n.classList.contains("pdf-carousel")) return n;
+        n = n.previousElementSibling;
+      }
       let p = scriptEl.parentElement;
-      while (p) { const el = p.querySelector(':scope > .pdf-carousel'); if (el) return el; p = p.parentElement; }
+      while (p) {
+        const el = p.querySelector(":scope > .pdf-carousel");
+        if (el) return el;
+        p = p.parentElement;
+      }
     }
-    return document.querySelector('.pdf-carousel');
+    return document.querySelector(".pdf-carousel");
   };
 
   const scriptEl = document.currentScript;
   let host = findHost(scriptEl);
-  const boot = () => { if (host) { initPdfCarousel(host); } };
+  const boot = () => {
+    if (host) {
+      initPdfCarousel(host);
+    }
+  };
 
   if (host) {
     boot();
   } else {
-    const tryLater = () => { host = findHost(scriptEl); if (host) { boot(); return; } requestAnimationFrame(tryLater); };
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', tryLater, { once: true });
+    const tryLater = () => {
+      host = findHost(scriptEl);
+      if (host) {
+        boot();
+        return;
+      }
+      requestAnimationFrame(tryLater);
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", tryLater, { once: true });
     } else {
       tryLater();
     }
   }
 </script>
-
-
-
