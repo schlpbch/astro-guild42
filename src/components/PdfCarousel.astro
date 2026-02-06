@@ -127,6 +127,23 @@ const {
     font-size: 0.9rem;
     display: none;
   }
+  .download-fallback {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  .download-link {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .download-link:hover {
+    background: #1d4ed8;
+  }
 </style>
 
 <div
@@ -171,6 +188,10 @@ const {
       <button class="btn" id="zoomIn" aria-label="Zoom in">＋</button>
       <button class="btn" id="fitBtn" aria-label="Toggle fit mode">Fit</button>
     </div>
+  </div>
+
+  <div class="download-fallback">
+    <a href={src} download class="download-link">📥 PDF herunterladen</a>
   </div>
 </div>
 

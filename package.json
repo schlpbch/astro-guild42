@@ -28,6 +28,7 @@
     "github-slugger": "^2.0.0",
     "gsap": "^3.14.2",
     "nanostores": "^1.1.0",
+    "pdfjs-dist": "^5.4.624",
     "react-chartjs-2": "^5.3.1",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
