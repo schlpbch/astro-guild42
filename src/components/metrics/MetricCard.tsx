@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 interface MetricCardProps {
   title: string;
@@ -19,14 +19,14 @@ export function MetricCard({
   const valueRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!valueRef.current || typeof value !== 'number' || !animate) return;
+    if (!valueRef.current || typeof value !== "number" || !animate) return;
 
     const obj = { value: 0 };
 
     gsap.to(obj, {
       value: value,
       duration: 1.5,
-      ease: 'power1.inOut',
+      ease: "power1.inOut",
       onUpdate: () => {
         if (valueRef.current) {
           valueRef.current.textContent = Math.round(obj.value).toLocaleString();
@@ -46,20 +46,20 @@ export function MetricCard({
             ref={valueRef}
             className="text-5xl font-bold text-gray-900 dark:text-white mt-3"
           >
-            {typeof value === 'number' && animate
-              ? '0'
-              : typeof value === 'number'
+            {typeof value === "number" && animate
+              ? "0"
+              : typeof value === "number"
                 ? value.toLocaleString()
                 : value}
           </div>
           {trend && (
             <div
               className={`mt-3 text-base font-medium ${
-                trend.startsWith('+') || trend.includes('up')
-                  ? 'text-green-600'
-                  : trend.startsWith('-') || trend.includes('down')
-                    ? 'text-red-600'
-                    : 'text-gray-600'
+                trend.startsWith("+") || trend.includes("up")
+                  ? "text-green-600"
+                  : trend.startsWith("-") || trend.includes("down")
+                    ? "text-red-600"
+                    : "text-gray-600"
               }`}
             >
               {trend}

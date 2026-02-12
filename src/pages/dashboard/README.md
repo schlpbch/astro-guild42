@@ -53,24 +53,27 @@ src/
 ## 📝 Adding New Surveys
 
 1. **Export CSV from Findmind**
+
    ```bash
    # Place in: src/data/surveys/your-survey.csv
    ```
 
 2. **Convert to JSON**
-   ```typescript
-   import { parseCSV, aggregateSurveyData } from './utils/survey/csvParser';
 
-   const csv = await fs.readFile('your-survey.csv', 'utf-8');
+   ```typescript
+   import { parseCSV, aggregateSurveyData } from "./utils/survey/csvParser";
+
+   const csv = await fs.readFile("your-survey.csv", "utf-8");
    const rows = parseCSV(csv);
    const data = aggregateSurveyData(rows);
    ```
 
 3. **Create Dashboard Page**
+
    ```astro
    ---
    // src/pages/dashboard/your-survey.astro
-   import surveyData from '../../data/surveys/your-survey.json';
+   import surveyData from "../../data/surveys/your-survey.json";
    // ... use BarChart, MetricCard components
    ---
    ```
@@ -81,10 +84,12 @@ src/
 ## 🎯 Chart Types
 
 Currently implemented:
+
 - **BarChart** - Horizontal/vertical bars with tooltips
 - **MetricCard** - Animated KPI cards
 
 Can be added (Observable Plot supports):
+
 - **LineChart** - Time series data
 - **PieChart** - Percentage distributions
 - **DotPlot** - Scatter plots

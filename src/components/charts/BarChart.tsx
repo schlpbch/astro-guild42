@@ -1,7 +1,7 @@
-import { ObservablePlot } from './ObservablePlot';
-import * as Plot from '@observablehq/plot';
-import { guild42Theme } from '../../config/theme';
-import type { ChartDataPoint } from '../../config/survey-schemas';
+import { ObservablePlot } from "./ObservablePlot";
+import * as Plot from "@observablehq/plot";
+import { guild42Theme } from "../../config/theme";
+import type { ChartDataPoint } from "../../config/survey-schemas";
 
 interface BarChartProps {
   data: ChartDataPoint[];
@@ -19,29 +19,29 @@ export function BarChart({
   const options = {
     marks: [
       // Y-Axis grid line at zero
-      Plot.ruleY([0], { stroke: '#e5e7eb', strokeWidth: 3 }),
+      Plot.ruleY([0], { stroke: "#e5e7eb", strokeWidth: 3 }),
 
       // Bar chart with EXTRA THICK rounded corners and tooltips
       Plot.barY(data, {
-        x: 'category',
-        y: 'value',
+        x: "category",
+        y: "value",
         fill: color,
         rx: 12,
         tip: true,
-        sort: { x: '-y' },
+        sort: { x: "-y" },
         insetLeft: 4,
         insetRight: 4,
       }),
 
       // Value labels on top of bars - HUGE
       Plot.text(data, {
-        x: 'category',
-        y: 'value',
+        x: "category",
+        y: "value",
         text: (d: ChartDataPoint) => d.value.toString(),
         dy: -20,
-        fill: '#111827',
+        fill: "#111827",
         fontSize: 28,
-        fontWeight: 'bold',
+        fontWeight: "bold",
       }),
     ],
     x: {
@@ -52,7 +52,7 @@ export function BarChart({
     },
     y: {
       grid: true,
-      label: 'Count',
+      label: "Count",
       fontSize: 22,
       tickSize: 10,
       labelFontSize: 24,

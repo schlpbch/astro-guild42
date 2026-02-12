@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -7,10 +7,10 @@ import {
   Title,
   Tooltip,
   Legend,
-} from 'chart.js';
-import { Bar } from 'react-chartjs-2';
-import { guild42Theme } from '../../config/theme';
-import type { ChartDataPoint } from '../../config/survey-schemas';
+} from "chart.js";
+import { Bar } from "react-chartjs-2";
+import { guild42Theme } from "../../config/theme";
+import type { ChartDataPoint } from "../../config/survey-schemas";
 
 // Register Chart.js components
 ChartJS.register(
@@ -39,10 +39,10 @@ export function BarChartJS({
     labels: data.map(d => d.category),
     datasets: [
       {
-        label: 'Count',
+        label: "Count",
         data: data.map(d => d.value),
         backgroundColor: color,
-        borderColor: 'rgba(128, 128, 128, 0.75)',
+        borderColor: "rgba(128, 128, 128, 0.75)",
         borderWidth: 2,
         borderRadius: 8,
         barThickness: 60,
@@ -80,21 +80,21 @@ export function BarChartJS({
       y: {
         beginAtZero: true,
         grid: {
-          color: '#e5e7eb',
+          color: "#e5e7eb",
           lineWidth: 2,
         },
         ticks: {
           font: {
             size: 22,
           },
-          color: '#374151',
+          color: "#374151",
         },
         title: {
           display: true,
-          text: 'Count',
+          text: "Count",
           font: {
             size: 24,
-            weight: 'bold' as const,
+            weight: "bold" as const,
           },
         },
       },
@@ -106,7 +106,7 @@ export function BarChartJS({
           font: {
             size: 18,
           },
-          color: '#374151',
+          color: "#374151",
           maxRotation: 90,
           minRotation: 90,
           autoSkip: false,
@@ -122,7 +122,9 @@ export function BarChartJS({
           {title}
         </h3>
       )}
-      <div style={{ height: `${height}px`, width: '100%', overflow: 'visible' }}>
+      <div
+        style={{ height: `${height}px`, width: "100%", overflow: "visible" }}
+      >
         <Bar data={chartData} options={options} />
       </div>
     </div>
