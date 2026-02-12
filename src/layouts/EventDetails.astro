@@ -8,6 +8,7 @@ import { slugifyStr } from "@utils/slugify";
 import ShareLinks from "@components/ShareLinks.astro";
 import { SITE } from "@config";
 import SubHeading from "@components/SubHeading";
+import { generateEventJsonLD } from "@utils/generate-jsonld";
 
 export interface Props {
   post: CollectionEntry<"events">;
@@ -44,9 +45,14 @@ const layoutProps = {
   ogImage: ogUrl,
   scrollSmooth: true,
 };
+
+const eventJsonLD = generateEventJsonLD(post, Astro.site?.toString() || "");
 ---
 
 <Layout {...layoutProps}>
+  <!-- Event JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify(eventJsonLD)} />
+
   <Header />
 
   <!-- <div class="progress-container fixed top-0 z-10 h-1 w-full bg-skin-fill">

@@ -2,6 +2,7 @@
 import { LOCALE, SITE } from "@config";
 import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
+import { generateOrganizationJsonLD } from "@utils/generate-jsonld";
 
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
@@ -31,6 +32,8 @@ const socialImageURL = new URL(
   ogImage ?? SITE.ogImage ?? "og.png",
   Astro.url.origin
 ).href;
+
+const organizationJsonLD = generateOrganizationJsonLD();
 ---
 
 <!doctype html>
@@ -163,6 +166,15 @@ const socialImageURL = new URL(
     <ViewTransitions />
 
     <script is:inline src="/toggle-theme.js"></script>
+    <script type="module">
+      import "../scripts/performance-monitoring.js";
+    </script>
+
+    <!-- Organization JSON-LD -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(organizationJsonLD)}
+    />
   </head>
   <body>
     <slot />
