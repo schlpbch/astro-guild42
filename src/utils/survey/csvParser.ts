@@ -1,5 +1,9 @@
 // CSV Parser for Findmind survey data
-import type { SurveyData, Question, QuestionResponse } from '../../config/survey-schemas';
+import type {
+  SurveyData,
+  Question,
+  QuestionResponse,
+} from "../../config/survey-schemas";
 
 interface CSVRow {
   participant_id: string;
@@ -11,8 +15,8 @@ interface CSVRow {
 }
 
 export function parseCSV(csvContent: string): CSVRow[] {
-  const lines = csvContent.trim().split('\n');
-  const headers = lines[0].split(',').map(h => h.replace(/"/g, ''));
+  const lines = csvContent.trim().split("\n");
+  const headers = lines[0].split(",").map(h => h.replace(/"/g, ""));
 
   const rows: CSVRow[] = [];
 
@@ -32,7 +36,7 @@ export function parseCSV(csvContent: string): CSVRow[] {
 
 function parseCSVLine(line: string): string[] {
   const result: string[] = [];
-  let current = '';
+  let current = "";
   let inQuotes = false;
 
   for (let i = 0; i < line.length; i++) {
@@ -40,9 +44,9 @@ function parseCSVLine(line: string): string[] {
 
     if (char === '"') {
       inQuotes = !inQuotes;
-    } else if (char === ',' && !inQuotes) {
+    } else if (char === "," && !inQuotes) {
       result.push(current);
-      current = '';
+      current = "";
     } else {
       current += char;
     }
@@ -70,11 +74,14 @@ export function aggregateSurveyData(rows: CSVRow[]): SurveyData {
 
   questionMap.forEach((questionRows, key) => {
     const firstRow = questionRows[0];
-    const questionType = firstRow.question_type === 'form' ? 'text' :
-                        firstRow.question_title.includes('current role') ? 'single_choice' :
-                        'multiple_choice';
+    const questionType =
+      firstRow.question_type === "form"
+        ? "text"
+        : firstRow.question_title.includes("current role")
+          ? "single_choice"
+          : "multiple_choice";
 
-    if (questionType === 'text') {
+    if (questionType === "text") {
       // Text responses
       questions.push({
         id: `q${firstRow.question_position}`,
@@ -92,7 +99,10 @@ export function aggregateSurveyData(rows: CSVRow[]): SurveyData {
         answerCounts.set(answer, (answerCounts.get(answer) || 0) + 1);
       });
 
-      const totalAnswers = Array.from(answerCounts.values()).reduce((a, b) => a + b, 0);
+      const totalAnswers = Array.from(answerCounts.values()).reduce(
+        (a, b) => a + b,
+        0
+      );
       const responses: QuestionResponse[] = Array.from(answerCounts.entries())
         .map(([answer, count]) => ({
           answer,
@@ -113,19 +123,19 @@ export function aggregateSurveyData(rows: CSVRow[]): SurveyData {
 
   // Sort questions by position
   questions.sort((a, b) => {
-    const aPos = parseInt(a.id.replace('q', ''));
-    const bPos = parseInt(b.id.replace('q', ''));
+    const aPos = parseInt(a.id.replace("q", ""));
+    const bPos = parseInt(b.id.replace("q", ""));
     return aPos - bPos;
   });
 
   return {
     metadata: {
-      id: 'guild42-survey-2026',
-      title: 'Guild42 Member Survey 2026',
-      description: 'Topics, Speakers, and Formats for 2026',
+      id: "guild42-survey-2026",
+      title: "Guild42 Member Survey 2026",
+      description: "Topics, Speakers, and Formats for 2026",
       totalParticipants,
       completedParticipants: totalParticipants,
-      createdAt: '2025-12-01',
+      createdAt: "2025-12-01",
     },
     questions,
   };

@@ -18,7 +18,7 @@ export interface QuestionResponse {
 export interface Question {
   id: string;
   questionText: string;
-  questionType: 'multiple_choice' | 'single_choice' | 'text' | 'rating';
+  questionType: "multiple_choice" | "single_choice" | "text" | "rating";
   totalResponses: number;
   responses: QuestionResponse[];
   textResponses?: string[]; // For open-ended questions

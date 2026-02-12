@@ -183,7 +183,7 @@ export const COMMUNITY: Array<Community> = [
     name: "devops bern",
     href: "https://www.meetup.com/devops-bern/",
   },
-      {
+  {
     name: "DevOpsDays Zurich",
     href: "https://www.devopsdays.ch",
   },
@@ -227,7 +227,6 @@ export const COMMUNITY: Array<Community> = [
     name: "uphill conf",
     href: "https://www.uphillconf.com/about",
   },
-
 ];
 
 export const SOCIALS: SocialObjects = [

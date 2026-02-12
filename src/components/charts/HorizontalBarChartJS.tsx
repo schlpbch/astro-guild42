@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -7,10 +7,10 @@ import {
   Title,
   Tooltip,
   Legend,
-} from 'chart.js';
-import { Bar } from 'react-chartjs-2';
-import { guild42Theme } from '../../config/theme';
-import type { ChartDataPoint } from '../../config/survey-schemas';
+} from "chart.js";
+import { Bar } from "react-chartjs-2";
+import { guild42Theme } from "../../config/theme";
+import type { ChartDataPoint } from "../../config/survey-schemas";
 
 // Register Chart.js components
 ChartJS.register(
@@ -39,10 +39,10 @@ export function HorizontalBarChartJS({
     labels: data.map(d => d.category),
     datasets: [
       {
-        label: 'Count',
+        label: "Count",
         data: data.map(d => d.value),
         backgroundColor: color,
-        borderColor: 'rgba(128, 128, 128, 0.75)',
+        borderColor: "rgba(128, 128, 128, 0.75)",
         borderWidth: 2,
         borderRadius: 8,
         barThickness: 40,
@@ -51,7 +51,7 @@ export function HorizontalBarChartJS({
   };
 
   const options = {
-    indexAxis: 'y' as const,
+    indexAxis: "y" as const,
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
@@ -76,21 +76,21 @@ export function HorizontalBarChartJS({
       x: {
         beginAtZero: true,
         grid: {
-          color: '#e5e7eb',
+          color: "#e5e7eb",
           lineWidth: 2,
         },
         ticks: {
           font: {
             size: 22,
           },
-          color: '#374151',
+          color: "#374151",
         },
         title: {
           display: true,
-          text: 'Count',
+          text: "Count",
           font: {
             size: 24,
-            weight: 'bold' as const,
+            weight: "bold" as const,
           },
         },
       },
@@ -102,7 +102,7 @@ export function HorizontalBarChartJS({
           font: {
             size: 14,
           },
-          color: '#374151',
+          color: "#374151",
           autoSkip: false,
         },
         afterFit: (scale: any) => {
@@ -119,7 +119,7 @@ export function HorizontalBarChartJS({
           {title}
         </h3>
       )}
-      <div style={{ height: `${height}px`, width: '100%' }}>
+      <div style={{ height: `${height}px`, width: "100%" }}>
         <Bar data={chartData} options={options} />
       </div>
     </div>
