@@ -30,6 +30,9 @@ export default [
         IntersectionObserver: "readonly",
         cancelAnimationFrame: "readonly",
         requestAnimationFrame: "readonly",
+        performance: "readonly",
+        PerformanceObserver: "readonly",
+        gtag: "readonly",
       },
     },
     rules: {
