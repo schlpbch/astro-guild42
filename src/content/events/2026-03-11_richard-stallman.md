@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Richard Stallman
-pubDatetime: 2026-03-11T17:30:00+01:00
+pubDatetime: 2026-03-11T17:30:00
 upcoming: true
 title: "Richard Stallman - Founder of the Free Software Movement"
 topics:
