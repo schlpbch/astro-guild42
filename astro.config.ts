@@ -11,6 +11,8 @@ export default defineConfig({
   site: SITE.website,
   redirects: {
     "/event/java-vs-python": "/events/why-python-is-so-popular",
+    "/event/http-caching-varnish": "/events/http-caching-varnish",
+    "/event/12-anniversary": "/events",
   },
   integrations: [
     tailwind({
