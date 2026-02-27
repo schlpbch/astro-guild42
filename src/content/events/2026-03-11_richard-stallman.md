@@ -13,7 +13,7 @@ topics:
 description: Richard Stallman, the founder of the Free Software Movement, will share his insights on the importance of software freedom and the impact it has on our digital lives. More details to be announced soon.
 ---
 
-![Richard Stallman - Founder of the Free Software Movement](@assets/images/events/2026-03-11_Richard_Stallman.png)
+![Richard Stallman - Founder of the Free Software Movement](@assets/images/2026_03_11_Richard_Stallman.png)
 
 The talk will be held at **Berner Fachhochschule, Aula, Brückenstrasse 73, 3012 Bern**.
 
