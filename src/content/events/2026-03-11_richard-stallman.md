@@ -2,7 +2,7 @@
 author: Andreas Schlapbach
 speakers:
   - Richard Stallman
-pubDatetime: 2026-03-11T17:30:00
+pubDatetime: 2026-03-11T17:30:00+01:00
 upcoming: true
 title: "Richard Stallman - Founder of the Free Software Movement"
 topics:
@@ -12,6 +12,8 @@ topics:
 
 description: Richard Stallman, the founder of the Free Software Movement, will share his insights on the importance of software freedom and the impact it has on our digital lives. More details to be announced soon.
 ---
+
+## About the Event
 
 ![Richard Stallman - Founder of the Free Software Movement](@assets/images/2026_03_11_Richard_Stallman.png)
 
