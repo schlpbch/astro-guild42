@@ -37,3 +37,6 @@ pnpm-debug.log*
 /.idea/*
 /claude-mad/.claude/settings.local.json
 /.claude/settings.local.json
+
+# Local Netlify folder
+.netlify
