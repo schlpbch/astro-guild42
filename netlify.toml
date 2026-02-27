@@ -8,11 +8,26 @@
   status = 301
 
 [[redirects]]
+  from = "/event/java-vs-python/"
+  to = "/events/why-python-is-so-popular"
+  status = 301
+
+[[redirects]]
   from = "/event/http-caching-varnish"
   to = "/events/http-caching-varnish"
   status = 301
 
 [[redirects]]
+  from = "/event/http-caching-varnish/"
+  to = "/events/http-caching-varnish"
+  status = 301
+
+[[redirects]]
   from = "/event/12-anniversary"
+  to = "/events"
+  status = 301
+
+[[redirects]]
+  from = "/event/12-anniversary/"
   to = "/events"
   status = 301
