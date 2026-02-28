@@ -34,6 +34,8 @@ export function generateOrganizationJsonLD(): JsonLD {
 /**
  * Generate JSON-LD for an Event
  */
+const EVENT_DURATION_MS = 2 * 60 * 60 * 1000; // 2 hours
+
 export function generateEventJsonLD(
   event: CollectionEntry<"events">,
   baseUrl: string
@@ -49,12 +51,10 @@ export function generateEventJsonLD(
     url: eventUrl,
     startDate: data.pubDatetime?.toISOString(),
     endDate: data.pubDatetime
-      ? new Date(data.pubDatetime.getTime() + 2 * 60 * 60 * 1000).toISOString()
+      ? new Date(data.pubDatetime.getTime() + EVENT_DURATION_MS).toISOString()
       : undefined,
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-    eventStatus: data.upcoming
-      ? "https://schema.org/EventScheduled"
-      : "https://schema.org/EventMovedOnline",
+    eventStatus: "https://schema.org/EventScheduled",
     location: {
       "@type": "Place",
       name: "Guild42 Community",

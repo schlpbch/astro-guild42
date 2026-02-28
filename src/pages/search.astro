@@ -8,7 +8,7 @@ import Footer from "@components/Footer.astro";
 import SearchBar from "@components/Search";
 import getSortedEvents from "@utils/getSortedPastEvents";
 
-// Retrieve all published articles
+// Retrieve all published events
 const events = await getCollection("events", ({ data }) => !data.draft);
 const sortedEvents = getSortedEvents(events);
 

@@ -175,7 +175,8 @@ const eventJsonLD = generateEventJsonLD(post, Astro.site?.toString() || "");
   /** Attaches copy buttons to code blocks in the document,
    * allowing users to copy code easily. */
   function attachCopyButtons() {
-    let copyButtonLabel = "Copy";
+    const copyButtonLabel = "Copy";
+    const COPY_FEEDBACK_MS = 700;
     let codeBlocks = Array.from(document.querySelectorAll("pre"));
 
     for (let codeBlock of codeBlocks) {
@@ -209,7 +210,7 @@ const eventJsonLD = generateEventJsonLD(post, Astro.site?.toString() || "");
 
       setTimeout(() => {
         button.innerText = copyButtonLabel;
-      }, 700);
+      }, COPY_FEEDBACK_MS);
     }
   }
   attachCopyButtons();

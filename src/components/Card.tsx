@@ -4,7 +4,7 @@ import SubHeading from "./SubHeading";
 
 export interface Props {
   href?: string;
-  frontmatter: CollectionEntry<"blog">["data"];
+  frontmatter: CollectionEntry<"events">["data"];
   secHeading?: boolean;
 }
 
