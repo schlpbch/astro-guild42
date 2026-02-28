@@ -14,7 +14,8 @@
     "format": "prettier --write . --plugin=prettier-plugin-astro",
     "cz": "cz",
     "prepare": "husky",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "deploy": "netlify deploy --prod"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
