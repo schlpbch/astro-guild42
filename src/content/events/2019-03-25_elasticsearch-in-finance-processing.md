@@ -12,7 +12,6 @@ topics:
   - analytics
   - monitoring
   - kafka
-  - mimacom
   - elastic stack
 
 description: Vinh Nguyên von mimacom zeigt anhand praktischer Beispiele aus dem Finanzwesen, wie Elasticsearch für Big Data, Echtzeitüberwachung und Analyse prozesskritischer Abläufe eingesetzt werden kann.

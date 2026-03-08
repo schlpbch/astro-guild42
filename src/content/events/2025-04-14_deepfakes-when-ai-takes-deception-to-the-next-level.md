@@ -6,7 +6,7 @@ pubDatetime: 2025-04-14T18:00:00+00:00
 upcoming: false
 title: "Deepfakes: When AI Takes Deception to the Next Level"
 topics:
-  - artificial-intelligence
+  - artificial intelligence
   - security
   - identity theft
 description: Gain practical insights and learn how to protect your organization from deepfakes as an emerging form of digital deception.

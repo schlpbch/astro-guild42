@@ -13,7 +13,6 @@ topics:
   - transformation
   - business
   - process
-  - approppo
 
 description: Daniel Zbinden und Roger Kislig von approppo zeigen, was organisatorisch und technisch nötig ist, um Geschäftsprozesse durch Apps erfolgreich zu digitalisieren.
 ---

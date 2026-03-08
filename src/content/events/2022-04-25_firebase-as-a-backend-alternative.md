@@ -7,8 +7,8 @@ title: Firebase as a Backend Alternative
 upcoming: false
 draft: false
 topics:
-  - BaaS
-  - Cloud
+  - baas
+  - cloud
   - serverless
   - app development
   - web development

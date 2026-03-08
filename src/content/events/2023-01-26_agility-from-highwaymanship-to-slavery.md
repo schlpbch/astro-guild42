@@ -9,7 +9,7 @@ draft: false
 topics:
   - agile
   - lean
-  - SAFe
+  - safe
   - scrum
 description: Three years ago we asked ourselves “Is this still agile?”, but it has now become clear what the answer is.
 ---

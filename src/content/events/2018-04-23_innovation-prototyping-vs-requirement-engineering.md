@@ -12,7 +12,6 @@ topics:
   - product development
   - mvp
   - drive method
-  - 89grad
 
 description: Ramun Hofmann von 89grad zeigt, wie mit der D.R.I.V.E.-Methode die Balance zwischen schnellem Prototyping und wachsendem Qualitätsanspruch durch phasengerechtes Requirements Engineering gelingt.
 ---

@@ -6,7 +6,7 @@ pubDatetime: 2020-09-14T18:00:00+00:00
 title: Serverless Java
 topics:
   - serverless
-  - Java
+  - java
 description: Serverless Java poses numerous questions which Adam Bien addresses in this slide-less talk.
 ---
 

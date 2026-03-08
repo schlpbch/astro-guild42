@@ -6,7 +6,7 @@ pubDatetime: 2024-10-07T18:00:00+00:00
 upcoming: false
 title: Empowering Your Applications with Large Language Models
 topics:
-  - artificial-intelligence
+  - artificial intelligence
   - software engineering
 description: In her talk Ursula Deriu delves in to applications of state of the language learning models (LLMs) in to real world applications.
 ---

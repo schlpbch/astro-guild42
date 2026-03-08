@@ -10,7 +10,7 @@ topics:
   - agents
   - java
   - frameworks
-  - ai
+  - artificial intelligence
   - human-in-the-loop
 
 description: Java Strikes Back, Engineering the Agentic Era

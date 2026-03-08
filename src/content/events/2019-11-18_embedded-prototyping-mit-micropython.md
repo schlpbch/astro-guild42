@@ -13,7 +13,6 @@ topics:
   - programming
   - python
   - prototyping
-  - noser engineering
 
 description: Tobias Badertscher, Christian Müller und Cédric Roserens von Noser Engineering zeigen, wie MicroPython schnelles Embedded-Prototyping ohne Kompilieren und Flashen ermöglicht.
 ---

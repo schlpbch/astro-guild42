@@ -5,7 +5,7 @@ speakers:
 pubDatetime: 2020-04-20T18:00:00+00:00
 title: Is this Still Agile?
 topics:
-  - Agile
+  - agile
   - methodology
 description: Danilo Biella demystifies and questions the current direction agile methodologies are developing.
 ---

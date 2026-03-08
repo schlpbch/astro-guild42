@@ -1,12 +1,11 @@
 ---
 author: Steve Bechstein
 speakers:
-  - tbd
 pubDatetime: 2026-10-12T18:00:00+00:00
 upcoming: true
 title: "Is Software Engineering in Bern Dying - or Just Evolving?"
 topics:
-  - ai
+  - artificial intelligence
   - near shore
   - engineering
 

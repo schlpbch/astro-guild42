@@ -7,7 +7,7 @@ title: An Introduction to Rust
 upcoming: false
 draft: false
 topics:
-  - Rust
+  - rust
   - embedded software
 description: Rust is developing into a popular languages for (embedded) software engineering.
 ---

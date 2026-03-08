@@ -5,9 +5,9 @@ speakers:
 pubDatetime: 2022-11-16T18:00:00+00:00
 title: Site Reliability Engineering (SRE) – What is that?
 topics:
-  - SRE
-  - Operations
-  - DevOps
+  - sre
+  - operations
+  - devops
 description: Site Reliability Engineering provides a clear framework for addressing reliability in the product life cycle which Florian introduces to Swisscom.
 ---
 

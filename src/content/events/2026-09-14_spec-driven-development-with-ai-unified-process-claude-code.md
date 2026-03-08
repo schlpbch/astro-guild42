@@ -7,7 +7,7 @@ pubDatetime: 2026-09-14T18:00:00+00:00
 upcoming: true
 title: "Spec-Driven Development with AI Unified Process & Claude Code"
 topics:
-  - ai
+  - artificial intelligence
   - development
   - spec-driven
   - claude-code

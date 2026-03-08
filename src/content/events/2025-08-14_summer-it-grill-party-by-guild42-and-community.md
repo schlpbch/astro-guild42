@@ -7,7 +7,6 @@ date: 2025-08-14
 upcoming: false
 title: "Summer IT Grill & Party by guild42 and Community"
 topics:
-  - party
   - celebration
 
 description: Celebrate with us 15 years of networking in the IT engineering community Bern and the existence of guild42.ch!

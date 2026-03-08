@@ -10,7 +10,6 @@ title: "Hilfe, der Kunde will im Nachhinein ein Open Source Projekt!"
 topics:
   - open source
   - e-government
-  - dv bern
   - softwareentwicklung
   - projektmanagement
   - kulturwandel

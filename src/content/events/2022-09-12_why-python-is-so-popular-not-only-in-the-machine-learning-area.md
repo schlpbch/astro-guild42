@@ -7,8 +7,8 @@ title: "Why Python Is So Popular (Not Only in the Machine Learning Area)"
 upcoming: false
 draft: false
 topics:
-  - Python
-  - Programming Language
+  - python
+  - programming language
 description: This talk highlights why Python is so popular and which characteristics make it stand out.
 ---
 

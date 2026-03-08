@@ -7,8 +7,8 @@ title: "Web Application Firewall - An Introduction"
 upcoming: false
 draft: false
 topics:
-  - Web Application Firewall
-  - OWASP
+  - web application firewall
+  - owasp
   - security
   - web development
 description: Fränzi Bühler gives an introduction how a Web Application Firewall helps to protect against common security flaws of web applications.

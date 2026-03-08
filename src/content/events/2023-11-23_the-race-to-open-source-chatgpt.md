@@ -7,7 +7,7 @@ title: The Race to Open-Source ChatGPT
 upcoming: false
 draft: false
 topics:
-  - chatGPT
+  - chatgpt
   - artificial intelligence
   - machine learning
 description: Lewis Tunstall gives an overview of the community’s efforts to create an open-source ChatGPT, and discusses some of the challenges involved in training and evaluating these models effectively.

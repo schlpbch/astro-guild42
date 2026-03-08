@@ -6,7 +6,7 @@ pubDatetime: 2024-09-09T18:00:00+00:00
 upcoming: false
 title: Can Generative AI Understand Software Engineering Tasks? Should You Worry?
 topics:
-  - artificial-intelligence
+  - artificial intelligence
   - software engineering
 description: In her talk Iryna Dohndorf explains whether we software engineers should embrace Generative AI and Deep Learning for our daily work or whether we should worry about our jobs instead.
 ---

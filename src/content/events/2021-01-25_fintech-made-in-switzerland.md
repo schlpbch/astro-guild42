@@ -7,8 +7,8 @@ pubDatetime: 2021-01-25T18:00:00+00:00
 title: Fintech – Made in Switzerland
 topics:
   - fintech
-  - React Native
-  - ExpressJS
+  - react native
+  - expressjs
   - kubernetes
 description: The team behind the Relai app - which present the easiest way to invest in Bitcoin in Europe - shows how they scaled their stack and architecture as the startup grows.
 ---
