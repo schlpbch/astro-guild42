@@ -4,7 +4,7 @@ speakers:
   - Richard Stallman
 pubDatetime: 2026-03-11T17:30:00+01:00
 upcoming: true
-title: "Free/Libre Software and Freedom, touching on how they relate to Machine Learning"
+title: "Free/Libre Software and Freedom, Touching on How They Relate to Machine Learning"
 topics:
   - free software
   - freedom
@@ -27,7 +27,7 @@ running of software, and in use of computing services and dis-services, with
 discussion of how this relates to machine learning, including both Artificial
 Intelligence and Pretend Intelligence.
 
-The talk will be held in English. If your interested in merchandise such as cool stickers please bring cash to support the Free Software Foundation!
+The talk will be held in English. If you're interested in merchandise such as _cool stickers_, please bring cash to support the Free Software Foundation!
 
 ## Speaker
 
