@@ -8,7 +8,7 @@ title: "Free/Libre Software and Freedom, Touching on How They Relate to Machine 
 topics:
   - free software
   - freedom
-  - artifical intelligence
+  - artificial intelligence
   - pretend intelligence
   - machine learning
 
