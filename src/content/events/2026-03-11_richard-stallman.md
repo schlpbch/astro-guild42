@@ -27,8 +27,7 @@ running of software, and in use of computing services and dis-services, with
 discussion of how this relates to machine learning, including both Artificial
 Intelligence and Pretend Intelligence.
 
-The talk will be held at **Berner Fachhochschule, Aula, Brückenstrasse 73, 3012
-Bern**. The talk will be held in English.
+The talk will be held in English. If your interested in merchandise such as cool stickers please bring cash to support the Free Software Foundation!
 
 ## Speaker
 
