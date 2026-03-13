@@ -3,7 +3,7 @@ author: Andreas Schlapbach
 speakers:
   - Richard Stallman
 pubDatetime: 2026-03-11T17:30:00+01:00
-upcoming: true
+upcoming: false
 title: "Free/Libre Software and Freedom, Touching on How They Relate to Machine Learning"
 topics:
   - free software
