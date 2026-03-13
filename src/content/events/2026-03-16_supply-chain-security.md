@@ -21,9 +21,9 @@ description: Built Fast, Poorly Protected? Supply Chain Security Between Contain
 
 Over the past few years, security efforts have focused primarily on cloud infrastructure and on preventing or remediating misconfigurations. In modern software development, however, the security of container images is often treated as a secondary concern, with speed of development and convenience taking precedence. Existing components, from libraries to base images, are reused and sourced through complex and opaque supply chains.
 
-Following prominent security incidents such as Log4j and xz, supply chain security has increasingly moved into the spotlight. In 2025, supply chain failures ranked third for the first time in the OWASP Top 10 Critical Security Risks to Web Applications.
+Following prominent security incidents such as [Log4j](https://nvd.nist.gov/vuln/detail/CVE-2021-44228) and [xz](https://en.wikipedia.org/wiki/XZ_Utils_backdoor), supply chain security has increasingly moved into the spotlight. In 2025, supply chain failures ranked third for the first time in the [OWASP Top 10](https://owasp.org/Top10/) Critical Security Risks to Web Applications.
 
-The EU’s Cyber Resilience Act (also applicable in Switzerland) will, starting in 2026, introduce binding requirements to promptly remediate actively exploitable vulnerabilities and to provide complete Software Bills of Materials (SBOMs).
+The EU’s [Cyber Resilience Act](https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act) (also applicable in Switzerland) will, starting in 2026, introduce binding requirements to promptly remediate actively exploitable vulnerabilities and to provide complete [Software Bills of Materials (SBOMs)](https://spdx.dev/).
 
 In this session, we will explore solutions for making software supply chains more secure in the future while simultaneously meeting the requirements of the CRA.
 
