@@ -9,13 +9,14 @@ import { buildEventUrl } from "./url-builder";
  */
 export function buildRssItem({
   data,
-  slug,
+  id,
   body,
 }: {
   data: CollectionEntry<"events">["data"];
-  slug: string;
+  id: string;
   body?: string;
 }): RssItemData {
+  const slug = id;
   const { imageUrl, imageType } = resolveEventImage(data, body);
 
   return {

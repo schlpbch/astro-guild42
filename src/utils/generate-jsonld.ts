@@ -40,7 +40,7 @@ export function generateEventJsonLD(
   event: CollectionEntry<"events">,
   baseUrl: string
 ): JsonLD {
-  const { data, slug } = event;
+  const { data, id: slug } = event;
   const eventUrl = `${baseUrl}events/${slug}/`;
 
   return {

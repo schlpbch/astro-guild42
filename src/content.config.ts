@@ -1,8 +1,9 @@
 import { SITE } from "@config";
 import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
 const events = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/*.md", base: "./src/content/events" }),
   schema: ({ image }) =>
     z.object({
       author: z.string().default(SITE.author),

@@ -22,7 +22,7 @@ export async function getStaticPaths() {
     const totalPages = getPageNumbers(topicPosts.length);
 
     return totalPages.map(page => ({
-      params: { topic, page },
+      params: { topic, page: String(page) },
       props: { topic, topicName },
     }));
   });
