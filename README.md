@@ -31,14 +31,6 @@ Events are stored as Markdown files in `src/content/events/`. Each event file in
 - Front matter with metadata (date, title, speakers, topics, etc.)
 - Event description and details in Markdown format
 
-### Managing Surveys
-
-Survey data and schemas are located in:
-
-- `src/data/surveys/` - Survey response data
-- `src/config/survey-schemas.ts` - Survey structure definitions
-- `scripts/process-survey-data.py` - Data processing utilities
-
 ### Pages and Layouts
 
 - **Pages**: Located in `src/pages/` for route-based pages

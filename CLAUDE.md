@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Guild42 is a static website for a software engineering community in Berne, Switzerland. Built with Astro 5, React, Tailwind CSS, and TypeScript. Deployed to Netlify at guild42.ch.
+Guild42 is a static website for a software engineering community in Berne, Switzerland. Built with Astro 6, Preact, Tailwind CSS, and TypeScript. Deployed to Netlify at guild42.ch.
 
 ## Commands
 
@@ -31,8 +31,6 @@ Package manager is **pnpm** (v10.22).
   - Naming convention: `YYYY_MM_DD_Title.md`
   - Set `draft: true` to exclude from builds; set `upcoming: true` for scheduled future events.
 
-- **Surveys**: Data-driven content in `src/data/surveys/` with schemas defined in `src/config/survey-schemas.ts`. Includes utilities for processing survey data in `src/utils/survey/`.
-
 ### Pages & Routing
 
 - **File-based routing**: `src/pages/` with Astro's standard routing.
@@ -42,7 +40,7 @@ Package manager is **pnpm** (v10.22).
 ### Layouts & Components
 
 - **Layouts**: `Layout.astro` (base HTML), `Events.astro` (event list page), `EventDetails.astro` (single event detail).
-- **Components**: Reusable UI components in `src/components/`. Notable ones: `Header.astro`, `Footer.astro`, `Hero.astro`, `Card.tsx` (React), `Sponsors.astro`, `CodeWindow.astro`.
+- **Components**: Reusable UI components in `src/components/`. Notable ones: `Header.astro`, `Footer.astro`, `Hero.astro`, `Card.tsx` (Preact), `Sponsors.astro`, `CodeWindow.astro`.
 - **Styling**: Tailwind CSS with custom CSS variable-based theming (colors: base, accent, inverted, card, card-muted). Dark/light mode supported via `lightAndDarkMode` in `src/config.ts`. Font: IBM Plex Mono. Typography plugin styles markdown content.
 
 ### Configuration & Utilities
@@ -55,7 +53,6 @@ Package manager is **pnpm** (v10.22).
   - RSS: `rss-item-builder.ts`, `rss-image-resolver.ts`.
   - JSON-LD: `generate-jsonld.ts` (SEO structured data).
   - URL building: `url-builder.ts`.
-  - Survey utilities: `src/utils/survey/` (data processing).
 
 - **Scripts**:
   - `src/scripts/pdf-carousel-client.js`: Client-side PDF carousel functionality.
@@ -95,4 +92,4 @@ Import paths: `@assets/*`, `@components/*`, `@config`, `@content/*`, `@layouts/*
 - **Jampack integration**: Runs after `astro build`. Handles minification, asset optimization, and image compression. Part of the build output, not a separate step.
 - **Markdown processing**: Remark plugins (`remark-toc`, `remark-collapse`) auto-generate table of contents in event content.
 - **Shiki syntax highlighting**: Code blocks in markdown use "one-dark-pro" theme with line wrapping enabled.
-- **React components**: Astro components can import React components via `@astrojs/react` integration for interactive UI elements.
+- **Preact components**: Astro components can import Preact components via `@astrojs/preact` integration for interactive UI elements.
