@@ -15,7 +15,9 @@ import SponsorGrid from "./SponsorGrid.astro";
 
 <style>
   @reference "../styles/base.css";
-  a {
-    @apply relative text-amber-400 hover:decoration-dashed underline-offset-4 hover:underline hover:decoration-amber-600 focus-visible:p-1 dark:text-amber-600;
+  @layer components {
+    a {
+      @apply relative text-amber-400 hover:decoration-dashed underline-offset-4 hover:underline hover:decoration-amber-600 focus-visible:p-1 dark:text-amber-600;
+    }
   }
 </style>

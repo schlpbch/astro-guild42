@@ -85,7 +85,9 @@ import SocialLink from "@components/SocialLink.astro";
 </Layout>
 <style>
   @reference "../styles/base.css";
-  a {
-    @apply relative text-amber-400 decoration-dashed underline-offset-4 hover:underline hover:decoration-amber-600 focus-visible:p-1;
+  @layer components {
+    a {
+      @apply relative text-amber-400 decoration-dashed underline-offset-4 hover:underline hover:decoration-amber-600 focus-visible:p-1;
+    }
   }
 </style>

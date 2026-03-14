@@ -33,22 +33,24 @@ attractiveness of Berne as a place to develop great software!
 
 <style>
   @reference "../styles/base.css";
-  span.t.keyword {
-    @apply text-blue-400;
-  }
-  span.t.bracket {
-    @apply text-yellow-400;
-  }
-  span.t.def {
-    @apply text-red-500;
-  }
-  span.t.comment {
-    @apply text-cyan-500;
-  }
-  span.t.number {
-    @apply text-blue-300;
-  }
-  span.t.method {
-    @apply text-yellow-300;
+  @layer components {
+    span.t.keyword {
+      @apply text-blue-400;
+    }
+    span.t.bracket {
+      @apply text-yellow-400;
+    }
+    span.t.def {
+      @apply text-red-500;
+    }
+    span.t.comment {
+      @apply text-cyan-500;
+    }
+    span.t.number {
+      @apply text-blue-300;
+    }
+    span.t.method {
+      @apply text-yellow-300;
+    }
   }
 </style>

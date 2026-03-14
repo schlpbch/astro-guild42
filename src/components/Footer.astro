@@ -36,10 +36,12 @@ const { noMarginTop = false } = Astro.props;
 </footer>
 <style>
   @reference "../styles/base.css";
-  footer {
-    @apply w-full;
-  }
-  .footer-wrapper {
-    @apply flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4;
+  @layer components {
+    footer {
+      @apply w-full;
+    }
+    .footer-wrapper {
+      @apply flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4;
+    }
   }
 </style>
