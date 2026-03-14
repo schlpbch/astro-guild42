@@ -35,9 +35,9 @@ pastEvents = getSortedPastEvents(pastEvents);
         <section class="py-8">
           <h2 class="text-2xl font-semibold tracking-wide">Upcoming Events</h2>
           <ul>
-            {forthcomingEvents.map(({ data, slug }) => (
+            {forthcomingEvents.map(({ data, id }) => (
               <Card
-                href={`/events/${slug}/`}
+                href={`/events/${id}/`}
                 frontmatter={data}
                 secHeading={false}
               />
@@ -53,10 +53,10 @@ pastEvents = getSortedPastEvents(pastEvents);
           <h2>Past Events</h2>
           <ul>
             {pastEvents.map(
-              ({ data, slug }, index) =>
+              ({ data, id }, index) =>
                 index < 2 && (
                   <Card
-                    href={`/events/${slug}/`}
+                    href={`/events/${id}/`}
                     frontmatter={data}
                     secHeading={false}
                   />
