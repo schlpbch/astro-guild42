@@ -3,7 +3,7 @@ author: Daniel Marthaler
 speakers:
   - Raphaela Seeger
   - Christoph Raaflaub
-pubDatetime: 2026-03-16T18:00:00+00:00
+pubDatetime: 2026-03-16T18:00:00+01:00
 upcoming: true
 title: "Supply Chain Security"
 topics:

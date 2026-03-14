@@ -1,7 +1,7 @@
 ---
 author: Florian Kammermann
 speakers: []
-pubDatetime: 2026-11-02T18:00:00+00:00
+pubDatetime: 2026-11-02T18:00:00+01:00
 upcoming: true
 title: "Trust by Design"
 topics:

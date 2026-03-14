@@ -1,7 +1,7 @@
 ---
 author: Steve Bechstein
 speakers: []
-pubDatetime: 2026-10-12T18:00:00+00:00
+pubDatetime: 2026-10-12T18:00:00+01:00
 upcoming: true
 title: "Is Software Engineering in Bern Dying - or Just Evolving?"
 topics:
