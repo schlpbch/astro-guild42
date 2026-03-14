@@ -1,5 +1,6 @@
 import Fuse from "fuse.js";
-import { useEffect, useRef, useState, useMemo } from "react";
+import { useEffect, useRef, useState, useMemo } from "preact/hooks";
+import type { JSX } from "preact";
 import Card from "@components/Card";
 import type { CollectionEntry } from "astro:content";
 
@@ -26,10 +27,6 @@ export default function SearchBar({ searchList }: Props) {
     null
   );
 
-  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
-    setInputVal(e.currentTarget.value);
-  };
-
   const fuse = useMemo(
     () =>
       new Fuse(searchList, {
@@ -41,6 +38,11 @@ export default function SearchBar({ searchList }: Props) {
     [searchList]
   );
 
+  const handleChange = (e: JSX.TargetedEvent<HTMLInputElement>) => {
+    const newVal = (e.target as HTMLInputElement).value;
+    setInputVal(newVal);
+  };
+
   useEffect(() => {
     // if URL has search query,
     // insert that search query in input field
@@ -50,16 +52,22 @@ export default function SearchBar({ searchList }: Props) {
 
     // put focus cursor at the end of the string
     setTimeout(function () {
-      inputRef.current!.selectionStart = inputRef.current!.selectionEnd =
-        searchStr?.length || 0;
+      if (inputRef.current && searchStr) {
+        inputRef.current.selectionStart = inputRef.current.selectionEnd =
+          searchStr.length;
+      }
     }, 50);
   }, []);
 
   useEffect(() => {
     // Add search result only if
     // input value is more than one character
-    let inputResult = inputVal.length > 1 ? fuse.search(inputVal) : [];
-    setSearchResults(inputResult);
+    if (inputVal.length > 1) {
+      const inputResult = fuse.search(inputVal);
+      setSearchResults(inputResult);
+    } else {
+      setSearchResults(null);
+    }
 
     // Update search string in URL
     if (inputVal.length > 0) {
@@ -71,7 +79,7 @@ export default function SearchBar({ searchList }: Props) {
     } else {
       history.replaceState(history.state, "", window.location.pathname);
     }
-  }, [inputVal]);
+  }, [inputVal, fuse]);
 
   return (
     <>
@@ -88,7 +96,7 @@ export default function SearchBar({ searchList }: Props) {
           type="text"
           name="search"
           value={inputVal}
-          onChange={handleChange}
+          onInput={handleChange}
           autoComplete="off"
           // autoFocus
           ref={inputRef}

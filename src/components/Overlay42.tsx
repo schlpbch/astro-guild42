@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "preact/hooks";
 
 export default function Overlay42() {
   const [open, setOpen] = useState(true);

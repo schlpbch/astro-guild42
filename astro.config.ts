@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
-import react from "@astrojs/react";
+import preact from "@astrojs/preact";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
@@ -14,7 +14,7 @@ export default defineConfig({
     "/event/http-caching-varnish": "/events/http-caching-varnish",
     "/event/12-anniversary": "/events",
   },
-  integrations: [react(), sitemap()],
+  integrations: [preact(), sitemap()],
   markdown: {
     remarkPlugins: [
       remarkToc,
@@ -34,9 +34,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
-    },
-    ssr: {
-      noExternal: ["@observablehq/plot"],
     },
   },
   scopedStyleStrategy: "where",
