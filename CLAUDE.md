@@ -16,6 +16,7 @@ pnpm lint             # ESLint
 pnpm format:check     # Prettier check
 pnpm format           # Prettier fix
 pnpm sync             # Sync Astro content collections
+pnpm test             # Run Playwright E2E tests (starts dev server automatically)
 pnpm cz               # Commitizen for conventional commit messages
 ```
 
