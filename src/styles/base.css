@@ -1,6 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer theme, base, components, utilities;
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-skin-fill: rgb(var(--color-fill));
+  --color-skin-accent: rgb(var(--color-accent));
+  --color-skin-base: rgb(var(--color-text-base));
+  --color-skin-card: rgb(var(--color-card));
+  --color-skin-card-muted: rgb(var(--color-card-muted));
+  --color-skin-line: rgb(var(--color-border));
+  --font-family-mono: "IBM Plex Mono", monospace;
+}
+
+@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 @layer base {
   @font-face {
@@ -95,43 +108,43 @@
     display: block;
   }
   body {
-    @apply flex min-h-[100svh] flex-col bg-skin-fill font-mono text-skin-base 
-    selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;
+    @apply flex min-h-[100svh] flex-col bg-skin-fill font-mono text-skin-base
+    selection:bg-skin-accent/70 selection:text-skin-fill;
   }
   section,
   footer {
     @apply mx-auto max-w-4xl px-4;
   }
   a {
-    @apply outline-2 outline-offset-1 outline-skin-fill 
+    @apply outline-none
+    focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-skin-accent
     focus-visible:no-underline focus-visible:outline-dashed;
   }
   svg {
     @apply inline-block h-6 w-6 fill-skin-base group-hover:fill-skin-accent;
   }
   svg.icon-tabler {
-    @apply inline-block h-6 w-6 scale-125 fill-transparent 
-    stroke-current stroke-2 opacity-90 group-hover:fill-transparent 
+    @apply inline-block h-6 w-6 scale-125 fill-transparent
+    stroke-current stroke-2 opacity-90 group-hover:fill-transparent
     sm:scale-110;
   }
   .prose {
-    @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
-    prose-h3:italic prose-p:!text-skin-base 
+    @apply prose-headings:!mb-3 prose-headings:!text-skin-base
+    prose-h3:italic prose-p:!text-skin-base
     prose-a:!text-skin-base prose-a:!decoration-dashed prose-a:underline-offset-4
     hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent
-    prose-blockquote:border-opacity-50 prose-blockquote:opacity-80
+    prose-blockquote:border-skin-accent/50 prose-blockquote:opacity-80
     prose-figcaption:!text-skin-base prose-figcaption:opacity-70
     prose-strong:!text-skin-base
 
-    
-    prose-code:rounded prose-code:bg-skin-card 
-    prose-code:bg-opacity-75 prose-code:p-1 
+
+    prose-code:rounded prose-code:bg-skin-card/75 prose-code:p-1
     prose-code:before:!content-none prose-code:after:!content-none
-    prose-ol:!text-skin-base 
+    prose-ol:!text-skin-base
     prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent
     prose-table:text-skin-base prose-th:border
-    prose-th:border-skin-line prose-td:border 
-    prose-td:border-skin-line prose-img:!my-2 
+    prose-th:border-skin-line prose-td:border
+    prose-td:border-skin-line prose-img:!my-2
     prose-img:mx-auto prose-img:border-0
     prose-img:border-skin-line prose-hr:!border-skin-line;
   }
@@ -154,6 +167,13 @@
   }
   .prose h2#table-of-contents + p {
     @apply hidden;
+  }
+  /* typography plugin: don't override pre/code colors */
+  .prose pre {
+    color: inherit;
+  }
+  .prose code {
+    color: inherit;
   }
 
   /* ===== scrollbar ===== */
@@ -191,11 +211,10 @@
   }
 }
 
-@layer components {
-  .display-none {
-    @apply hidden;
-  }
-  .focus-outline {
-    @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
-  }
+@utility display-none {
+  display: none;
+}
+
+@utility focus-outline {
+  @apply outline-none focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-skin-accent focus-visible:no-underline focus-visible:outline-dashed;
 }

@@ -18,7 +18,10 @@ import SponsorGrid from "@components/SponsorGrid.astro";
 </Layout>
 
 <style>
-  a {
-    @apply hover:text-skin-accent;
+  @reference "../styles/base.css";
+  @layer components {
+    a {
+      @apply hover:text-skin-accent;
+    }
   }
 </style>

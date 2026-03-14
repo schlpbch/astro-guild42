@@ -26,10 +26,13 @@ const { centered = false } = Astro.props;
 </div>
 
 <style>
-  .social-icons {
-    @apply flex-wrap justify-center gap-1;
-  }
-  .link-button {
-    @apply p-2 hover:rotate-6 sm:p-1;
+  @reference "../styles/base.css";
+  @layer components {
+    .social-icons {
+      @apply flex-wrap justify-center gap-1;
+    }
+    .link-button {
+      @apply p-2 hover:rotate-6 sm:p-1;
+    }
   }
 </style>

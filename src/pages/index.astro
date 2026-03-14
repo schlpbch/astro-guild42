@@ -83,43 +83,46 @@ pastEvents = getSortedPastEvents(pastEvents);
 </Layout>
 
 <style>
-  /* ===== Hero Section ===== */
-  #hero {
-    @apply pb-6 pt-8;
-  }
-  #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
-  }
-  #hero .rss-link {
-    @apply mb-6;
-  }
-  #hero .rss-icon {
-    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
-  }
-  #hero p {
-    @apply my-2;
-  }
-  .social-wrapper {
-    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
-  }
-  .social-links {
-    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
-  }
+  @reference "../styles/base.css";
+  @layer components {
+    /* ===== Hero Section ===== */
+    #hero {
+      @apply pb-6 pt-8;
+    }
+    #hero h1 {
+      @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+    }
+    #hero .rss-link {
+      @apply mb-6;
+    }
+    #hero .rss-icon {
+      @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+    }
+    #hero p {
+      @apply my-2;
+    }
+    .social-wrapper {
+      @apply mt-4 flex flex-col sm:flex-row sm:items-center;
+    }
+    .social-links {
+      @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
+    }
 
-  /* ===== upcoming & Recent Posts Sections ===== */
-  #upcoming,
-  #recent-events {
-    @apply pb-6 pt-12;
-  }
-  #upcoming h2,
-  #recent-events h2 {
-    @apply text-2xl font-semibold tracking-wide;
-  }
-  #main-content h1 {
-    @apply inline-block bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-lg font-semibold tracking-tighter text-transparent sm:my-8 sm:text-4xl;
-  }
+    /* ===== upcoming & Recent Posts Sections ===== */
+    #upcoming,
+    #recent-events {
+      @apply pb-6 pt-12;
+    }
+    #upcoming h2,
+    #recent-events h2 {
+      @apply text-2xl font-semibold tracking-wide;
+    }
+    #main-content h1 {
+      @apply inline-block bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-lg font-semibold tracking-tighter text-transparent sm:my-8 sm:text-4xl;
+    }
 
-  .all-events-btn-wrapper {
-    @apply my-8 text-center;
+    .all-events-btn-wrapper {
+      @apply my-8 text-center;
+    }
   }
 </style>
