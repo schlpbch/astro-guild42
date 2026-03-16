@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://engineering.purdue.edu/ece264/16au/static/.vimrc.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>.vimrc</title>
+	<style>
+	.hll { background-color: #ffffcc }
+.c { color: #408080; font-style: italic } /* Comment */
+.err { border: 1px solid #FF0000 } /* Error */
+.k { color: #008000; font-weight: bold } /* Keyword */
+.o { color: #666666 } /* Operator */
+.ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.cp { color: #BC7A00 } /* Comment.Preproc */
+.cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.c1 { color: #408080; font-style: italic } /* Comment.Single */
+.cs { color: #408080; font-style: italic } /* Comment.Special */
+.gd { color: #A00000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #FF0000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #00A000 } /* Generic.Inserted */
+.go { color: #888888 } /* Generic.Output */
+.gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #0044DD } /* Generic.Traceback */
+.kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #008000 } /* Keyword.Pseudo */
+.kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #B00040 } /* Keyword.Type */
+.m { color: #666666 } /* Literal.Number */
+.s { color: #BA2121 } /* Literal.String */
+.na { color: #7D9029 } /* Name.Attribute */
+.nb { color: #008000 } /* Name.Builtin */
+.nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.no { color: #880000 } /* Name.Constant */
+.nd { color: #AA22FF } /* Name.Decorator */
+.ni { color: #999999; font-weight: bold } /* Name.Entity */
+.ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.nf { color: #0000FF } /* Name.Function */
+.nl { color: #A0A000 } /* Name.Label */
+.nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.nt { color: #008000; font-weight: bold } /* Name.Tag */
+.nv { color: #19177C } /* Name.Variable */
+.ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mb { color: #666666 } /* Literal.Number.Bin */
+.mf { color: #666666 } /* Literal.Number.Float */
+.mh { color: #666666 } /* Literal.Number.Hex */
+.mi { color: #666666 } /* Literal.Number.Integer */
+.mo { color: #666666 } /* Literal.Number.Oct */
+.sb { color: #BA2121 } /* Literal.String.Backtick */
+.sc { color: #BA2121 } /* Literal.String.Char */
+.sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.s2 { color: #BA2121 } /* Literal.String.Double */
+.se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.sh { color: #BA2121 } /* Literal.String.Heredoc */
+.si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.sx { color: #008000 } /* Literal.String.Other */
+.sr { color: #BB6688 } /* Literal.String.Regex */
+.s1 { color: #BA2121 } /* Literal.String.Single */
+.ss { color: #19177C } /* Literal.String.Symbol */
+.bp { color: #008000 } /* Name.Builtin.Pseudo */
+.vc { color: #19177C } /* Name.Variable.Class */
+.vg { color: #19177C } /* Name.Variable.Global */
+.vi { color: #19177C } /* Name.Variable.Instance */
+.il { color: #666666 } /* Literal.Number.Integer.Long */
+	</style>
+  </head>
+  <body><div class="highlight"><pre><span></span><span class="c">"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="c">"</span>
+<span class="c">" .vimrc file of Alex Quinn</span>
+<span class="c">" License:  public domain (use as you please, no credit needed)</span>
+<span class="c">"</span>
+<span class="c">" vim: set tabstop=4 shiftwidth=4 fileencoding=utf8 expandtab:</span>
+
+<span class="k">set</span> <span class="nb">nocompatible</span> <span class="c">" Use VIM settings rather than Vi settings; this *must* be</span>
+<span class="c">                 " first in .vimrc</span>
+
+<span class="c">"_________________________________________________________________________</span>
+<span class="c">" GENERAL SETTINGS</span>
+<span class="c">"</span>
+
+<span class="k">set</span> <span class="nb">autoindent</span>           <span class="c">" copy indent from the current line when starting a new line</span>
+<span class="k">set</span> <span class="nb">backspace</span><span class="p">=</span><span class="m">2</span>          <span class="c">" allow backspacing over everything in insert mode</span>
+<span class="k">set</span> <span class="k">history</span><span class="p">=</span><span class="m">50</span>           <span class="c">" keep 50 lines of command line history</span>
+<span class="k">set</span> <span class="nb">ignorecase</span>           <span class="c">" search commands are case-insensitive</span>
+<span class="k">set</span> <span class="nb">incsearch</span>            <span class="c">" while typing a search command, show matches incrementally</span>
+<span class="c">                         " instead of waiting for you to press enter</span>
+<span class="k">set</span> <span class="nb">mouse</span><span class="p">=</span><span class="k">a</span>              <span class="c">" enable mouse interaction</span>
+<span class="k">set</span> <span class="k">number</span>               <span class="c">" line numbers at the side</span>
+<span class="k">set</span> <span class="nb">ruler</span>                <span class="c">" show the cursor position all the time</span>
+<span class="k">set</span> <span class="nb">shiftwidth</span><span class="p">=</span><span class="m">4</span>         <span class="c">" pressing &gt;&gt; or &lt;&lt; in normal mode indents by 4 characters</span>
+<span class="k">set</span> <span class="nb">tabstop</span><span class="p">=</span><span class="m">4</span>            <span class="c">" a tab character indents to the 4th (or 8th, 12th, etc.) column</span>
+<span class="k">set</span> <span class="nb">viminfo</span><span class="p">=</span><span class="s1">'20,\"50     " read/write a .viminfo file, don'</span><span class="k">t</span> store <span class="nb">more</span> than <span class="m">50</span> <span class="nb">lines</span> of <span class="k">registers</span>
+<span class="k">set</span> <span class="nb">encoding</span><span class="p">=</span>utf8        <span class="c">" non-ascii characters are encoded with UTF-8 by default</span>
+<span class="k">set</span> <span class="nb">noexpandtab</span>          <span class="c">" pressing the tab key creates a tab character, not spaces</span>
+<span class="k">set</span> <span class="nb">formatoptions</span><span class="p">=</span>croq   <span class="c">" c=autowrap comments, r=continue comment on &lt;enter&gt;,</span>
+<span class="c">                         " o=continue comment on o or O, q=allow format comment with gqgq</span>
+<span class="k">set</span> <span class="nb">textwidth</span><span class="p">=</span><span class="m">0</span>          <span class="c">" no forced wrapping in any file type (unless overridden)</span>
+<span class="k">set</span> <span class="nb">showcmd</span>              <span class="c">" show length of visual selection (docs recommended</span>
+<span class="c">                         " keeping this off when working over slow connections)</span>
+<span class="k">set</span> <span class="nb">complete</span><span class="p">=</span>.<span class="p">,</span><span class="k">w</span><span class="p">,</span><span class="k">b</span><span class="p">,</span><span class="k">u</span>     <span class="c">" make autocomplete faster - http://www.mail-archive.com/vim@vim.org/msg03963.html</span>
+<span class="k">set</span> <span class="nb">splitright</span>           <span class="c">" create vertical splits to the right</span>
+<span class="k">set</span> <span class="nb">splitbelow</span>           <span class="c">" create horizontal splits below</span>
+
+<span class="k">set</span> <span class="nb">switchbuf</span><span class="p">=</span>usetab     <span class="c">" when switching buffers, include tabs</span>
+<span class="k">set</span> <span class="nb">tabpagemax</span><span class="p">=</span><span class="m">30</span>        <span class="c">" show up to 30 tabs</span>
+
+<span class="k">set</span> <span class="nb">cryptmethod</span><span class="p">=</span>blowfish <span class="c">" use blowfish encryption for encrytped files</span>
+<span class="k">let</span> <span class="k">g</span>:netrw_mouse_maps<span class="p">=</span><span class="m">0</span> <span class="c">" Ignore mouse clicks when browsing directories</span>
+
+<span class="c">"_________________________________________________________________________</span>
+<span class="c">" Create command to disable mouse and arrow keys if you wish (mainly for HW01)</span>
+<span class="c">"</span>
+<span class="k">function</span><span class="p">!</span> DisableMouseAndArrowKeys<span class="p">()</span>
+	map <span class="p">&lt;</span><span class="k">up</span><span class="p">&gt;</span>   <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+	map <span class="p">&lt;</span>down<span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+	map <span class="p">&lt;</span><span class="k">left</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+	map <span class="p">&lt;</span><span class="k">up</span><span class="p">&gt;</span>   <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+	<span class="k">set</span> <span class="nb">mouse</span><span class="p">=</span>
+<span class="k">endfunction</span>
+command DisableMouseAndArrowKeys :<span class="k">call</span> DisableMouseAndArrowKeys<span class="p">()</span>
+
+
+<span class="c">"_________________________________________________________________________</span>
+<span class="c">" MAPPINGS for normal mode</span>
+<span class="c">"</span>
+
+<span class="c">" F1 - help on some command</span>
+map <span class="p">&lt;</span>F1<span class="p">&gt;</span> :<span class="k">h</span> 
+
+<span class="c">" F2 - open file in new tab</span>
+map <span class="p">&lt;</span>F2<span class="p">&gt;</span> :<span class="k">tabe</span> 
+
+<span class="c">" F3 - save current file</span>
+map <span class="p">&lt;</span>F3<span class="p">&gt;</span> :<span class="k">w</span><span class="p">&lt;</span>CR<span class="p">&gt;</span>
+
+<span class="c">" F4 - exit</span>
+map <span class="p">&lt;</span>F4<span class="p">&gt;</span> :<span class="k">q</span><span class="p">&lt;</span>CR<span class="p">&gt;</span>
+
+<span class="c">" Shift-F4 - exit without saving</span>
+map <span class="p">&lt;</span>S<span class="p">-</span>F4<span class="p">&gt;</span> :<span class="k">q</span><span class="p">!&lt;</span>CR<span class="p">&gt;</span>
+
+<span class="c">" F6 - switch to next split</span>
+map <span class="p">&lt;</span>F6<span class="p">&gt;</span> <span class="p">&lt;</span>C<span class="p">-</span>W<span class="p">&gt;&lt;</span>C<span class="p">-</span>W<span class="p">&gt;</span>
+
+<span class="c">" Shift-F6 - switch to next split, in reverse order</span>
+map <span class="p">&lt;</span>S<span class="p">-</span>F6<span class="p">&gt;</span> <span class="p">&lt;</span>C<span class="p">-</span>W<span class="p">&gt;</span>W
+
+<span class="c">" F7 - Start search command, delimited by comma</span>
+nmap <span class="p">&lt;</span>F7<span class="p">&gt;</span> :%s<span class="p">,</span>
+
+<span class="c">" F8 - stop highlighting search results</span>
+map <span class="p">&lt;</span>F8<span class="p">&gt;</span> :<span class="k">noh</span><span class="p">&lt;</span>CR<span class="p">&gt;</span>
+
+<span class="c">" F9 - change a setting</span>
+map <span class="p">&lt;</span>F9<span class="p">&gt;</span> :<span class="k">set</span> 
+
+<span class="c">" Shift-F9 - change a setting, only in current tab/buffer</span>
+map <span class="p">&lt;</span>S<span class="p">-</span>F9<span class="p">&gt;</span> :<span class="k">setlocal</span> 
+
+<span class="c">" F12 - toggle display of whitespace</span>
+nmap <span class="p">&lt;</span>F12<span class="p">&gt;</span> :<span class="k">set</span> <span class="nb">invlist</span><span class="p">&lt;</span>CR<span class="p">&gt;</span>
+
+<span class="c">" ; (semicolon) - same as : (colon)</span>
+nmap ; :
+
+<span class="c">" ' ' (space) - same as : (colon)</span>
+nmap <span class="p">&lt;</span>SPACE<span class="p">&gt;</span> :
+
+<span class="c">" [ (left bracket) - change tabs to the left</span>
+<span class="nb">nnoremap</span> <span class="p">&lt;</span>s<span class="p">-</span><span class="k">tab</span><span class="p">&gt;</span> gT
+
+<span class="c">" [ (right bracket) - change tabs to the right</span>
+<span class="nb">nnoremap</span> <span class="p">&lt;</span><span class="k">tab</span><span class="p">&gt;</span> gt
+
+
+<span class="c">"_________________________________________________________________________</span>
+<span class="c">" MAPPINGS for insert mode</span>
+<span class="c">"</span>
+
+<span class="c">" F2 - add another item to a comma-separated list of strings</span>
+imap <span class="p">&lt;</span>F2<span class="p">&gt;</span> <span class="p">&lt;</span>RIGHT<span class="p">&gt;,</span> <span class="s2">""</span><span class="p">&lt;</span>LEFT<span class="p">&gt;</span>
+
+<span class="c">" F3 - autocomplete, backward</span>
+<span class="nb">inoremap</span> <span class="p">&lt;</span>F3<span class="p">&gt;</span> <span class="p">&lt;</span>C<span class="p">-</span>P<span class="p">&gt;</span>
+
+<span class="c">" F4 - autocomplete, forward</span>
+<span class="nb">inoremap</span> <span class="p">&lt;</span>F4<span class="p">&gt;</span> <span class="p">&lt;</span>C<span class="p">-</span>N<span class="p">&gt;</span>
+
+<span class="c">" F5 - underscore (to save pinky finger)</span>
+map<span class="p">!</span> <span class="p">&lt;</span>F5<span class="p">&gt;</span> _
+
+<span class="c">" F6 - pair of curly braces, continue typing inside them</span>
+map<span class="p">!</span> <span class="p">&lt;</span>F6<span class="p">&gt;</span> {}<span class="p">&lt;</span>LEFT<span class="p">&gt;</span>
+
+<span class="c">" F7 - pair of parentheses, continue typing after them</span>
+map<span class="p">!</span> <span class="p">&lt;</span>F7<span class="p">&gt;</span> <span class="p">()</span>
+
+<span class="c">" F8 - pair of parentheses, continue typing inside them</span>
+map<span class="p">!</span> <span class="p">&lt;</span>F8<span class="p">&gt;</span> <span class="p">()&lt;</span>LEFT<span class="p">&gt;</span>
+
+<span class="c">" F9 - pair of parentheses with extra spaces inside, continue typing inside them</span>
+map<span class="p">!</span> <span class="p">&lt;</span>F9<span class="p">&gt;</span> <span class="p">(</span>  <span class="p">)&lt;</span>LEFT<span class="p">&gt;&lt;</span>LEFT<span class="p">&gt;</span>
+
+<span class="c">" F10 - pair of double quotation marks, continue typing inside them</span>
+map<span class="p">!</span> <span class="p">&lt;</span>F10<span class="p">&gt;</span> <span class="s2">""</span><span class="p">&lt;</span>LEFT<span class="p">&gt;</span>
+
+<span class="c">" Shift-F10 - pair of single quotation marks, continue typing inside them</span>
+map<span class="p">!</span> <span class="p">&lt;</span>S<span class="p">-</span>F10<span class="p">&gt;</span> <span class="s1">''</span><span class="p">&lt;</span>LEFT<span class="p">&gt;</span>
+
+<span class="c">" F11 - pair of square brackets, continue typing inside them</span>
+map<span class="p">!</span> <span class="p">&lt;</span>F11<span class="p">&gt;</span> []<span class="p">&lt;</span>LEFT<span class="p">&gt;</span>
+
+<span class="c">" F12 - pair of angle brackets, continue typing inside them</span>
+map<span class="p">!</span> <span class="p">&lt;</span>F12<span class="p">&gt;</span> <span class="p">&lt;&gt;&lt;</span>LEFT<span class="p">&gt;</span>
+
+
+<span class="c">"_________________________________________________________________________</span>
+<span class="c">" PLUGINS</span>
+<span class="c">"</span>
+<span class="c">" We are making some plugins and color schemes available to all students.</span>
+<span class="c">" For a list, enter the following from bash:</span>
+<span class="c">"   $ ls /home/shay/a/ece264s0/16au/vimfiles/{bundle,colors}</span>
+<span class="c">"</span>
+<span class="c">" As of 8/1/2016, it included these plugins:  airline, commentary, easy-align,</span>
+<span class="c">" LargeFile, multiple-cursors, Rename, SimpylFold, snipmate, surround.</span>
+<span class="c">"</span>
+<span class="c">" We use the Pathogen plugin manager.  (https://github.com/tpope/vim-pathogen)</span>
+<span class="k">if</span> filereadable<span class="p">(</span><span class="s1">'/home/shay/a/ece264s0/16au/vimfiles/autoload/pathogen.vim'</span><span class="p">)</span>
+	<span class="k">let</span> &amp;<span class="nb">runtimepath</span><span class="p">=</span><span class="s1">'/home/shay/a/ece264s0/16au/vimfiles,'</span> . &amp;<span class="nb">runtimepath</span>
+	execute pathogen#infect<span class="p">()</span>
+<span class="k">endif</span>
+
+<span class="c">" hotkeys for easy-align plugin, if installed</span>
+<span class="k">if</span> exists<span class="p">(</span><span class="s2">":EasyAlign"</span><span class="p">)</span>
+	nmap <span class="k">g</span><span class="p">&lt;</span><span class="k">tab</span><span class="p">&gt;</span> <span class="p">&lt;</span>Plug<span class="p">&gt;(</span>EasyAlign<span class="p">)</span> 
+	xmap <span class="k">g</span><span class="p">&lt;</span><span class="k">tab</span><span class="p">&gt;</span> <span class="p">&lt;</span>Plug<span class="p">&gt;(</span>EasyAlign<span class="p">)</span>
+<span class="k">endif</span>
+
+
+<span class="c">"_________________________________________________________________________</span>
+<span class="c">" COLORS</span>
+<span class="c">"</span>
+<span class="k">if</span> &amp;<span class="nb">t_Co</span> <span class="p">&gt;</span> <span class="m">2</span> <span class="p">||</span> has<span class="p">(</span><span class="s2">"gui_running"</span><span class="p">)</span>
+	<span class="k">try</span>
+		<span class="k">colorscheme</span> summerfruit256 <span class="c">" might not be on every system</span>
+	<span class="k">catch</span> <span class="sr">/^Vim\%((\a\+)\)\=:E185/</span>
+		<span class="k">colorscheme</span> slate          <span class="c">" backup, in case summerfruit was not available</span>
+	<span class="k">endtry</span>
+
+    <span class="nb">syntax</span> <span class="k">on</span>
+<span class="k">endif</span>
+
+
+<span class="c">"_________________________________________________________________________</span>
+<span class="c">" GUI OPTIONS - only affects gvim</span>
+<span class="c">"</span>
+<span class="k">if</span> has<span class="p">(</span><span class="s2">"gui_running"</span><span class="p">)</span>
+    <span class="k">set</span> <span class="nb">hlsearch</span>                <span class="c">" Highlight last used search pattern</span>
+    <span class="k">au</span> <span class="nb">GUIEnter</span> * <span class="k">simalt</span> <span class="p">~</span><span class="k">x</span>     <span class="c">" Start maximized</span>
+    <span class="k">set</span> <span class="nb">guioptions</span><span class="p">-=</span>T           <span class="c">" No toolbar</span>
+    <span class="k">set</span> <span class="nb">guioptions</span><span class="p">-=</span><span class="k">m</span>           <span class="c">" No menus</span>
+    <span class="k">set</span> <span class="nb">guioptions</span><span class="p">-=</span>L           <span class="c">" No left scrollbar</span>
+    <span class="k">set</span> <span class="nb">guioptions</span><span class="p">-=</span><span class="k">r</span>           <span class="c">" No right scrollbar</span>
+<span class="k">endif</span>
+
+
+<span class="c">"_________________________________________________________________________</span>
+<span class="c">" AUTOMATIC BACKUP FILES</span>
+<span class="c">"</span>
+<span class="c">" Enable backup files - Every time you save a file, it will create a copy of the file</span>
+<span class="c">" called &lt;filename&gt;~ (e.g., file.txt~) in the directory ~/.vim_backup_files/.</span>
+<span class="c">" This is *NOT* a comphrehensive backup solution, but it can help sometimes.</span>
+<span class="c">"</span>
+<span class="k">let</span> &amp;<span class="nb">backupdir</span><span class="p">=(</span>$HOME . <span class="s1">'/.vim_backup_files'</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">!</span> isdirectory<span class="p">(</span>&amp;<span class="nb">backupdir</span><span class="p">)</span>
+	<span class="k">call</span> mkdir<span class="p">(</span>&amp;<span class="nb">backupdir</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="m">0700</span><span class="p">)</span>
+<span class="k">endif</span>
+<span class="k">set</span> <span class="nb">backup</span>
+</pre></div>
+
+
+<div id="give-freely-root-bcjindcccaagfpapjjmafapmmgkkhgoa" class="give-freely-root" data-extension-id="bcjindcccaagfpapjjmafapmmgkkhgoa" data-extension-name="JSON Formatter" style="display: block;"><template shadowrootmode="open"><style>
+  :host {
+    all: initial;
+  }
+
+  .gf-scroll-remove::-webkit-scrollbar {
+    border-radius-bottom-right: 15px;
+  }
+
+  button {
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+
+  .give-freely-close-button:hover {
+    opacity: 0.7;
+  }
+
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 1em 0;
+  }
+
+  dialog::backdrop  {
+    background-color: revert;
+  }
+
+  dialog.backdrop-hidden::backdrop  {
+    background-color: transparent;
+  }
+</style><div><div class="gf-app"></div></div></template></div></body></html>
