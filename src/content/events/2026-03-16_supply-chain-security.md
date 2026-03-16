@@ -4,7 +4,7 @@ speakers:
   - Raphaela Seeger
   - Christoph Raaflaub
 pubDatetime: 2026-03-16T18:00:00+01:00
-upcoming: true
+upcoming: false
 title: "Supply Chain Security"
 topics:
   - open source

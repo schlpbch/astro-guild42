@@ -30,8 +30,8 @@ const { currentPage, totalPages, paginatedPosts, topic, topicName } =
     <h1 slot="title" transition:name={topic}>{`Topic:${topic}`}</h1>
     <ul>
       {
-        paginatedPosts.map(({ data, slug }) => (
-          <Card href={`/events/${slug}/`} frontmatter={data} />
+        paginatedPosts.map(({ data, id }) => (
+          <Card href={`/events/${id}/`} frontmatter={data} />
         ))
       }
     </ul>

@@ -6,8 +6,8 @@ import type { CollectionEntry } from "astro:content";
 export type SearchItem = {
   title: string;
   description: string;
-  data: CollectionEntry<"blog">["data"];
-  slug: string;
+  data: CollectionEntry<"events">["data"];
+  id: string;
 };
 
 interface Props {

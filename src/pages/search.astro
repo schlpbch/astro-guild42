@@ -13,11 +13,11 @@ const events = await getCollection("events", ({ data }) => !data.draft);
 const sortedEvents = getSortedEvents(events);
 
 // List of items to search in
-const searchList = sortedEvents.map(({ data, slug }) => ({
+const searchList = sortedEvents.map(({ data, id }) => ({
   title: data.title,
   description: data.description,
   data,
-  slug,
+  id,
 }));
 ---
 

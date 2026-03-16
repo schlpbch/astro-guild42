@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/schlpbch/astro-guild42"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -22,7 +25,7 @@
     "prepare": "husky",
     "test": "playwright test",
     "lint": "eslint .",
-    "deploy": "netlify deploy --prod"
+    "deploy": "pnpx netlify deploy --prod"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.8",
