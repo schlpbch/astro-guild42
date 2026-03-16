@@ -3,6 +3,12 @@
   "version": "1.3.0",
   "type": "module",
   "private": false,
+  "author": "Andreas Schlapbach <schlpbch@gmail.com>",
+  "description": "The official website of Guild42",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schlpbch/astro-guild42"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -54,6 +60,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.3.4",
     "prettier": "^3.8.1",
+    "netlify": "^24.3.0",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "react": "^19.2.4",
