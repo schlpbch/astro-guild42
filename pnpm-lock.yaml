@@ -4219,8 +4219,8 @@ packages:
   gsap@3.14.2:
     resolution: {integrity: sha512-P8/mMxVLU7o4+55+1TCnQrPmgjPKnwkzkXOK1asnR9Jg2lna4tEY5qBJjMmAaOBDDZWtlRjBXjLa0w53G/uBLA==}
 
-  h3@1.15.6:
-    resolution: {integrity: sha512-oi15ESLW5LRthZ+qPCi5GNasY/gvynSKUQxgiovrY63bPAtG59wtM+LSrlcwvOHAXzGrXVLnI97brbkdPF9WoQ==}
+  h3@1.15.9:
+    resolution: {integrity: sha512-H7UPnyIupUOYUQu7f2x7ABVeMyF/IbJjqn20WSXpMdnQB260luADUkSgJU7QTWLutq8h3tUayMQ1DdbSYX5LkA==}
 
   has-bigints@1.1.0:
     resolution: {integrity: sha512-R3pbpkcIqv2Pm3dUwgjclDRVmWpTJW2DcMzcIhEXEx1oh/CEMObMm3KLmRJOdvhM7o4uQBnwr8pzRK2sJWIqfg==}
@@ -12069,7 +12069,7 @@ snapshots:
 
   gsap@3.14.2: {}
 
-  h3@1.15.6:
+  h3@1.15.9:
     dependencies:
       cookie-es: 1.2.2
       crossws: 0.3.5
@@ -12439,7 +12439,7 @@ snapshots:
       defu: 6.1.4
       destr: 2.0.5
       etag: 1.8.1
-      h3: 1.15.6
+      h3: 1.15.9
       image-meta: 0.2.2
       listhen: 1.9.0
       ofetch: 1.5.1
@@ -12478,7 +12478,7 @@ snapshots:
       defu: 6.1.4
       destr: 2.0.5
       etag: 1.8.1
-      h3: 1.15.6
+      h3: 1.15.9
       image-meta: 0.2.2
       listhen: 1.9.0
       ofetch: 1.5.1
@@ -12960,7 +12960,7 @@ snapshots:
       crossws: 0.3.5
       defu: 6.1.4
       get-port-please: 3.2.0
-      h3: 1.15.6
+      h3: 1.15.9
       http-shutdown: 1.2.2
       jiti: 2.6.1
       mlly: 1.8.1
@@ -15516,7 +15516,7 @@ snapshots:
       anymatch: 3.1.3
       chokidar: 5.0.0
       destr: 2.0.5
-      h3: 1.15.6
+      h3: 1.15.9
       lru-cache: 11.2.7
       node-fetch-native: 1.6.7
       ofetch: 1.5.1
@@ -15529,7 +15529,7 @@ snapshots:
       anymatch: 3.1.3
       chokidar: 5.0.0
       destr: 2.0.5
-      h3: 1.15.6
+      h3: 1.15.9
       lru-cache: 11.2.7
       node-fetch-native: 1.6.7
       ofetch: 1.5.1
