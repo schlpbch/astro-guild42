@@ -38,13 +38,3 @@ technology landscape significantly through his work on the [GNU
 Project](https://www.gnu.org/) and the [Free Software
 Foundation](https://www.fsf.org/). Read more about his work and contributions
 on his [serious biography](https://stallman.org/biographies.html#serious).
-
-## Registration
-
-You can register via
-[Meetup](https://www.meetup.com/guild42ch/events/313562486/?eventOrigin=group_events_list).
-If you have _JavaScript disabled_, you can also register by sending an email
-with the subject "Registration for Richard Stallman Talk" and include your name
-in the body of the email.
-
-We look forward to seeing you!

@@ -39,7 +39,3 @@ With over 15 years of experience, Christoph supports organizations in designing 
 #### Ela
 
 [Raphaela Seeger](https://www.linkedin.com/in/raphaela-seeger/) joined Puzzle 3.5 years ago as a Platform Engineer after completing her PhD in biological systems. She brought her passion for automation with her and works at Puzzle on CI/CD, DevSecOps, and supply chain security. With her extensive teaching experience, she excels at explaining complex topics, such as security risks in cloud environments, in a clear and accessible way, and at outlining practical solution approaches.
-
-### Registration
-
-You can register via [Meetup](https://www.meetup.com/guild42ch/events/313017029/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link&utm_version=v2&member_id=160224342). We look forward to seeing you there!

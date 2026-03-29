@@ -3,7 +3,7 @@ author: Florian Kammermann
 speakers:
   - Simon Martinelli
   - Andreas Schlapbach
-pubDatetime: 2026-09-14T18:00:00+01:00
+pubDatetime: 2026-09-14T18:00:00+02:00
 upcoming: true
 title: "Spec-Driven Development with AI Unified Process & Claude Code"
 topics:

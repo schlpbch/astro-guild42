@@ -2,7 +2,7 @@
 author: Simon Butscher
 speakers:
   - Lize Raes
-pubDatetime: 2026-04-20T18:00:00+01:00
+pubDatetime: 2026-04-20T18:00:02+00:00
 upcoming: true
 title: "Java Strikes Back: Engineering the Agentic Era"
 topics:
