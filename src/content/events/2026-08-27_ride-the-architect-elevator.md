@@ -2,7 +2,7 @@
 author: Simon Butscher
 speakers:
   - Gregor Hohpe
-pubDatetime: 2026-08-27T18:00:00+00:00
+pubDatetime: 2026-08-27T18:00:00+02:00
 upcoming: true
 title: "Ride the Architect Elevator"
 topics:
