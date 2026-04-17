@@ -144,6 +144,14 @@ export const PATRONS: Array<Patron> = [
     name: "Martin Bächtold",
     category: Category.Member42,
   },
+  {
+    name: "Olivier Wolf",
+    category: Category.Member42,
+  },
+  {
+    name: "Michael Brand",
+    category: Category.Member42,
+  },
 ];
 
 export const COMMUNITY: Array<Community> = [
