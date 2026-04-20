@@ -3,7 +3,7 @@ author: Simon Butscher
 speakers:
   - Lize Raes
 pubDatetime: 2026-04-20T18:00:00+02:00
-upcoming: true
+upcoming: false
 title: "Java Strikes Back: Engineering the Agentic Era"
 topics:
   - agents
@@ -42,9 +42,3 @@ COVID-19, to bioinformatics for drug development. Lize likes her projects
 hands-on and slightly unconventional, especially when they help make the world
 a bit better. Outside of work, you’ll find her behind the piano or in her
 woodworking atelier.
-
-### Registration
-
-You can register via
-[Meetup](https://www.meetup.com/guild42ch/events/313017169/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link&utm_version=v2&member_id=160224342).
-We look forward to seeing you there!
