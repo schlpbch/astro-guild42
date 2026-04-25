@@ -1,0 +1,51 @@
+name: Deploy to FTP (Production)
+
+# Required secrets:
+#   FTP_SERVER       - FTP host (e.g. ftp.example.com)
+#   FTP_USERNAME     - FTP login
+#   FTP_PASSWORD     - FTP password
+#   FTP_PROD_PATH    - server-side target dir for production (e.g. /public_html/)
+# Optional repo variables:
+#   FTP_PROTOCOL     - ftp | ftps | ftps-legacy (default: ftps)
+
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.22.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build site
+        run: pnpm build
+
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_PROD_PATH }}
+          protocol: ${{ vars.FTP_PROTOCOL || 'ftps' }}

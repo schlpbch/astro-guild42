@@ -9,6 +9,7 @@ import { SITE } from "./src/config";
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
+  base: process.env.BASE_PATH || undefined,
   redirects: {
     "/event/java-vs-python": "/events/why-python-is-so-popular",
     "/event/http-caching-varnish": "/events/http-caching-varnish",

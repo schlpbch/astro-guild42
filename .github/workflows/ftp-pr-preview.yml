@@ -1,0 +1,118 @@
+name: PR Preview (FTP)
+
+# Required secrets:
+#   FTP_SERVER          - FTP host
+#   FTP_USERNAME        - FTP login
+#   FTP_PASSWORD        - FTP password
+#   FTP_PREVIEW_PATH    - server-side base dir for previews,
+#                         must end with a slash (e.g. /public_html/preview/)
+# Required repo variables:
+#   PREVIEW_BASE_URL    - public URL matching FTP_PREVIEW_PATH
+#                         (e.g. https://preview.guild42.ch)
+# Optional repo variables:
+#   FTP_PROTOCOL        - ftp | ftps | ftps-legacy (default: ftps)
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  preview:
+    if: github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compute preview slug
+        id: slug
+        run: |
+          RAW="pr-${{ github.event.pull_request.number }}-${{ github.head_ref }}"
+          SLUG=$(echo "$RAW" | tr '[:upper:]' '[:lower:]' | sed 's|[^a-z0-9-]|-|g' | sed 's|--*|-|g' | cut -c1-50 | sed 's|-$||')
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+          echo "Preview slug: $SLUG"
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.22.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build site (with preview base path)
+        env:
+          BASE_PATH: /${{ steps.slug.outputs.slug }}
+        run: pnpm build
+
+      - name: Deploy to FTP subfolder
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_PREVIEW_PATH }}${{ steps.slug.outputs.slug }}/
+          protocol: ${{ vars.FTP_PROTOCOL || 'ftps' }}
+
+      - name: Comment preview URL on PR
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: ftp-preview
+          message: |
+            **Preview deployed**
+
+            URL: ${{ vars.PREVIEW_BASE_URL }}/${{ steps.slug.outputs.slug }}/
+
+            Updated automatically on every push. Removed when this PR is closed or merged.
+
+  cleanup:
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compute preview slug
+        id: slug
+        run: |
+          RAW="pr-${{ github.event.pull_request.number }}-${{ github.head_ref }}"
+          SLUG=$(echo "$RAW" | tr '[:upper:]' '[:lower:]' | sed 's|[^a-z0-9-]|-|g' | sed 's|--*|-|g' | cut -c1-50 | sed 's|-$||')
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Delete preview folder via FTP
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_PREVIEW_PATH: ${{ secrets.FTP_PREVIEW_PATH }}
+          FTP_PROTOCOL: ${{ vars.FTP_PROTOCOL || 'ftps' }}
+          SLUG: ${{ steps.slug.outputs.slug }}
+        run: |
+          # lftp uses ftp:// or ftps:// scheme; map our protocol var
+          case "$FTP_PROTOCOL" in
+            ftps|ftps-legacy) SCHEME="ftps" ;;
+            *)                SCHEME="ftp"  ;;
+          esac
+          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "$SCHEME://$FTP_SERVER" <<EOF
+          set ssl:verify-certificate no
+          rm -r "${FTP_PREVIEW_PATH}${SLUG}"
+          bye
+          EOF
+
+      - name: Update PR comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: ftp-preview
+          message: |
+            Preview removed (PR ${{ github.event.pull_request.merged && 'merged' || 'closed' }}).
