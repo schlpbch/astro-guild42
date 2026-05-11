@@ -75,6 +75,12 @@ export const PATRONS: Array<Patron> = [
     category: Category.Life,
   },
   {
+    name: "KAN Service GmbH",
+    href: "https://kan-service.ch/",
+    owner: "Adrian Wildermuth",
+    category: Category.Life,
+  },
+  {
     name: "Lightware Solutions GmbH",
     href: "https://www.lightware-solutions.ch/",
     owner: "Andreas Pfeuti",
