@@ -102,7 +102,6 @@ export const PATRONS: Array<Patron> = [
     href: "https://www.linkedin.com/in/matthias-rueedlinger/",
     category: Category.Life,
   },
-
   {
     name: "Noser Engineering AG, Bern",
     href: "https://www.noser.com/",
