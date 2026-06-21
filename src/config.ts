@@ -42,6 +42,11 @@ export const PATRONS: Array<Patron> = [
     category: Category.Universe,
   },
   {
+    name: "Redguard AG, Bern",
+    href: "https://www.redguard.ch/",
+    category: Category.Universe,
+  },
+  {
     name: "Codeblock GmbH",
     href: "https://www.linkedin.com/company/codeblock-gmbh/",
     owner: "Claude Gex",
