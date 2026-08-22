@@ -28,7 +28,7 @@ You’ll see how to write requirements that AI understands and keep everything c
 
 This isn’t about replacing developers. Let AI handle the boring stuff so you can focus on what matters - understanding what the business needs.
 
-### Speaker
+### Speakers
 
 [Simon Martinelli](https://www.linkedin.com/in/simonmartinelli/) is a Java Champion, Vaadin Champion, and Oracle ACE Pro, with over three decades of experience as a software architect, developer, consultant, and trainer. As the owner of Martinelli LLC, he specializes in optimizing full-stack development with Java using AI and has a deep focus on modern architectures and software modernization. He frequently shares his expertise by speaking at international conferences, writing articles, and maintaining his blog, Keep IT Simple: https://martinelli.ch. His passion for teaching is reflected in his work as a lecturer at two universities in Switzerland.
 
