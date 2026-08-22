@@ -18,8 +18,6 @@ description: Many software projects work code-centered, requirements are collect
 
 ![Spec-Driven Development Speaker](@assets/images/2026_09_14_spec_driven_development.png)
 
-## Abstract: AI makes coding faster, but we’re still stuck with the same old problem: code becomes the source of truth. What if we flipped this around?
-
 AI makes coding faster, but we’re still stuck with the same old problem: code becomes the source of truth. What if we flipped this around?
 
 This talk shows a new way to build software: Write your requirements once. Let AI generate everything else - diagrams, models, code, and tests. When requirements change, everything updates automatically. No more outdated docs.
