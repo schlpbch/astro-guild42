@@ -44,8 +44,7 @@ export function resolveEventImage(
  */
 function resolveOgImage(
   ogImage:
-    | string
-    | { src?: string; format?: string; width?: number; height?: number },
+    string | { src?: string; format?: string; width?: number; height?: number },
   fallback: ImageResolution
 ): ImageResolution {
   if (typeof ogImage === "string") {
