@@ -36,7 +36,6 @@
     "fuse.js": "^7.5.0",
     "github-slugger": "^2.0.0",
     "nanostores": "^1.5.2",
-    "pdfjs-dist": "^5.7.284",
     "preact": "^10.29.8",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
@@ -65,7 +64,7 @@
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3"
   },
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@11.24.0",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
