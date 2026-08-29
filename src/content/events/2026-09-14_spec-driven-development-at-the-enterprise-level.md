@@ -5,7 +5,7 @@ speakers:
   - Andreas Schlapbach
 pubDatetime: 2026-09-14T18:00:00+02:00
 upcoming: true
-title: "Spec-Driven Development with AI at the Enterprise Level"
+title: "Spec-Driven Development at the Enterprise Level"
 topics:
   - artificial intelligence
   - development
